@@ -1,0 +1,210 @@
+2022-11-13 16:42:48.463   [INF]  Now listening on: https://localhost:7294
+2022-11-13 16:42:48.532   [INF]  Now listening on: http://localhost:5294
+2022-11-13 16:42:48.538   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-13 16:42:48.539   [INF]  Hosting environment: Development
+2022-11-13 16:42:48.540   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-13 16:42:49.525   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-13 16:42:50.305   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 782.4406ms
+2022-11-13 16:42:50.316   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-13 16:42:50.385   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-13 16:42:50.422   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 106.3096ms
+2022-11-13 16:42:50.537   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 151.8450ms
+2022-11-13 16:42:52.094   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-13 16:42:52.668   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 575.0089ms
+2022-11-13 16:42:58.550   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 127
+2022-11-13 16:42:58.577   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-13 16:42:58.652   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-13 16:42:58.711   [ERR]  *!*Flat with ID: 0 not fount in flats list*!*
+2022-11-13 16:42:58.724   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-13 16:42:58.740   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 75.016ms
+2022-11-13 16:42:58.744   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-13 16:42:58.747   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 127 - 200 - application/json;+charset=utf-8 194.6380ms
+2022-11-13 16:43:49.974   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-13 16:43:50.069   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-13 16:43:50.075   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-13 16:43:50.097   [INF]  dan
+2022-11-13 16:43:50.099   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-13 16:43:50.101   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 23.7704ms
+2022-11-13 16:43:50.103   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-13 16:43:50.107   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 132.6833ms
+2022-11-13 16:43:56.874   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-13 16:43:56.877   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-13 16:43:56.879   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-13 16:43:56.882   [INF]  dan
+2022-11-13 16:43:56.883   [ERR]  *!*Id should be unique, flat ID 0 already exist in the List*!*
+2022-11-13 16:43:56.885   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-13 16:43:56.892   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 10.6567ms
+2022-11-13 16:43:56.895   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-13 16:43:56.896   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 22.1513ms
+2022-11-13 16:44:06.187   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 127
+2022-11-13 16:44:06.189   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-13 16:44:06.190   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-13 16:44:06.196   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-13 16:44:06.200   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 4.1519ms
+2022-11-13 16:44:06.202   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-13 16:44:06.204   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 127 - 200 - application/json;+charset=utf-8 17.1590ms
+2022-11-13 16:44:15.806   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations - -
+2022-11-13 16:44:15.808   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-13 16:44:15.811   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-13 16:44:15.815   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-13 16:44:15.827   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 12.738ms
+2022-11-13 16:44:15.831   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-13 16:44:15.833   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations - - - 200 - application/json;+charset=utf-8 26.2297ms
+2022-11-13 17:12:28.007   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-13 17:12:28.038   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 31.1377ms
+2022-11-13 17:12:28.054   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-13 17:12:28.148   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 95.0109ms
+2022-11-13 17:12:33.036   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-13 17:12:33.058   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 22.3486ms
+2022-11-13 17:56:57.369   [INF]  Now listening on: https://localhost:7294
+2022-11-13 17:56:57.529   [INF]  Now listening on: http://localhost:5294
+2022-11-13 17:56:57.542   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-13 17:56:57.548   [INF]  Hosting environment: Development
+2022-11-13 17:56:57.552   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-13 17:57:05.138   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-11-13 17:57:05.448   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 319.0740ms
+2022-11-13 17:57:05.457   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-13 17:57:06.006   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 548.7370ms
+2022-11-13 17:57:06.023   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-11-13 17:57:06.024   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-11-13 17:57:06.024   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-13 17:57:06.024   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-11-13 17:57:06.025   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-13 17:57:06.049   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 24.5661ms
+2022-11-13 17:57:06.329   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-11-13 17:57:06.329   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-11-13 17:57:06.481   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 457.5680ms
+2022-11-13 17:57:06.481   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 456.4429ms
+2022-11-13 17:57:06.544   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-11-13 17:57:06.556   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 533.3526ms
+2022-11-13 17:57:06.609   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 577.5262ms
+2022-11-13 17:57:08.889   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-13 17:57:08.980   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/favicon-32x32.png - -
+2022-11-13 17:57:09.062   [INF]  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-11-13 17:57:09.066   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/favicon-32x32.png - - - 200 628 image/png 84.5456ms
+2022-11-13 17:57:09.464   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 575.9484ms
+2022-11-13 17:57:17.787   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-13 17:57:17.806   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-13 17:57:17.881   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-13 17:57:18.049   [INF]  dan
+2022-11-13 17:57:47.229   [INF]  Now listening on: https://localhost:7294
+2022-11-13 17:57:47.463   [INF]  Now listening on: http://localhost:5294
+2022-11-13 17:57:47.476   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-13 17:57:47.478   [INF]  Hosting environment: Development
+2022-11-13 17:57:47.516   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-13 17:57:50.748   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-11-13 17:57:51.135   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 398.1552ms
+2022-11-13 17:57:51.143   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-13 17:57:51.784   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 640.9034ms
+2022-11-13 17:57:51.817   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-11-13 17:57:51.817   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-11-13 17:57:51.818   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-11-13 17:57:51.818   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-13 17:57:51.818   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-13 17:57:51.947   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 128.9219ms
+2022-11-13 17:57:51.985   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-11-13 17:57:52.035   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-11-13 17:57:52.079   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-11-13 17:57:52.241   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 410.0569ms
+2022-11-13 17:57:52.265   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 446.6690ms
+2022-11-13 17:57:52.269   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 451.5946ms
+2022-11-13 17:57:52.293   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 476.3117ms
+2022-11-13 17:57:53.834   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-13 17:57:54.228   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 393.9657ms
+2022-11-13 17:58:01.670   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-13 17:58:01.686   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-13 17:58:01.740   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-13 17:58:01.813   [INF]  dan
+2022-11-13 17:58:52.151   [INF]  Now listening on: https://localhost:7294
+2022-11-13 17:58:52.299   [INF]  Now listening on: http://localhost:5294
+2022-11-13 17:58:52.335   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-13 17:58:52.342   [INF]  Hosting environment: Development
+2022-11-13 17:58:52.344   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-13 17:58:55.574   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-11-13 17:58:55.893   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 330.1198ms
+2022-11-13 17:58:55.897   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-13 17:58:56.622   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 724.2218ms
+2022-11-13 17:58:56.680   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-11-13 17:58:56.680   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-11-13 17:58:56.681   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-11-13 17:58:56.681   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-13 17:58:56.681   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-13 17:58:56.814   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 133.2604ms
+2022-11-13 17:58:56.984   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-11-13 17:58:56.984   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-11-13 17:58:57.001   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 321.4488ms
+2022-11-13 17:58:57.002   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 321.3575ms
+2022-11-13 17:58:57.048   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 367.0463ms
+2022-11-13 17:58:57.049   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-11-13 17:58:57.062   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 381.4119ms
+2022-11-13 17:58:58.714   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-13 17:58:59.197   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 482.3406ms
+2022-11-13 17:59:03.280   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-13 17:59:03.301   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-13 17:59:03.383   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-13 17:59:28.191   [INF]  Now listening on: https://localhost:7294
+2022-11-13 17:59:30.184   [INF]  Now listening on: http://localhost:5294
+2022-11-13 17:59:30.376   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-13 17:59:30.418   [INF]  Hosting environment: Development
+2022-11-13 17:59:30.425   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-13 17:59:33.618   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-11-13 17:59:34.392   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 799.3065ms
+2022-11-13 17:59:34.494   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-13 17:59:35.863   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 1369.9012ms
+2022-11-13 17:59:35.925   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-11-13 17:59:35.922   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-11-13 17:59:35.931   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-11-13 17:59:35.931   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-13 17:59:35.932   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-13 17:59:36.636   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 704.2565ms
+2022-11-13 17:59:36.698   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-11-13 17:59:36.699   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-11-13 17:59:36.705   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 774.7939ms
+2022-11-13 17:59:36.716   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 791.5815ms
+2022-11-13 17:59:37.414   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1481.9070ms
+2022-11-13 17:59:37.476   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-11-13 17:59:37.488   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 1565.2994ms
+2022-11-13 17:59:39.006   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-13 17:59:39.522   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 516.0297ms
+2022-11-13 17:59:51.709   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-13 17:59:51.743   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-13 17:59:51.890   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-13 18:01:13.670   [INF]  Now listening on: https://localhost:7294
+2022-11-13 18:01:13.765   [INF]  Now listening on: http://localhost:5294
+2022-11-13 18:01:13.772   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-13 18:01:13.775   [INF]  Hosting environment: Development
+2022-11-13 18:01:13.777   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-13 18:01:20.858   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-11-13 18:01:21.329   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 477.2028ms
+2022-11-13 18:01:21.356   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-13 18:01:22.422   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 1065.5972ms
+2022-11-13 18:01:22.505   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-11-13 18:01:22.506   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-11-13 18:01:22.506   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-11-13 18:01:22.506   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-13 18:01:22.507   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-13 18:01:22.539   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 32.7949ms
+2022-11-13 18:01:22.633   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-11-13 18:01:23.006   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-11-13 18:01:23.069   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-11-13 18:01:23.269   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 763.3944ms
+2022-11-13 18:01:23.305   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 798.8134ms
+2022-11-13 18:01:23.324   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 817.3467ms
+2022-11-13 18:01:23.336   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 828.9822ms
+2022-11-13 18:01:25.252   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-13 18:01:25.960   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 707.7058ms
+2022-11-13 18:01:42.384   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-13 18:01:42.401   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-13 18:01:42.461   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-13 18:02:33.120   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-13 18:02:33.155   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 50663.8544ms
+2022-11-13 18:02:33.163   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-13 18:02:33.165   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 50781.8758ms
+2022-11-13 18:02:47.131   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 89
+2022-11-13 18:02:47.135   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-13 18:02:47.138   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-13 18:03:15.463   [ERR]  *!*Id should be unique, flat ID 0 already exist in the List*!*
+2022-11-13 18:03:19.302   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-13 18:03:19.304   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 32164.4694ms
+2022-11-13 18:03:19.309   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-13 18:03:19.311   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 89 - 200 - application/json;+charset=utf-8 32179.7816ms

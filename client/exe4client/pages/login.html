@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link href="../css/login.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/card.css" rel="stylesheet" />
+    <script src="../js/ajaxCall.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        $(document).ready(function () {
+
+
+            if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+                api = "https://localhost:7294/api/Users";
+            }
+            else {
+
+                api = "https://proj.ruppin.ac.il/cgroup35/test2/tar1/api/Users";
+            }
+            if (sessionStorage["cgroup35"] != undefined) {
+                cgroup35 = JSON.parse(sessionStorage["cgroup35"]);
+            }
+            else {
+                cgroup35 = {
+                    userEmail: "",
+                    userFirstName: "",
+                    userlastName: ""
+                }
+                sessionStorage["cgroup35"] = JSON.stringify(cgroup35);
+            }
+
+           //login form functions
+            const signUpButton = document.getElementById('signUp');
+            const signInButton = document.getElementById('signIn');
+            const container = document.getElementById('container');
+
+
+            signUpButton.addEventListener('click', () => {
+                container.classList.add("right-panel-active");
+            });
+
+            signInButton.addEventListener('click', () => {
+                container.classList.remove("right-panel-active");
+            });
+            $("#CreateAccountForm").submit(sumbitCreateform);
+            $("#LoginForm").submit(sumbitLoginform);
+            $("#Password2").on("blur", ansValidation);
+
+        });
+
+
+        //Function name:sumbitCreateform
+        //parameters:---
+        //Purpose:to add new user to DB
+        //note: return false to prevent deletion of the dynamic elements
+        //Trigger function addUserToServer();
+        function sumbitCreateform() {
+            addUserToServer();
+            return false;
+        }
+        //Function name:addUserToServer
+        //parameters:---
+        //Purpose:to add new user to DB with AJAX call
+        //note: --
+        function addUserToServer() {
+            let firstName = $("#Fname").val();
+            let lastName = $("#Lname").val();
+            let email = $("#Email").val();
+            let Password1 = $("#Password1").val();
+
+
+            let UserToAdd = {
+
+                FirstName: firstName,
+                FamilyName: lastName,
+                Email: email,
+                Password: Password1,
+                IsActive: true,
+                IsAdmin: false
+            }
+
+            ajaxCall("POST", api, JSON.stringify(UserToAdd), postSCB, postECB);
+
+        }
+       //Function name:postSCB
+        //parameters: data- number of rows affected in DB
+        //Purpose:update the seesion storhe with the connecting user data and move to flat page
+        //note: if user is admin move to admin page
+        function postSCB(data) {
+            if (data == 1) {
+
+                cgroup35.userEmail = $("#Email").val();
+                cgroup35.userFirstName = $("#Fname").val();
+                cgroup35.userlastName = $("#Lname").val();
+                sessionStorage["cgroup35"] = JSON.stringify(cgroup35);
+                window.location.href = `index.html`;
+            }
+            else {
+
+            }
+        }
+        //Function name:postECB
+        //parameters: err- if ther is eny exepction
+        //Purpose: to show error message
+        //note: ---
+        function postECB(err) {
+            if (err.responseText != undefined) {
+                if (err.responseText.includes("PRIMARY KEY")) {
+                    showError('errorSingUp', "This email is already exists, try to sing in ");
+                }
+            }
+            else {
+                showError('errorSingUp', "Something went wrong- check if serever is connected ");
+            }
+            console.log(err);
+        }
+        //Function name:sumbitLoginform
+        //parameters:---
+        //Purpose:log in user
+        //note: return false to prevent deletion of the dynamic elements
+        //Trigger function getUserFromServer();
+        function sumbitLoginform() {
+            getUserFromServer();
+            return false;
+        }
+        //Function name:getUserFromServer
+        //parameters:---
+        //Purpose:checkin if the user name and password are the same as in DB
+        //note:---
+        function getUserFromServer() {
+            let email = $("#loginEmail").val();
+            let password = $("#loginPassword").val();
+
+            let UserToGet = {
+                Email: email,
+                Password: password
+            }
+            let qString = `${api}/email/${UserToGet.Email}/password/${UserToGet.Password}`;
+            qString.replace("@", "%40");
+            ajaxCall("GET", qString, JSON.stringify(UserToGet), GetSCB, GetECB);
+        }
+         //Function name:GetSCBUser
+        //parameters: data- number of rows affected in DB
+        //Purpose:update the seesion storge with the connecting user data and mova to flat page
+        //note: if user is admin move to admin page
+        function GetSCB(data) {
+            if (data.length != 1) {
+                showError('error', "Your password or email are incorrect");
+            }
+            else {
+                if (data[0].isActive == false) {
+                   
+                    showError('error', "This user is inactive, please contact the administrator to continue");
+                }
+                else if (data[0].isAdmin) {
+                    window.location.href = "../adminMain/userManager.html";
+                }
+                else {
+                    cgroup35.userEmail = data[0].email;
+                    cgroup35.userFirstName = data[0].firstName;
+                    cgroup35.userlastName = data[0].familyName;
+                    sessionStorage["cgroup35"] = JSON.stringify(cgroup35);
+                    window.location.href = `index.html`;
+                }
+       
+            }
+
+        }
+
+        //Function name:GetECBUser
+        //parameters: err- if ther is eny exepction
+        //Purpose: to show error message
+        //note: ---
+        function GetECB(err) {
+            showError("error", "Something went wrong-check if serever is connected");
+        }
+         //Function name:ansValidation
+        //parameters:---
+        //Purpose: Checking if both paswword are the same
+        //note: if not the form get validity.valid = false
+        function ansValidation() {
+           
+            var passValue = document.getElementById("Password1").value
+            var confpassValue = document.getElementById("Password2").value
+
+            if (passValue !== confpassValue) {
+                this.validity.valid = false; // must set it to false to prevent the submit to the server
+                this.setCustomValidity('Your password and confirmation password do not match');
+            }
+            else {
+                this.validity.valid = true;
+                this.setCustomValidity('');
+            }
+        }
+        //Function name:showError
+        //parameters:get the message error string and the id of elert
+        //Purpose: alert error messsage for 5 seconds
+        //note:Asychrony function
+        async function showErrorput(id, message) {
+            document.getElementById(id).style.display = 'block';
+            document.getElementById(id).innerHTML = message;
+            await new Promise(resolve => setTimeout(resolve, 6000));
+            document.getElementById(id).style.display = 'none';
+
+
+        }
+        //Function name:showError
+        //parameters:get the message error string and the id of elert
+        //Purpose: alert error messsage for 5 seconds
+        //note:Asychrony function
+        async function showError(id, message) {
+            document.getElementById(id).style.display = 'block';
+            document.getElementById(id).innerHTML = message;
+            await new Promise(resolve => setTimeout(resolve, 6000));
+            document.getElementById(id).style.display = 'none';
+
+
+        }
+         //Function name:showPassword
+        //parameters: id- id of password input, iconid-id of the icon tag
+        //Purpose: if user try to update but is not connected
+        //note: send to connection modal
+        function showPassword(id, iconid) {
+            var pas1 = document.getElementById(id);
+            if (pas1.type === "password") {
+                pas1.type = "text";
+                document.getElementById(iconid).classList.add("fa-eye-slash")
+                document.getElementById(iconid).classList.remove("fa-eye")
+            } else {
+                pas1.type = "password";
+                document.getElementById(iconid).classList.remove("fa-eye-slash")
+                document.getElementById(iconid).classList.add("fa-eye")
+            }
+
+        }
+    </script>
+
+
+</head>
+
+
+
+
+
+
+
+
+<body id="background">
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container ">
+            <form action="#" class="contactForm" id="CreateAccountForm">
+                <h3>Create Account</h3>
+                <input type="text" id="Fname" placeholder="First Name" class="form-control" required />
+                <input type="text" id="Lname" placeholder="Last Name" class="form-control" required />
+                <input type="email" id="Email" placeholder="Email" class="form-control"
+                       pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$"
+                       oninvalid="this.setCustomValidity('Invalid Email Format')"
+                       oninput="this.setCustomValidity('')" required />
+                <div class="showpass">
+                    <input type="password" id="Password1" placeholder="Password" class="form-control" required
+                           pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                           oninvalid="this.setCustomValidity('Password Minimum eight characters, at least one uppercase letter, one lowercase letter and one number')"
+                           oninput="this.setCustomValidity('')" />
+                    <a onclick="showPassword('Password1','showpasseye')">
+                        <i id="showpasseye" class="fa fa-eye" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="showpass">
+                    <input type="password" id="Password2" placeholder="Confirm Password" class="form-control" required />
+                    <a onclick="showPassword('Password2','showpasseye2')">
+                        <i id="showpasseye2" class="fa fa-eye" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div id="errorSingUp" class="alert alert-danger" role="alert"></div>
+                <input type="submit" id="btnSingUp" class="btn btn-primary" value="Sign Up" />
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+
+            <!--<img src="../images/vacationpool.jpg" />-->
+            <form action="#" class="contactForm" id="LoginForm">
+                <h3>Sign in</h3>
+                <input type="text" id="loginEmail" placeholder="Email" class="form-control" required />
+                <div class="showpass">
+                    <input type="password" id="loginPassword" placeholder="Password" class="form-control" required />
+                    <a onclick="showPassword('loginPassword','showpasseyeLogIn')">
+                        <i id="showpasseyeLogIn" class="fa fa-eye" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div id="error" class="alert alert-danger" role="alert"></div>
+                <button class="btn btn-primary" id="btnSingIn">Sign In</button>
+            </form>
+
+        </div>
+        <div class="overlay-container ">
+
+            <div class="overlay " id="overlaybackground">
+                <div class="overlay-panel overlay-left">
+                    <h1 class="whiteTitle">Welcome Back!</h1>
+                    <p class="secondTitle">To keep connected with us please login with your personal info</p>
+                    <button class="btn btn-primary" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1 class="whiteTitle">Hello, Friend!</h1>
+                    <p class="secondTitle">Enter your personal details and start journey with us</p>
+                    <button class="btn btn-primary" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

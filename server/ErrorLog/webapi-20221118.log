@@ -1,0 +1,310 @@
+2022-11-18 17:02:58.548   [INF]  Now listening on: https://localhost:7294
+2022-11-18 17:02:58.644   [INF]  Now listening on: http://localhost:5294
+2022-11-18 17:02:58.654   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-18 17:02:58.656   [INF]  Hosting environment: Development
+2022-11-18 17:02:58.658   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-18 17:02:59.741   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-18 17:03:00.788   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-18 17:03:00.819   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-18 17:03:00.821   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 1082.8146ms
+2022-11-18 17:03:00.858   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 68.5970ms
+2022-11-18 17:03:01.148   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 329.3448ms
+2022-11-18 17:03:02.935   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-18 17:03:03.126   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 190.7517ms
+2022-11-18 17:03:33.937   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-18 17:03:33.953   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:03:34.011   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-18 17:03:34.061   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:03:34.077   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 53.0152ms
+2022-11-18 17:03:34.081   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:03:34.082   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 144.7704ms
+2022-11-18 17:03:45.485   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 95
+2022-11-18 17:03:45.500   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:03:45.665   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-18 17:03:45.694   [ERR]  *!*Id should be unique, flat ID 0 already exist in the List*!*
+2022-11-18 17:03:45.729   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:03:45.738   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 54.9349ms
+2022-11-18 17:03:45.746   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:03:45.762   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 95 - 200 - application/json;+charset=utf-8 275.9317ms
+2022-11-18 17:03:51.590   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 91
+2022-11-18 17:03:51.592   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:03:51.594   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-18 17:03:51.643   [ERR]  *!*Id should be unique, flat ID 0 already exist in the List*!*
+2022-11-18 17:03:51.645   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:03:51.647   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 4.5643ms
+2022-11-18 17:03:51.657   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:03:51.660   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 91 - 200 - application/json;+charset=utf-8 70.2067ms
+2022-11-18 17:03:58.520   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 91
+2022-11-18 17:03:58.523   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:03:58.525   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-18 17:03:58.535   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:03:58.538   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 3.6663ms
+2022-11-18 17:03:58.551   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:03:58.555   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 91 - 200 - application/json;+charset=utf-8 35.0271ms
+2022-11-18 17:04:09.799   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-18 17:04:09.826   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:04:09.861   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-18 17:04:09.865   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:04:09.870   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 6.2792ms
+2022-11-18 17:04:09.881   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:04:09.885   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 86.3209ms
+2022-11-18 17:04:14.934   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats - -
+2022-11-18 17:04:14.937   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-11-18 17:04:14.942   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-18 17:04:14.952   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-18 17:04:14.971   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 20.7832ms
+2022-11-18 17:04:14.980   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-11-18 17:04:14.983   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats - - - 200 - application/json;+charset=utf-8 48.2636ms
+2022-11-18 17:04:39.638   [INF]  Request starting HTTP/2 GET https://localhost:7294/city_maxPrice?city=tlv&maxPrice=500 - -
+2022-11-18 17:04:39.639   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.GetByCityPrice (exe1HW)'
+2022-11-18 17:04:39.667   [INF]  Route matched with {action = "GetByCityPrice", controller = "Flats"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByCityPrice(System.String, Double) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-18 17:04:39.698   [INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-18 17:04:39.700   [INF]  Executed action exe1.Controllers.FlatsController.GetByCityPrice (exe1HW) in 19.803ms
+2022-11-18 17:04:39.702   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.GetByCityPrice (exe1HW)'
+2022-11-18 17:04:39.705   [INF]  Request finished HTTP/2 GET https://localhost:7294/city_maxPrice?city=tlv&maxPrice=500 - - - 200 - application/json;+charset=utf-8 66.9143ms
+2022-11-18 17:05:10.512   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 126
+2022-11-18 17:05:10.514   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:05:10.520   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:05:10.534   [ERR]  *!*Flat with ID: 1 not exist in flats list*!*
+2022-11-18 17:05:10.541   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:05:10.543   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 20.3334ms
+2022-11-18 17:05:10.546   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:05:10.552   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 126 - 200 - application/json;+charset=utf-8 37.9025ms
+2022-11-18 17:05:19.888   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations - -
+2022-11-18 17:05:19.891   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:05:19.895   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:05:19.906   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-18 17:05:19.909   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 8.7406ms
+2022-11-18 17:05:19.913   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:05:19.915   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations - - - 200 - application/json;+charset=utf-8 26.6814ms
+2022-11-18 17:05:54.136   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 125
+2022-11-18 17:05:54.160   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:05:54.163   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:05:54.166   [ERR]  *!*Flat with ID: 1 not exist in flats list*!*
+2022-11-18 17:05:54.169   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:05:54.191   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 25.7611ms
+2022-11-18 17:05:54.195   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:05:54.197   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 125 - 200 - application/json;+charset=utf-8 61.1271ms
+2022-11-18 17:06:00.240   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 125
+2022-11-18 17:06:00.244   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:06:00.246   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:06:00.250   [ERR]  *!*Flat with ID: 1 not exist in flats list*!*
+2022-11-18 17:06:00.252   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:06:00.259   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 9.5887ms
+2022-11-18 17:06:00.264   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:06:00.265   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 125 - 200 - application/json;+charset=utf-8 25.0002ms
+2022-11-18 17:06:08.422   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 125
+2022-11-18 17:06:08.462   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:06:08.466   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:06:08.472   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:06:08.478   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 6.2909ms
+2022-11-18 17:06:08.490   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:06:08.492   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 125 - 200 - application/json;+charset=utf-8 69.4463ms
+2022-11-18 17:06:13.186   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations - -
+2022-11-18 17:06:13.188   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:06:13.190   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:06:13.195   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-18 17:06:13.208   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 13.5104ms
+2022-11-18 17:06:13.211   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:06:13.215   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations - - - 200 - application/json;+charset=utf-8 29.1243ms
+2022-11-18 17:06:52.934   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 125
+2022-11-18 17:06:52.935   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:06:52.937   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:06:52.940   [ERR]  *!*Cannot rent an apartment (0) the selected dates are not available*!*
+2022-11-18 17:06:52.941   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:06:52.946   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 6.8191ms
+2022-11-18 17:06:52.948   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:06:52.950   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 125 - 200 - application/json;+charset=utf-8 16.1999ms
+2022-11-18 17:07:17.023   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 125
+2022-11-18 17:07:17.025   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:07:17.027   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:07:17.073   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:07:17.076   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 3.2439ms
+2022-11-18 17:07:17.091   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:07:17.093   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 125 - 200 - application/json;+charset=utf-8 70.3615ms
+2022-11-18 17:07:23.765   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations - -
+2022-11-18 17:07:23.767   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:07:23.770   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:07:23.773   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-18 17:07:23.775   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 2.5662ms
+2022-11-18 17:07:23.785   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:07:23.787   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations - - - 200 - application/json;+charset=utf-8 22.4500ms
+2022-11-18 17:10:00.572   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/2022-11-07/endDate/2022-11-11 - -
+2022-11-18 17:10:00.579   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:10:00.584   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.DateTime, System.DateTime) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:10:00.605   [INF]  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2022-11-18 17:10:00.607   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 16.6825ms
+2022-11-18 17:10:00.609   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:10:00.611   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/2022-11-07/endDate/2022-11-11 - - - 404 - text/plain;+charset=utf-8 38.9078ms
+2022-11-18 17:11:05.836   [INF]  Now listening on: https://localhost:7294
+2022-11-18 17:11:05.903   [INF]  Now listening on: http://localhost:5294
+2022-11-18 17:11:05.911   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-18 17:11:05.913   [INF]  Hosting environment: Development
+2022-11-18 17:11:05.914   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-18 17:11:06.245   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-18 17:11:07.107   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 868.7266ms
+2022-11-18 17:11:07.153   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-18 17:11:07.153   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-18 17:11:07.161   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 7.5589ms
+2022-11-18 17:11:07.209   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.5017ms
+2022-11-18 17:11:08.184   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-18 17:11:08.413   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 228.7491ms
+2022-11-18 17:11:13.820   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-18 17:11:13.844   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:11:13.922   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-18 17:11:14.023   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:11:14.046   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 106.7185ms
+2022-11-18 17:11:14.054   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:11:14.056   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 236.2838ms
+2022-11-18 17:11:18.529   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats - -
+2022-11-18 17:11:18.534   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-11-18 17:11:18.539   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-18 17:11:18.546   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-18 17:11:18.555   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 11.9549ms
+2022-11-18 17:11:18.568   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-11-18 17:11:18.573   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats - - - 200 - application/json;+charset=utf-8 43.0908ms
+2022-11-18 17:11:35.051   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 127
+2022-11-18 17:11:35.055   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:11:35.059   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:11:35.085   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:11:35.087   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 20.7165ms
+2022-11-18 17:11:35.090   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:11:35.094   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 127 - 200 - application/json;+charset=utf-8 41.4126ms
+2022-11-18 17:11:42.159   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations - -
+2022-11-18 17:11:42.161   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:11:42.165   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:11:42.169   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-18 17:11:42.180   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 11.5022ms
+2022-11-18 17:11:42.185   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:11:42.187   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations - - - 200 - application/json;+charset=utf-8 28.0209ms
+2022-11-18 17:12:21.829   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/"2022-11-01"/endDate/"2022-11-20" - -
+2022-11-18 17:12:21.832   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:12:21.839   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.DateTime, System.DateTime) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:12:21.857   [INF]  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-18 17:12:21.863   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 18.0783ms
+2022-11-18 17:12:21.869   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:12:21.873   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/"2022-11-01"/endDate/"2022-11-20" - - - 400 - application/problem+json;+charset=utf-8 43.0522ms
+2022-11-18 17:12:45.445   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/2022-11-01/endDate/2022-11-20 - -
+2022-11-18 17:12:45.450   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:12:45.456   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.DateTime, System.DateTime) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:12:45.494   [INF]  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2022-11-18 17:12:45.497   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 34.474ms
+2022-11-18 17:12:45.500   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:12:45.508   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/2022-11-01/endDate/2022-11-20 - - - 404 - text/plain;+charset=utf-8 62.9047ms
+2022-11-18 17:12:59.732   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/'2022-11-01'/endDate/'2022-11-20' - -
+2022-11-18 17:12:59.737   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:12:59.755   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.DateTime, System.DateTime) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:12:59.765   [INF]  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-18 17:12:59.771   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 8.1266ms
+2022-11-18 17:12:59.783   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:12:59.787   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/'2022-11-01'/endDate/'2022-11-20' - - - 400 - application/problem+json;+charset=utf-8 54.9684ms
+2022-11-18 17:13:27.252   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/2022-11-10/endDate/2022-11-20 - -
+2022-11-18 17:13:27.278   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:13:27.292   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.DateTime, System.DateTime) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:13:27.299   [INF]  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2022-11-18 17:13:27.307   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 11.1651ms
+2022-11-18 17:13:27.311   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:13:27.313   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/2022-11-10/endDate/2022-11-20 - - - 404 - text/plain;+charset=utf-8 61.1788ms
+2022-11-18 17:13:50.408   [INF]  Now listening on: https://localhost:7294
+2022-11-18 17:13:50.508   [INF]  Now listening on: http://localhost:5294
+2022-11-18 17:13:50.517   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-18 17:13:50.520   [INF]  Hosting environment: Development
+2022-11-18 17:13:50.521   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-18 17:13:54.949   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-11-18 17:13:55.317   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 376.6594ms
+2022-11-18 17:13:55.340   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-18 17:13:55.813   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 473.1008ms
+2022-11-18 17:13:55.836   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-18 17:13:55.836   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-11-18 17:13:55.836   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-11-18 17:13:55.836   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-11-18 17:13:55.836   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-18 17:13:55.843   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 7.1765ms
+2022-11-18 17:13:55.975   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 138.3638ms
+2022-11-18 17:13:56.218   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-11-18 17:13:56.218   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-11-18 17:13:56.229   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 392.9135ms
+2022-11-18 17:13:56.250   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-11-18 17:13:56.256   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 419.7035ms
+2022-11-18 17:13:56.264   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 427.7505ms
+2022-11-18 17:13:57.157   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-18 17:13:57.459   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 302.2339ms
+2022-11-18 17:14:20.245   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-18 17:14:20.296   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:14:20.368   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-18 17:14:26.221   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:14:26.240   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 5850.7107ms
+2022-11-18 17:14:26.247   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:14:26.249   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 6005.9537ms
+2022-11-18 17:14:31.113   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats - -
+2022-11-18 17:14:31.126   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-11-18 17:14:31.164   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-18 17:14:31.177   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-18 17:14:31.188   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 12.5531ms
+2022-11-18 17:14:31.209   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-11-18 17:14:31.220   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats - - - 200 - application/json;+charset=utf-8 100.6555ms
+2022-11-18 17:14:43.738   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 127
+2022-11-18 17:14:43.739   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:14:43.768   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:14:43.787   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:14:43.789   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 9.3392ms
+2022-11-18 17:14:43.791   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:14:43.796   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 127 - 200 - application/json;+charset=utf-8 58.4582ms
+2022-11-18 17:14:47.482   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations - -
+2022-11-18 17:14:47.483   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:14:47.491   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:14:47.497   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-18 17:14:47.520   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 24.4586ms
+2022-11-18 17:14:47.532   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:14:47.535   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations - - - 200 - application/json;+charset=utf-8 52.6383ms
+2022-11-18 17:15:06.361   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/2022-11-01/endDate/2022-11-20 - -
+2022-11-18 17:15:06.368   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:15:06.375   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.DateTime, System.DateTime) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:16:16.797   [INF]  Now listening on: https://localhost:7294
+2022-11-18 17:16:16.853   [INF]  Now listening on: http://localhost:5294
+2022-11-18 17:16:16.860   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-18 17:16:16.862   [INF]  Hosting environment: Development
+2022-11-18 17:16:16.863   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-18 17:16:17.656   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-18 17:16:18.206   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 559.3347ms
+2022-11-18 17:16:18.223   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-18 17:16:18.223   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-18 17:16:18.243   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 19.8978ms
+2022-11-18 17:16:18.291   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 68.2669ms
+2022-11-18 17:16:19.231   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-18 17:16:19.479   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 249.7663ms
+2022-11-18 17:16:24.001   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-18 17:16:24.042   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:16:24.105   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-18 17:16:24.174   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:16:24.199   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 73.5915ms
+2022-11-18 17:16:24.205   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-18 17:16:24.207   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 205.0262ms
+2022-11-18 17:16:43.086   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 127
+2022-11-18 17:16:43.092   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:16:43.102   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:16:43.130   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-18 17:16:43.144   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 38.7015ms
+2022-11-18 17:16:43.147   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-18 17:16:43.149   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 127 - 200 - application/json;+charset=utf-8 63.7016ms
+2022-11-18 17:17:03.808   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/2022-11-01/endDate/2022-11-20 - -
+2022-11-18 17:17:03.812   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:17:03.819   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.DateTime, System.DateTime) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:17:03.833   [INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-18 17:17:03.850   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 27.6232ms
+2022-11-18 17:17:03.855   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:17:03.862   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/2022-11-01/endDate/2022-11-20 - - - 200 - application/json;+charset=utf-8 48.4508ms
+2022-11-18 17:17:08.971   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/2022-11-01/endDate/2022-11-15 - -
+2022-11-18 17:17:08.974   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:17:08.977   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.DateTime, System.DateTime) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:17:09.003   [INF]  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2022-11-18 17:17:09.011   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 28.6201ms
+2022-11-18 17:17:09.015   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:17:09.017   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/2022-11-01/endDate/2022-11-15 - - - 404 - text/plain;+charset=utf-8 45.9007ms
+2022-11-18 17:17:16.592   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/2022-11-11/endDate/2022-11-18 - -
+2022-11-18 17:17:16.595   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:17:16.597   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(System.DateTime, System.DateTime) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-18 17:17:16.605   [INF]  Executing NotFoundObjectResult, writing value of type 'System.String'.
+2022-11-18 17:17:16.609   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 8.5486ms
+2022-11-18 17:17:16.615   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-18 17:17:16.626   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations/getByDates/startDate/2022-11-11/endDate/2022-11-18 - - - 404 - text/plain;+charset=utf-8 33.6564ms

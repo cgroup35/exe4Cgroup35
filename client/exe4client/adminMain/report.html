@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Vacation Manager</title>
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link href="css/databootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">-->
+    <link href="css/datatable.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+    <style type="text/css">
+
+        button {
+            margin-left: 10px;
+        }
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="js/ajaxCalls.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <script src="js/table2excel.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"></script>
+
+
+    <script>
+
+
+        // will run when the document is ready
+        $(document).ready(function () {
+
+            if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+                api = "https://localhost:7294/month/";
+            }
+            else {
+
+                api = "https://proj.ruppin.ac.il/cgroup35/test2/tar1/month/";
+            }
+            $("#reportForm").submit(submitReport);
+
+
+        });
+
+        function submitReport() {
+            getreport();
+            return false;
+        }
+        function getreport() {
+
+
+            let month = $("#selectMonth").val();
+            let routh = api+month;
+            ajaxCall("GET", routh, "", getSuccess, error);
+        }
+        function getSuccess(data) {
+            console.log(data);
+            let str = `<table id="tblId"><tr><th>city</th><th>avg price</th></tr>`;
+            for (var i = 0; i < data.length; i++) {
+                str += `<tr><td>${data[i].city}</td><td>${data[i].avg}$</td></tr>`
+
+            }
+            str += `</table><button onclick="dan()" id="exportbtn" class="btn btn-success"><i class="fa fa-file-excel-o" id="excelicon" aria-hidden="true"></i>Export To Excel</button>`;
+            document.getElementById("ph").innerHTML = str;
+        }
+        function error(err) {
+            console.log(err);
+        }
+        function dan() {
+            $("#tblId").table2excel({
+                filename: "vacationReport.xls"
+            })
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="wrapper d-flex align-items-stretch">
+            <nav id="sidebar">
+                <div class="custom-menu">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    </button>
+                </div>
+                <div class="img bg-wrap text-center py-4" style="background-image: url(images/bg_1.jpg); ">
+                    <div class="user-logo">
+                        <div class="img" style="background-image: url(images/adminpng.png);"></div>
+                        <h3>Cgroup35 Administrator</h3>
+                    </div>
+                </div>
+                <ul class="list-unstyled components mb-5">
+                    <li>
+                        <a href="#"><span class="fa fa-user mr-3"></span> Users</a>
+                    </li>
+                    <!--<li>
+                        <a href="#"><span class="fa fa-download mr-3 notif"><small class="d-flex align-items-center justify-content-center">5</small></span> Download</a>
+                    </li>-->
+                    <li>
+                        <a href="flatManager.html"><span class="fa fa-home mr-3"></span> Flats</a>
+                    </li>
+                    <li>
+                        <a href="vacationManager.html"><span class="fa fa-calendar mr-3"></span> Vacations</a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><span class="fa fa-file mr-3"></span> report</a>
+                    </li>
+                    <li>
+                        <a href="../pages/login.html"><span class="fa fa-sign-out mr-3"></span> Sign Out</a>
+
+                    </li>
+                </ul>
+
+            </nav>
+            <div class="container">
+                <form id="reportForm">
+                    <h1>Select a month for which you would like to receive the average apartment prices by city</h1>
+                    <select class="form-control" id="selectMonth">
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <button type="submit" value="Send" class="btn btn-primary" id="btnGetReport">Calc</button>
+                </form>
+
+                <div id="ph">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--<script src="js/jquery.min.js"></script>-->
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+</html>

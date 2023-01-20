@@ -1,0 +1,817 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>My Vacations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="../css/card.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/menubar.css" rel="stylesheet" />
+    <link href="../css/modal.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="../js/ajaxCall.js"></script>
+    <script src="../js/IsraelCities.js"></script>
+    <script src="../js/menu/popper.min.js"></script>
+    <script src="../js/menu/owl.carousel.min.js"></script>
+    <script src="../js/menu/main.js"></script>
+    <script src="../js/menu/jquery.sticky.js"></script>
+    <script src="../js/menu/jquery-3.3.1.min.js"></script>
+    <script src="../js/menu/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('tKBm5PSjBxB7qQyQu');
+        })();
+    </script>
+
+
+
+
+    <script>
+        //jqurey when page is ready (like init function)
+        $(document).ready(function () {
+
+            if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+                api = "https://localhost:7294/api/Vacations";
+            }
+            else {
+
+                api = "https://proj.ruppin.ac.il/cgroup35/test2/tar1/api/Vacations";
+            }
+            if (sessionStorage["cgroup35"] != undefined) {
+                cgroup35 = JSON.parse(sessionStorage["cgroup35"]);
+            } else {
+                cgroup35 = {
+                    userEmail: "",
+                    userFirstName: "",
+                    userlastName: "",
+                    flatID: ""
+                }
+                sessionStorage["cgroup35"] = JSON.stringify(cgroup35);
+            }
+
+            getVacationFromServer();
+            $("#AddVacationForm").submit(sumbitform);
+            if (cgroup35.userEmail != "") {
+                $("#UserId").val(cgroup35.userEmail); //upadte the flat id value from the query string
+                $("#UserId").prop('disabled', true);
+            }
+
+            $("#flatId").val("Flat ID: " + cgroup35.flatID);
+            $("#flatId").prop('disabled', true);//make flat id read only
+            setTodayAsMinDate();// set today as min date for input start date
+            $("#startDate").on("blur", updateEndDate);  //update min end date=start date && max end date = start date +10 days;
+            beforPressShow = true;
+            $("#updateForm").submit(sumbitUpdateform);
+            $("#LoginForm").submit(sumbitLoginform);
+            showErrorupdate();
+
+        })
+        //Function name:showErrorupdate
+        //parameters:---
+        //Purpose: alert error messsage for 5 seconds
+        //note:Asychrony function
+        function showErrorupdate() {
+            if (cgroup35.userEmail == "") {
+                document.getElementById('warningLogout').style.display = 'block';
+            }
+            else {
+                document.getElementById('warningLogout').style.display = 'none';
+            }
+
+        }
+        //Function name:sumbitLoginform
+        //parameters:---
+        //Purpose:log in user
+        //note: return false to prevent deletion of the dynamic elements
+        //Trigger function getUserFromServer();
+        function sumbitLoginform() {
+            getUserFromServer();
+            return false;
+        }
+        //Function name:getUserFromServer
+        //parameters:---
+        //Purpose:checkin if the user name and password are the same as in DB
+        //note:---
+        function getUserFromServer() {
+            let email = $("#loginEmail").val();
+            let password = $("#loginPassword").val();
+
+
+            let UserToGet = {
+                Email: email,
+                Password: password
+            }
+            if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+                apiForUser = "https://localhost:7294/api/Users";
+            }
+            else {
+
+                apiForUser = "https://proj.ruppin.ac.il/cgroup35/test2/tar1/api/Users";
+            }
+            let qString = `${apiForUser}/email/${UserToGet.Email}/password/${UserToGet.Password}`;
+            qString.replace("@", "%40");
+            ajaxCall("GET", qString, JSON.stringify(UserToGet), GetSCBUser, GetECBUser);
+        }
+
+        //Function name:GetSCBUser
+        //parameters: data- number of rows affected in DB
+        //Purpose:update the seesion storhe with the connecting user data and mobe to vacation page
+        //note: if user is admin move to admin page
+        function GetSCBUser(data) {
+            if (data.length != 1) {
+                showError('errorModal', "Your password or email are incorrect");
+            }
+            else {
+                cgroup35.userEmail = data[0].email;
+                cgroup35.userFirstName = data[0].firstName;
+                cgroup35.userlastName = data[0].familyName;
+                sessionStorage["cgroup35"] = JSON.stringify(cgroup35);
+                jQuery(document.elementFromPoint(100, 100)).click()
+                document.getElementById('warningLogout').style.display = 'none';
+                if (cgroup35.userEmail == "admin" || cgroup35.userEmail == "Admin" || cgroup35.userEmail == "ADMIN") {
+                    window.location.href = `../adminMain/userManager.html`;
+
+                    return;
+                }
+            }
+        }
+        //Function name:GetECBUser
+        //parameters: err- if ther is eny exepction
+        //Purpose: to show error message
+        //note: ---
+        function GetECBUser(err) {
+            showError('errorModal', "Something went wrong-check if serever is connected");
+        }
+        //Function name:letRender
+        //parameters: ---
+        //Purpose: to show all vacation 
+        //note: ---
+        function letRender() {
+            beforPressShow = false;
+            $('#ph').show();
+            render();
+        }
+        //Function name:updateEndDate
+        //parameters:---
+        //Purpose: set min and max value for end date
+        //note:use the start day value.
+        function updateEndDate() {
+            endDate.min = $("#startDate").val();
+
+            var mindate = new Date(endDate.min);
+            mindate.setDate(mindate.getDate() + 1);//at least one day
+            var ddMin = mindate.getDate();
+            var mmMin = mindate.getMonth() + 1; //January is 0!
+            var yyyyMin = mindate.getFullYear();
+            if (ddMin < 10) {
+                ddMin = '0' + ddMin;
+            }
+
+            if (mmMin < 10) {
+                mmMin = '0' + mmMin;
+            }
+            mindate = yyyyMin + '-' + mmMin + '-' + ddMin;
+            endDate.min = mindate;
+
+
+            var maxdate = new Date(endDate.min);
+            maxdate.setDate(maxdate.getDate() + 9); // one day already taken need more 9 days
+            var dd = maxdate.getDate();
+            var mm = maxdate.getMonth() + 1; //January is 0!
+            var yyyy = maxdate.getFullYear();
+            if (dd < 10) {
+                dd = '0' + dd;
+            }
+
+            if (mm < 10) {
+                mm = '0' + mm;
+            }
+            maxdate = yyyy + '-' + mm + '-' + dd;
+            endDate.max = maxdate;
+
+        }
+        //Function name:showError
+        //parameters:get the message error string
+        //Purpose: alert error messsage for 5 seconds
+        //note:Asychrony function
+        async function showError(id, message) {
+            document.getElementById(id).style.display = 'block';
+            document.getElementById(id).innerHTML = message;
+            await new Promise(resolve => setTimeout(resolve, 5000));
+            document.getElementById(id).style.display = 'none';
+
+        }
+        //Function name:showSuccess
+        //parameters:---
+        //Purpose: alert succes messsage for 3 seconds
+        //note:Asychrony function
+        async function showSuccess() {
+            cleanform();
+            document.getElementById('successAlert').style.display = 'block';
+            await new Promise(resolve => setTimeout(resolve, 3000));
+            document.getElementById('successAlert').style.display = 'none';
+
+        }
+         //Function name:showSuccessupdate
+        //parameters:---
+        //Purpose: alert succes messsage for 3 seconds on update
+        //note:Asychrony function
+        async function showSuccessupdate() {
+            cleanform();
+            document.getElementById('successAlertUpdate').style.display = 'block';
+            await new Promise(resolve => setTimeout(resolve, 3000));
+            document.getElementById('successAlertUpdate').style.display = 'none';
+
+
+        }
+        //Function name:cleanform
+        //parameters:---
+        //Purpose: Prepare the form for the next vacation
+        //note:--
+        function cleanform() {
+            /* $("#UserId").val("");*/
+            $("#startDate").val("");
+            setTodayAsMinDate();
+            $("#endDate").val("");
+        }
+        //Function name:setTodayAsMinDate
+        //parameters:---
+        //Purpose: set min value of start date to today date
+        //note:--
+        function setTodayAsMinDate() {
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1; //January is 0!
+            var yyyy = today.getFullYear();
+            if (dd < 10) {
+                dd = '0' + dd;
+            }
+
+            if (mm < 10) {
+                mm = '0' + mm;
+            }
+            today = yyyy + '-' + mm + '-' + dd;
+            startDate.min = today;
+            endDate.min = today;
+        }
+        //Function name:getVacationFromServer
+        //parameters:---
+        //Purpose: call to server and get all vacation
+        //note:if success return list to GetSCB
+        //		use ajax
+        function getVacationFromServer() {
+
+            ajaxCall("GET", api, "", GetSCB, GetECB);
+
+        }
+        //Function name:GetSCB
+        //parameters:data- the object that return from server
+        //Purpose: initialization global arr variable with returned list
+        //note:if trigger by ajax
+        //Trigger function render();
+        function GetSCB(data) {
+            arr = data;
+            render();
+
+        }
+        //Function name:GetECB
+        //parameters:err- the exception returned from server
+        //Purpose: alert error message
+        //note:trigger by ajax
+        //Trigger function showError();
+        function GetECB(err) {
+            showError('error', "Something went wrong-check if serever is connected");
+
+        }
+        //Function name:addVacationToServer
+        //parameters:---
+        //Purpose:Post a new vacation from form sumbit
+        //note:trigger by sumbit btn
+        function addVacationToServer() {
+
+            let userEmail = $("#UserId").val();
+            let flatId = parseInt($("#flatId").val().split(":")[1]);
+            let startDate = $("#startDate").val();
+            let endDate = $("#endDate").val();
+
+            let VactionToAdd = {
+                Id: 0,
+                UserEmail: userEmail,
+                FlatId: flatId,
+                StartDate: startDate,
+                Enddate: endDate
+            }
+            ajaxCall("POST", api, JSON.stringify(VactionToAdd), postSCB, postECB);
+
+        }
+        //Function name:postSCB
+        //parameters:data- the object that return from server
+        //Purpose: add vacation to list (DB)
+        //note: trigger by ajax
+        //Trigger function showSuccess() and getVacationFromServer() ;
+        function postSCB(data) {
+            if (data != 0) {
+                sendmail();
+                showSuccess();
+                getVacationFromServer();
+            }
+            else {
+                showError('error', "The requested dates are not available");
+            }
+
+
+        }
+        //Function name:postECB
+        //parameters:err- the exception returned from server
+        //Purpose: alert error message
+        //note:trigger by ajax
+        //Trigger function showError();
+        function postECB(err) {
+
+            showError('error', "Something went wrong-check if serever is connected or check the log file");
+
+        }
+
+        //Function name:sumbitform
+        //parameters:---
+        //Purpose:add vacation to list (DB)
+        //note: return false to prevent deletion of the dynamic elements
+        //Trigger function addVacationToServer();
+        function sumbitform() {
+            if (cgroup35.flatID == "") {
+                document.getElementById('errorLogout').style.display = 'block';
+                $('html, body').animate({ scrollTop: 0 }, 'fast');
+                return false;
+            }
+            addVacationToServer();
+            return false;
+
+        }
+        //Function name:render
+        //parameters:---
+        //Purpose: write to ph the existing vacation dynamically
+        //note: --
+        function render() {
+            if (beforPressShow == false) {
+
+
+                let str = "";
+                for (var i = 0; i < arr.length; i++) {
+                    str += `<div class="cardspace col-lg-4">
+                             <div class="card">
+                             <img class="card-image" src="../images/vacationpool.jpg"/>
+
+                             <div class="card-description">Flat ID: ${arr[i].flatId}</div>
+                             <div class="card-description">User ID: ${arr[i].userEmail}</div>
+                             <div class="card-description">Start date: ${arr[i].startDate.split('T')[0]}</div>
+                             <div class="card-description">End date: ${arr[i].enddate.split('T')[0]}</div>
+                              </div>
+                             </div>`
+                }
+                document.getElementById("phCard").innerHTML = str;
+            }
+        }
+
+        //Function name:BackToFlatPage
+        //parameters:---
+        //Purpose: go back to flats page
+        //note: return params value
+        function BackToFlatPage() {
+            window.location.href = "index.html";
+        }
+        //Function name:logOut
+        //parameters:---
+        //Purpose: clean the session storage and show message that user is not conccted
+        //note: re render vacation
+        function logOut() {
+            document.body.classList.remove("offcanvas-menu")
+            cgroup35.userEmail = "";
+            cgroup35.userFirstName = "";
+            cgroup35.userlastName = "";
+            cgroup35.flatID = "";
+            sessionStorage["cgroup35"] = JSON.stringify(cgroup35);
+            $("#UserId").val(cgroup35.userEmail);
+            $("#flatId").val("Flat ID: " + cgroup35.flatID);
+            showErrorupdate();
+
+        }
+         //Function name:closemenu
+        //parameters: ---
+        //Purpose: close the menu side bar.
+        //note: for phone!!
+        function closemenu() {
+            let name = cgroup35.userFirstName;
+            let lastname = cgroup35.userlastName;
+            let email = cgroup35.userEmail
+            $("#Fname").val(name);
+            $("#Lname").val(lastname);
+            $("#Email").val(email);
+            modalBodyRender();
+
+
+            document.body.classList.remove("offcanvas-menu")
+        }
+        //Function name:modalBodyRender
+        //parameters: ---
+        //Purpose: if user try to update but is not connected
+        //note: send to connection modal--if user is connected modal not change
+        function modalBodyRender() {
+
+            if (cgroup35.userEmail == "") {
+
+                let str = `<div class="alert alert-danger" role="alert" style="display:block">
+                                                                You are not connected <a href="login.html" class="alert-link">click here to log in</a>.
+                                                            </div>`
+                document.getElementById("modalph").innerHTML = str;
+            }
+        }
+        //Function name:showPassword
+        //parameters: id- id of password input, iconid-id of the icon tag
+        //Purpose: if user try to update but is not connected
+        //note: send to connection modal
+        function showPassword(id, iconid) {
+            var pas1 = document.getElementById(id);
+            if (pas1.type === "password") {
+                pas1.type = "text";
+                document.getElementById(iconid).classList.add("fa-eye-slash")
+                document.getElementById(iconid).classList.remove("fa-eye")
+            } else {
+                pas1.type = "password";
+                document.getElementById(iconid).classList.remove("fa-eye-slash")
+                document.getElementById(iconid).classList.add("fa-eye")
+            }
+
+        }
+        //Function name:sumbitUpdateform
+        //parameters:---
+        //Purpose:upadte user on DB
+        //note: return false to prevent deletion of the dynamic elements
+        //Trigger function updateUserInDB();
+        function sumbitUpdateform() {
+            updateUserInDB();
+            return false;
+        }
+        //Function name:updateUserInDB
+        //parameters:---
+        //Purpose:upadte user on DB with AJAX call PUT
+        //note: --
+        function updateUserInDB() {
+
+            let firstName = $("#Fname").val();
+            let lastName = $("#Lname").val();
+            let email = $("#Email").val();
+            let Password1 = $("#Password1").val();
+
+
+            let UserToAdd = {
+
+                FirstName: firstName,
+                FamilyName: lastName,
+                Email: email,
+                Password: Password1
+            }
+            let apiForUser;
+            if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+                apiForUser = "https://localhost:7294/api/Users";
+            }
+            else {
+
+                apiForUser = "https://proj.ruppin.ac.il/cgroup35/test2/tar1/api/Users";
+            }
+            ajaxCall("PUT", apiForUser, JSON.stringify(UserToAdd), PutSCB, PutECB);
+        }
+        //Function name:PutSCB
+        //parameters: data- number of rows affected in DB
+        //Purpose:show success update message and update the session storge
+        //note: ---
+        function PutSCB(data) {
+            if (data == 1) {
+                jQuery(document.elementFromPoint(100, 100)).click()
+                showSuccessupdate();
+                cgroup35.userFirstName = $("#Fname").val();
+                cgroup35.userlastName = $("#Lname").val();
+
+            }
+
+        }
+         //Function name:PutECB
+        //parameters: err- if ther is eny exepction
+        //Purpose: to  console log the error
+        //note: ---
+        function PutECB(err) {
+            console.log(err);
+        }
+
+        //Function name:sendmail
+        //parameters: --
+        //Purpose: send a mail with order details when the order is confirmed
+        //note: ---
+        function sendmail() {
+
+            params = {
+                send_to:cgroup35.userEmail,
+                my_html: `<!DOCTYPE html>
+                            <html>
+                            <head>
+                                <meta charset="utf-8" />
+                                <title></title>
+                                <style>
+        
+                                    body {
+                                        font-family: sans-serif;
+                                        text-align: center;
+                                        color: #c5b5ae;
+                                    }
+
+                                    h1 {
+                                        color: #b3dbdd;
+                                        font-size: 3em;
+                                        margin: 0;
+                                        text-align: center;
+                                    }
+
+                                    img {
+                                        width: 70%;
+                                        height: auto;
+                                        display: block;
+                                        margin: 0 auto;
+                                    }
+
+                                    span {
+                                        font-size: 1.25em;
+                                        font-weight: bold;
+                                        color: #000;
+                                        display: block;
+                                        text-align: left;
+                                    }
+                                    #tnxsapn {
+                                        text-align: center;
+                                        color: #b3dbdd;
+                                        font-size: 2em;
+                                    }
+
+      
+                                </style>
+                            </head>
+                            <body>
+                                <h1>your reservation is confirmed</h1>
+                                <span>Hello ${cgroup35.userFirstName} ${cgroup35.userlastName},</span>
+                                <span>Flat ID: ${cgroup35.flatID}</span>
+                                <span>Start Date: ${$("#startDate").val()}</span>
+                                <span>End Date: ${$("#endDate").val()}</span>
+                                <img src="https://cdn.villa-bali.com/cache/fullSize/villas/little-bohemian-house/little-bohemian-house-little-bohemian-lounge-04-62c538907002b.gif" />
+                                <span id="tnxsapn">thank you! group35</span>
+                            </body>
+                            </html>`
+            }
+            const serviceID = 'default_service';
+            const templateID = 'template_4b80h6o';
+
+            emailjs.send(serviceID, templateID, params)
+                .then(function (res) {
+                   
+                })
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <!--Modal: modalPush-->
+    <div class="modal fade" id="modalPush" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-info" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <!--<div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Be always up to date</p>
+
+                </div>-->
+                <!--Body-->
+                <div class="modal-body" id="modalph">
+                    <div class="form-container sign-up-container">
+                        <form action="#" class="contactForm" id="updateForm">
+                            <h3>Update Account</h3>
+                            <input type="text" id="Fname" placeholder="First Name" class="form-control" required />
+                            <input type="text" id="Lname" placeholder="Last Name" class="form-control" required />
+                            <input type="email" id="Email" placeholder="Email" class="form-control" required readonly />
+                            <div class="showpass">
+                                <input type="password" id="Password1" placeholder="Password" class="form-control" required
+                                       pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                       oninvalid="this.setCustomValidity('Password Minimum eight characters, at least one uppercase letter, one lowercase letter and one number')"
+                                       oninput="this.setCustomValidity('')" />
+                                <a onclick="showPassword('Password1','showpasseye1')"><i id="showpasseye1" class="fa fa-eye" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="showpass">
+                                <input type="password" id="Password2" placeholder="Confirm Password" class="form-control" required />
+                                <a onclick="showPassword('Password2','showpasseye2')">  <i id="showpasseye2" class="fa fa-eye" aria-hidden="true"></i></a>
+                            </div>
+                            <input type="submit" id="btnUpdate" class="btn btn-primary" value="Update" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modalPush-->
+
+    <div class="modal fade" id="modalPushLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-info" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="form-container sign-up-container">
+                        <form action="#" class="contactForm" id="LoginForm">
+                            <h3>Login Account</h3>
+                            <input type="text" id="loginEmail" placeholder="Email" class="form-control" required />
+                            <div class="showpass">
+                                <input type="password" id="loginPassword" placeholder="Password" class="form-control" required />
+                                <a onclick="showPassword('loginPassword','showpasseyeLogin')"><i id="showpasseyeLogin" class="fa fa-eye"></i></a>
+                            </div>
+                            <div id="errorModal" class="alert alert-danger" role="alert"></div>
+                            <button class="btn btn-primary" id="btnSingIn">Sign In</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modalPush-->
+
+
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+
+
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+        <div class="container">
+            <div class="row align-items-center position-relative">
+
+
+                <div class="site-logo">
+                    <a href="index.html" class="text-black"><span class="text-primary">VACATIONS</a>
+                </div>
+
+                <div class="col-12">
+                    <nav class="site-navigation text-right ml-auto " role="navigation">
+
+                        <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                            <li><a href="#modalPush" data-toggle="modal" data-target="#modalPush" id="nav-link" onclick="closemenu()">Update Details</a></li>
+                            <li><a href="#" onclick="logOut()" class="nav-link" id="logOutLink">Log Out</a></li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <div class="toggle-button d-inline-block d-lg-none">
+                    <a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black">
+                        <span class="icon-menu h3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" color="#c5b5ae" ">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <section class="ftco-section">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="alert alert-warning alert-dismissible alertwidth" id="warningLogout">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>Warning!</strong> you are not connected. for sign in <a href="#modalPushLogin" data-toggle="modal" data-target="#modalPushLogin">click here</a>
+                </div>
+                <div class="alert alert-danger  alert-dismissible alertwidth" id="errorLogout">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>Error!</strong> you cant order vacation with out choose flat <a href="index.html">Click here to choose a flat </a>
+                </div>
+                <div id="successAlertUpdate" class="alert alert-success" role="alert">Your personal details have been successfully updated </div>
+                <div class="col-md-12">
+                    <div class="wrapper">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6 d-flex align-items-stretch">
+                                <div class="info-wrap w-100 p-5 img" style="background-image: url(../images/Boho-Pool-Banora-Point-05.jpg);"></div>
+                            </div>
+                            <div class="col-lg-6">
+
+                                <div class="contact-wrap w-100 p-md-5 p-4">
+                                    <h3>Add new vacation</h3>
+                                    <form id="AddVacationForm" class="contactForm">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="UserId" placeholder="User Email" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group changflat">
+                                                    <input type="text" class="form-control" id="flatId" placeholder="Flat ID" required>
+                                                    <input type="button" class="btn btn-primary" value="Choose flat" onclick="BackToFlatPage()">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <!--<input type="date" class="form-control" id="startDate" required>-->
+                                                    <input type="text" placeholder="Arrival date"
+                                                           onfocus="(this.type='date')"
+                                                           onblur="(this.type='text')"
+                                                           class="form-control" id="startDate" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" placeholder="Leaving date"
+                                                           onfocus="(this.type='date')"
+                                                           onblur="(this.type='text')"
+                                                           class="form-control" id="endDate" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group" id="submitbtn">
+                                                    <input type="submit" value="Add vacation" class="btn btn-primary">
+                                                    <div class="submitting"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div>
+                                        <input type="button" class="btn btn-primary getbtn" value="Get All Vacations" onclick=" letRender()" />
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="error" class="alert alert-danger" role="alert"></div>
+            <div id="successAlert" class="alert alert-success" role="alert">Vacation was added successfully! </div>
+
+            <div class="cards style-1 wrapper" id="ph">
+                <div class="row" id="phCard">
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+</body>
+</html>
+

@@ -1,0 +1,362 @@
+2022-12-15 19:02:35.383   [INF]  Now listening on: https://localhost:7294
+2022-12-15 19:02:35.521   [INF]  Now listening on: http://localhost:5294
+2022-12-15 19:02:35.532   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-15 19:02:35.534   [INF]  Hosting environment: Development
+2022-12-15 19:02:35.536   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-15 19:02:46.379   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-15 19:02:46.992   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 621.0463ms
+2022-12-15 19:02:47.046   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-15 19:02:48.580   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 1534.2457ms
+2022-12-15 19:02:48.612   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-15 19:02:48.612   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-15 19:02:48.613   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-15 19:02:48.613   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-15 19:02:48.613   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-15 19:02:48.628   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 15.0872ms
+2022-12-15 19:02:48.866   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-15 19:02:48.869   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-15 19:02:48.882   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-15 19:02:48.903   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 290.1952ms
+2022-12-15 19:02:48.931   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 319.9654ms
+2022-12-15 19:02:48.936   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 323.0308ms
+2022-12-15 19:02:49.320   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 707.7853ms
+2022-12-15 19:02:49.867   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-15 19:02:49.954   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/favicon-32x32.png - -
+2022-12-15 19:02:50.470   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 603.5576ms
+2022-12-15 19:02:50.560   [INF]  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-12-15 19:02:50.634   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/favicon-32x32.png - - - 200 628 image/png 680.3101ms
+2022-12-15 19:03:03.834   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users - -
+2022-12-15 19:03:03.884   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 19:03:03.952   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 19:03:03.978   [INF]  Executing ObjectResult, writing value of type 'System.String[]'.
+2022-12-15 19:03:04.012   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 25.7799ms
+2022-12-15 19:03:04.018   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 19:03:04.020   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users - - - 200 - application/json;+charset=utf-8 185.9669ms
+2022-12-15 19:08:31.458   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users - -
+2022-12-15 19:08:31.475   [INF]  CORS policy execution successful.
+2022-12-15 19:08:31.480   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users - - - 204 - - 22.6978ms
+2022-12-15 19:08:31.484   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Users application/json 71
+2022-12-15 19:08:31.489   [INF]  CORS policy execution successful.
+2022-12-15 19:08:31.492   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-15 19:08:31.540   [INF]  Route matched with {action = "Post", controller = "Users"}. Executing controller action with signature Void Post(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 19:08:31.637   [INF]  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-12-15 19:08:31.644   [INF]  Executed action exe1HW.Controllers.UsersController.Post (exe1HW) in 99.1731ms
+2022-12-15 19:08:31.646   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-15 19:08:31.648   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Users application/json 71 - 400 - application/problem+json;+charset=utf-8 164.0712ms
+2022-12-15 19:09:14.141   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users - -
+2022-12-15 19:09:14.143   [INF]  CORS policy execution successful.
+2022-12-15 19:09:14.144   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users - - - 204 - - 3.2348ms
+2022-12-15 19:09:14.155   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Users application/json 71
+2022-12-15 19:09:14.158   [INF]  CORS policy execution successful.
+2022-12-15 19:09:14.160   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-15 19:09:14.162   [INF]  Route matched with {action = "Post", controller = "Users"}. Executing controller action with signature Void Post(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 19:09:14.171   [INF]  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-12-15 19:09:14.174   [INF]  Executed action exe1HW.Controllers.UsersController.Post (exe1HW) in 6.3792ms
+2022-12-15 19:09:14.179   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-15 19:09:14.185   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Users application/json 71 - 400 - application/problem+json;+charset=utf-8 29.3279ms
+2022-12-15 19:15:20.732   [INF]  Now listening on: https://localhost:7294
+2022-12-15 19:15:20.853   [INF]  Now listening on: http://localhost:5294
+2022-12-15 19:15:20.863   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-15 19:15:20.866   [INF]  Hosting environment: Development
+2022-12-15 19:15:20.867   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-15 19:15:25.215   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-15 19:15:25.541   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 335.5027ms
+2022-12-15 19:15:25.600   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-15 19:15:26.572   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 971.8836ms
+2022-12-15 19:15:26.665   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-15 19:15:26.667   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-15 19:15:26.667   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-15 19:15:26.667   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-15 19:15:26.668   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-15 19:15:26.690   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 22.7539ms
+2022-12-15 19:15:27.061   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-15 19:15:27.061   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-15 19:15:27.109   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 440.9365ms
+2022-12-15 19:15:27.388   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 722.7908ms
+2022-12-15 19:15:27.413   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-15 19:15:27.416   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 747.5465ms
+2022-12-15 19:15:27.469   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 802.3673ms
+2022-12-15 19:15:28.558   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-15 19:15:28.979   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 413.6250ms
+2022-12-15 19:16:01.514   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users - -
+2022-12-15 19:16:01.540   [INF]  CORS policy execution successful.
+2022-12-15 19:16:01.550   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users - - - 204 - - 35.8749ms
+2022-12-15 19:16:01.571   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Users application/json 71
+2022-12-15 19:16:01.576   [INF]  CORS policy execution successful.
+2022-12-15 19:16:01.593   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-15 19:16:01.678   [INF]  Route matched with {action = "Post", controller = "Users"}. Executing controller action with signature Boolean Post(exe1HW.Models.User) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 19:17:06.012   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-12-15 19:17:06.049   [INF]  Executed action exe1HW.Controllers.UsersController.Post (exe1HW) in 64346.789ms
+2022-12-15 19:17:06.053   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-15 19:17:06.055   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Users application/json 71 - 0 - application/json;+charset=utf-8 64483.7650ms
+2022-12-15 19:17:08.400   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users - -
+2022-12-15 19:17:08.406   [INF]  CORS policy execution successful.
+2022-12-15 19:17:08.412   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users - - - 204 - - 12.6031ms
+2022-12-15 19:17:08.421   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Users application/json 71
+2022-12-15 19:17:08.423   [INF]  CORS policy execution successful.
+2022-12-15 19:17:08.425   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-15 19:17:08.430   [INF]  Route matched with {action = "Post", controller = "Users"}. Executing controller action with signature Boolean Post(exe1HW.Models.User) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 19:33:22.270   [INF]  Now listening on: https://localhost:7294
+2022-12-15 19:33:22.425   [INF]  Now listening on: http://localhost:5294
+2022-12-15 19:33:22.436   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-15 19:33:22.440   [INF]  Hosting environment: Development
+2022-12-15 19:33:22.441   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-15 19:33:27.212   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-15 19:33:27.578   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 375.0730ms
+2022-12-15 19:33:27.637   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-15 19:33:28.438   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 800.9598ms
+2022-12-15 19:33:28.455   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-15 19:33:28.455   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-15 19:33:28.456   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-15 19:33:28.456   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-15 19:33:28.456   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-15 19:33:28.871   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 415.4512ms
+2022-12-15 19:33:28.922   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-15 19:33:28.922   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-15 19:33:29.059   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 602.1865ms
+2022-12-15 19:33:29.107   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 652.2110ms
+2022-12-15 19:33:29.132   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 675.4381ms
+2022-12-15 19:33:29.148   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-15 19:33:29.154   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 700.4533ms
+2022-12-15 19:33:30.449   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-15 19:33:30.935   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 485.8386ms
+2022-12-15 19:34:53.379   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users - -
+2022-12-15 19:34:53.421   [INF]  CORS policy execution successful.
+2022-12-15 19:34:53.427   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users - - - 204 - - 48.1375ms
+2022-12-15 19:34:53.440   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Users application/json 85
+2022-12-15 19:34:53.448   [INF]  CORS policy execution successful.
+2022-12-15 19:34:53.467   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-15 19:34:53.504   [INF]  Route matched with {action = "Post", controller = "Users"}. Executing controller action with signature Int32 Post(exe1HW.Models.User) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 19:35:32.554   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-15 19:35:32.585   [INF]  Executed action exe1HW.Controllers.UsersController.Post (exe1HW) in 39055.4977ms
+2022-12-15 19:35:32.600   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-15 19:35:32.634   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Users application/json 85 - 200 - application/json;+charset=utf-8 39193.4671ms
+2022-12-15 19:39:17.743   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users - -
+2022-12-15 19:39:17.747   [INF]  CORS policy execution successful.
+2022-12-15 19:39:17.749   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users - - - 204 - - 7.9813ms
+2022-12-15 19:39:17.759   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Users application/json 65
+2022-12-15 19:39:17.761   [INF]  CORS policy execution successful.
+2022-12-15 19:39:17.762   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-15 19:39:17.765   [INF]  Route matched with {action = "Post", controller = "Users"}. Executing controller action with signature Int32 Post(exe1HW.Models.User) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 19:39:23.116   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-15 19:39:23.119   [INF]  Executed action exe1HW.Controllers.UsersController.Post (exe1HW) in 5349.9906ms
+2022-12-15 19:39:23.121   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-15 19:39:23.124   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Users application/json 65 - 200 - application/json;+charset=utf-8 5365.2871ms
+2022-12-15 20:01:15.188   [INF]  Now listening on: https://localhost:7294
+2022-12-15 20:01:15.314   [INF]  Now listening on: http://localhost:5294
+2022-12-15 20:01:15.327   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-15 20:01:15.329   [INF]  Hosting environment: Development
+2022-12-15 20:01:15.330   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-15 20:01:19.425   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-15 20:01:19.709   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 292.0817ms
+2022-12-15 20:01:19.741   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-15 20:01:20.377   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 635.8140ms
+2022-12-15 20:01:20.451   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-15 20:01:20.451   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-15 20:01:20.451   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-15 20:01:20.451   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-15 20:01:20.452   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-15 20:01:20.467   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 15.6813ms
+2022-12-15 20:01:20.589   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-15 20:01:20.630   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 174.3826ms
+2022-12-15 20:01:20.637   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-15 20:01:20.754   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 302.3141ms
+2022-12-15 20:01:20.821   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-15 20:01:20.868   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 415.5744ms
+2022-12-15 20:01:20.976   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 525.1433ms
+2022-12-15 20:01:22.142   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-15 20:01:22.575   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 433.1212ms
+2022-12-15 20:01:52.487   [INF]  Now listening on: https://localhost:7294
+2022-12-15 20:01:52.784   [INF]  Now listening on: http://localhost:5294
+2022-12-15 20:01:52.802   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-15 20:01:52.805   [INF]  Hosting environment: Development
+2022-12-15 20:01:52.811   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-15 20:01:55.550   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-15 20:01:55.840   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 303.9151ms
+2022-12-15 20:01:55.856   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-15 20:01:56.500   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 651.5090ms
+2022-12-15 20:01:56.525   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-15 20:01:56.526   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-15 20:01:56.526   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-15 20:01:56.526   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-15 20:01:56.527   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-15 20:01:56.544   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 18.1607ms
+2022-12-15 20:01:56.775   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-15 20:01:56.775   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-15 20:01:56.873   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 346.4409ms
+2022-12-15 20:01:56.917   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-15 20:01:56.919   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 393.1997ms
+2022-12-15 20:01:56.939   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 414.0925ms
+2022-12-15 20:01:56.959   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 432.4261ms
+2022-12-15 20:01:58.549   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-15 20:01:58.985   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 439.7801ms
+2022-12-15 20:02:17.468   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/dan@gmail.com - -
+2022-12-15 20:02:17.515   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:02:17.665   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 20:03:37.667   [INF]  Now listening on: https://localhost:7294
+2022-12-15 20:03:38.031   [INF]  Now listening on: http://localhost:5294
+2022-12-15 20:03:38.068   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-15 20:03:38.070   [INF]  Hosting environment: Development
+2022-12-15 20:03:38.138   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-15 20:03:41.413   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-15 20:03:41.759   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 355.4363ms
+2022-12-15 20:03:41.802   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-15 20:03:42.410   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 607.6435ms
+2022-12-15 20:03:42.441   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-15 20:03:42.488   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-15 20:03:42.488   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-15 20:03:42.522   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-15 20:03:42.537   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-15 20:03:43.030   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 508.0726ms
+2022-12-15 20:03:43.031   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-15 20:03:43.031   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-15 20:03:43.031   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-15 20:03:43.072   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 630.5628ms
+2022-12-15 20:03:43.117   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 629.1957ms
+2022-12-15 20:03:43.133   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 644.6693ms
+2022-12-15 20:03:43.251   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 713.0668ms
+2022-12-15 20:03:44.540   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-15 20:03:45.173   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 632.8532ms
+2022-12-15 20:03:55.718   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/dan@gmail.com - -
+2022-12-15 20:03:55.744   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:03:55.813   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 20:04:33.165   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-15 20:04:35.999   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 40138.3935ms
+2022-12-15 20:04:36.012   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:04:36.015   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/dan@gmail.com - - - 200 - application/json;+charset=utf-8 40296.9530ms
+2022-12-15 20:04:56.944   [INF]  Now listening on: https://localhost:7294
+2022-12-15 20:04:58.838   [INF]  Now listening on: http://localhost:5294
+2022-12-15 20:04:59.788   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-15 20:05:05.061   [INF]  Hosting environment: Development
+2022-12-15 20:05:07.243   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-15 20:05:07.380   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-15 20:05:10.669   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 3313.2355ms
+2022-12-15 20:05:11.012   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-15 20:05:11.756   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 742.7807ms
+2022-12-15 20:05:11.766   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-15 20:05:11.766   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-15 20:05:11.767   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-15 20:05:11.767   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-15 20:05:11.772   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-15 20:05:11.973   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 205.7748ms
+2022-12-15 20:05:12.010   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-15 20:05:12.133   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-15 20:05:12.221   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 454.8156ms
+2022-12-15 20:05:12.297   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 530.1100ms
+2022-12-15 20:05:12.530   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 758.2955ms
+2022-12-15 20:05:12.552   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-15 20:05:12.596   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 829.9796ms
+2022-12-15 20:05:14.067   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-15 20:05:14.585   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 517.7937ms
+2022-12-15 20:05:48.551   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users?{%22Email%22:%22dan@gmail.com%22}&_=1671127505358 - -
+2022-12-15 20:05:48.572   [INF]  CORS policy execution successful.
+2022-12-15 20:05:48.599   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users?{%22Email%22:%22dan@gmail.com%22}&_=1671127505358 - - - 204 - - 47.9434ms
+2022-12-15 20:05:48.622   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users?{%22Email%22:%22dan@gmail.com%22}&_=1671127505358 application/json -
+2022-12-15 20:05:48.626   [INF]  CORS policy execution successful.
+2022-12-15 20:05:48.642   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:05:48.673   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 20:05:48.784   [INF]  Executing ObjectResult, writing value of type 'System.String[]'.
+2022-12-15 20:05:48.812   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 40.271ms
+2022-12-15 20:05:48.818   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:05:48.821   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users?{%22Email%22:%22dan@gmail.com%22}&_=1671127505358 application/json - - 200 - application/json;+charset=utf-8 198.5963ms
+2022-12-15 20:06:25.212   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users?{%22Email%22:%22dan@gmail.com%22}&_=1671127505359 - -
+2022-12-15 20:06:25.264   [INF]  CORS policy execution successful.
+2022-12-15 20:06:25.266   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users?{%22Email%22:%22dan@gmail.com%22}&_=1671127505359 - - - 204 - - 54.6738ms
+2022-12-15 20:06:25.281   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users?{%22Email%22:%22dan@gmail.com%22}&_=1671127505359 application/json -
+2022-12-15 20:06:25.404   [INF]  CORS policy execution successful.
+2022-12-15 20:06:25.417   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:06:25.422   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 20:06:25.441   [INF]  Executing ObjectResult, writing value of type 'System.String[]'.
+2022-12-15 20:06:25.456   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 18.5147ms
+2022-12-15 20:06:25.483   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:06:25.486   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users?{%22Email%22:%22dan@gmail.com%22}&_=1671127505359 application/json - - 200 - application/json;+charset=utf-8 205.1348ms
+2022-12-15 20:08:15.709   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email - -
+2022-12-15 20:08:15.732   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:08:15.794   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 20:08:19.590   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-15 20:08:19.639   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 3835.4084ms
+2022-12-15 20:08:19.645   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:08:19.669   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email - - - 200 - application/json;+charset=utf-8 3958.2090ms
+2022-12-15 20:09:08.485   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email?{%22Email%22:%22dan@gmail.com%22}&_=1671127733998 - -
+2022-12-15 20:09:08.520   [INF]  CORS policy execution successful.
+2022-12-15 20:09:08.522   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email?{%22Email%22:%22dan@gmail.com%22}&_=1671127733998 - - - 204 - - 52.0215ms
+2022-12-15 20:09:08.539   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email?{%22Email%22:%22dan@gmail.com%22}&_=1671127733998 application/json -
+2022-12-15 20:09:08.554   [INF]  CORS policy execution successful.
+2022-12-15 20:09:08.556   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:09:08.559   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 20:09:14.248   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-15 20:09:14.252   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 5688.1961ms
+2022-12-15 20:09:14.254   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:09:14.257   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email?{%22Email%22:%22dan@gmail.com%22}&_=1671127733998 application/json - - 200 - application/json;+charset=utf-8 5719.9087ms
+2022-12-15 20:09:58.087   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email?{%22Email%22:%22dan@gmail.com%22}&_=1671127733999 - -
+2022-12-15 20:09:58.093   [INF]  CORS policy execution successful.
+2022-12-15 20:09:58.095   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email?{%22Email%22:%22dan@gmail.com%22}&_=1671127733999 - - - 204 - - 7.5911ms
+2022-12-15 20:09:58.106   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email?{%22Email%22:%22dan@gmail.com%22}&_=1671127733999 application/json -
+2022-12-15 20:09:58.109   [INF]  CORS policy execution successful.
+2022-12-15 20:09:58.113   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:09:58.118   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 20:11:22.803   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-15 20:11:22.824   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 84662.8313ms
+2022-12-15 20:11:22.830   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:11:22.864   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email?{%22Email%22:%22dan@gmail.com%22}&_=1671127733999 application/json - - 200 - application/json;+charset=utf-8 84757.5533ms
+2022-12-15 20:11:41.834   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email?{%22Email%22:%22dan@gmail.com%22}&_=1671127734000 - -
+2022-12-15 20:11:41.848   [INF]  CORS policy execution successful.
+2022-12-15 20:11:41.850   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email?{%22Email%22:%22dan@gmail.com%22}&_=1671127734000 - - - 204 - - 15.9306ms
+2022-12-15 20:11:41.862   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email?{%22Email%22:%22dan@gmail.com%22}&_=1671127734000 application/json -
+2022-12-15 20:11:41.864   [INF]  CORS policy execution successful.
+2022-12-15 20:11:41.866   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:11:41.869   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 20:13:33.496   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-15 20:13:33.507   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 111629.8713ms
+2022-12-15 20:13:33.510   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:13:33.512   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email?{%22Email%22:%22dan@gmail.com%22}&_=1671127734000 application/json - - 0 - application/json;+charset=utf-8 111649.9192ms
+2022-12-15 20:14:08.074   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/dan@gmail.com - -
+2022-12-15 20:14:08.096   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:14:08.099   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 20:14:15.347   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-15 20:14:15.354   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 7250.7403ms
+2022-12-15 20:14:15.362   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:14:15.367   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/dan@gmail.com - - - 200 - application/json;+charset=utf-8 7292.9313ms
+2022-12-15 20:15:17.675   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com?{%22Email%22:%22dan@gmail.com%22}&_=1671128103704 - -
+2022-12-15 20:15:17.708   [INF]  CORS policy execution successful.
+2022-12-15 20:15:17.711   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com?{%22Email%22:%22dan@gmail.com%22}&_=1671128103704 - - - 204 - - 36.3896ms
+2022-12-15 20:15:17.735   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/dan@gmail.com?{%22Email%22:%22dan@gmail.com%22}&_=1671128103704 application/json -
+2022-12-15 20:15:17.750   [INF]  CORS policy execution successful.
+2022-12-15 20:15:17.753   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:15:17.755   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-15 20:15:38.174   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-15 20:15:38.182   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 20422.3417ms
+2022-12-15 20:15:38.187   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-15 20:15:38.199   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/dan@gmail.com?{%22Email%22:%22dan@gmail.com%22}&_=1671128103704 application/json - - 200 - application/json;+charset=utf-8 20463.4038ms
+2022-12-15 22:33:26.621   [INF]  Now listening on: https://localhost:7294
+2022-12-15 22:33:26.753   [INF]  Now listening on: http://localhost:5294
+2022-12-15 22:33:26.759   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-15 22:33:26.762   [INF]  Hosting environment: Development
+2022-12-15 22:33:26.763   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-15 22:33:31.988   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-15 22:33:32.601   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 623.9133ms
+2022-12-15 22:33:32.647   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-15 22:33:33.143   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 495.8865ms
+2022-12-15 22:33:33.174   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-15 22:33:33.175   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-15 22:33:33.176   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-15 22:33:33.177   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-15 22:33:33.196   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 20.2806ms
+2022-12-15 22:33:33.206   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-15 22:33:33.546   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-15 22:33:33.562   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-15 22:33:33.801   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 595.6237ms
+2022-12-15 22:33:34.000   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 821.6649ms
+2022-12-15 22:33:34.002   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-15 22:33:34.020   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 845.4092ms
+2022-12-15 22:33:34.030   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 856.3405ms
+2022-12-15 22:33:35.072   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-15 22:33:35.571   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 498.2458ms
+2022-12-15 22:33:52.591   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 83
+2022-12-15 22:33:52.621   [INF]  CORS policy execution successful.
+2022-12-15 22:33:52.637   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-12-15 22:33:52.703   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Int32 Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-15 22:33:53.773   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-15 22:33:53.805   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 1082.1006ms
+2022-12-15 22:33:53.814   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-12-15 22:33:53.816   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 83 - 200 - application/json;+charset=utf-8 1228.3151ms

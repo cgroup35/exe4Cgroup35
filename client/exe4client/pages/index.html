@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>My Flats</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="../css/card.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/menubar.css" rel="stylesheet" />
+    <link href="../css/modal.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="../js/ajaxCall.js"></script>
+    <script src="../js/IsraelCities.js"></script>
+    <script src="../js/menu/popper.min.js"></script>
+    <script src="../js/menu/owl.carousel.min.js"></script>
+    <script src="../js/menu/main.js"></script>
+    <script src="../js/menu/jquery.sticky.js"></script>
+    <script src="../js/menu/jquery-3.3.1.min.js"></script>
+    <script src="../js/menu/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
+
+
+
+
+    <script>
+
+        //jqurey when page is ready (like init function)
+        $(document).ready(function () {
+            if (location.hostname === "localhost" || location.hostname === "127.0.0.1") { //Checking if run on local host ot server
+                api = "https://localhost:7294/api/Flats";
+            }
+            else {
+                api = "https://proj.ruppin.ac.il/cgroup35/test2/tar1/api/Flats";
+
+            }
+            if (sessionStorage["cgroup35"] != undefined) {//define the session storage
+                cgroup35 = JSON.parse(sessionStorage["cgroup35"]);
+            }
+            else {
+                cgroup35 = {
+                    userEmail: "",
+                    userFirstName: "",
+                    userlastName: "",
+                    flatID: ""
+                }
+                sessionStorage["cgroup35"] = JSON.stringify(cgroup35);
+            }
+            getFlatsFromServer();//Loading all existences flats
+            $("#AddFlatForm").submit(sumbitform);
+            loadDataList();//Load all cities to datalist
+            datalistValueCheck();//Checking if the value exists in the list
+            $("#Password2").on("blur", ansValidation);//Checking if both password are the same
+            $("#updateForm").submit(sumbitUpdateform);
+            $("#LoginForm").submit(sumbitLoginform);
+            showErrorupdate();//If user is not logged in
+        })
+        //Function name:showErrorupdate
+        //parameters:---
+        //Purpose: alert error messsage for 5 seconds
+        //note:Asychrony function
+        function showErrorupdate() {
+            if (cgroup35.userEmail == "") {
+                document.getElementById('errorLogout').style.display = 'block';
+            }
+            else {
+                document.getElementById('errorLogout').style.display = 'none';
+            }
+        }
+
+        //Function name:showError
+        //parameters:get the message error string
+        //Purpose: alert error messsage for 5 seconds
+        //note:Asychrony function
+        async function showError(id, message) {
+            document.getElementById(id).style.display = 'block';
+            document.getElementById(id).innerHTML = message;
+            await new Promise(resolve => setTimeout(resolve, 5000));
+            document.getElementById(id).style.display = 'none';
+
+
+        }
+        //Function name:showSuccess
+        //parameters:---
+        //Purpose: alert succes messsage for 3 seconds
+        //note:Asychrony function
+        //Trigger function cleanform();
+        async function showSuccess() {
+            cleanform();
+            document.getElementById('successAlert').style.display = 'block';
+            await new Promise(resolve => setTimeout(resolve, 3000));
+            document.getElementById('successAlert').style.display = 'none';
+
+
+        }
+        //Function name:showSuccessupdate
+        //parameters:---
+        //Purpose: alert succes messsage for 3 seconds on update
+        //note:Asychrony function
+        async function showSuccessupdate() {
+            cleanform();
+            document.getElementById('successAlertUpdate').style.display = 'block';
+            await new Promise(resolve => setTimeout(resolve, 3000));
+            document.getElementById('successAlertUpdate').style.display = 'none';
+
+
+        }
+        //Function name:cleanform
+        //parameters:---
+        //Purpose: Prepare the form for the next flat
+        //note:--
+        function cleanform() {
+            $("#FlatCity").val("");
+            $("#FlatAddress").val("");
+            $("#FlatRooms").val("");
+            $("#FlatPrice").val("");
+        }
+        //Function name:loadDataList
+        //parameters:---
+        //Purpose: Load all cities form JSON array of cities to form input
+        //note:use JSON array
+        function loadDataList() {
+            let str = "";
+            for (var i = 0; i < cities.length; i++) {
+                str += `<option value="${cities[i].city}"></option>`
+            }
+            $("#state_list").html(str);
+
+        }
+        //Function name:getFlatsFromServer
+        //parameters:---
+        //Purpose: call to server and get all flats
+        //note:if success return list to GetSCB
+        //		use ajax
+        function getFlatsFromServer() {
+
+            ajaxCall("GET", api, "", GetSCB, GetECB);
+
+        }
+        //Function name:GetSCB
+        //parameters:data- the object that return from server
+        //Purpose: initialization global arr variable with returned list
+        //note:if trigger by ajax
+        //Trigger function render();
+        function GetSCB(data) {
+
+
+            arr = data;
+            if (arr.length > 0) {
+                $('#ph').show();
+            }
+            render();
+
+        }
+        //Function name:GetECB
+        //parameters:err- the exception returned from server
+        //Purpose: alert error message
+        //note:trigger by ajax
+        //Trigger function showError();
+        function GetECB(err) {
+            showError('error', "Something went wrong- check if serever is connected");
+        }
+        //Function name:addFlatToServer
+        //parameters:---
+        //Purpose:Post a new flat from form sumbit
+        //note:trigger by sumbit btn
+        function addFlatToServer() {
+            let city = $("#FlatCity").val();
+            let address = $("#FlatAddress").val();
+            let rooms = $("#FlatRooms").val();
+            let price = $("#FlatPrice").val();
+
+            let flatToAdd = {
+                Id: 0,
+                City: city,
+                Address: address,
+                NumberOfRooms: rooms,
+                Price: price
+            }
+            ajaxCall("POST", api, JSON.stringify(flatToAdd), postSCB, postECB);
+
+        }
+        //Function name:postSCB
+        //parameters:data- the object that return from server
+        //Purpose: add flat to list (DB)
+        //note: trigger by ajax
+        //Trigger function showSuccess() and getFlatsFromServer() ;
+        function postSCB(data) {
+            showSuccess();
+            getFlatsFromServer();
+        }
+        //Function name:postECB
+        //parameters:err- the exception returned from server
+        //Purpose: alert error message
+        //note:trigger by ajax
+        //Trigger function showError();
+        function postECB(err) {
+            showError('error', "Something went wrong- check if serever is connected");
+        }
+
+        //Function name:sumbitform
+        //parameters:---
+        //Purpose:add flat to list (DB)
+        //note: return false to prevent deletion of the dynamic elements
+        //Trigger function addFlatToServer();
+        function sumbitform() {
+            addFlatToServer();
+            return false;
+        }
+        //Function name:render
+        //parameters:---
+        //Purpose: write to ph the existing flats dynamically
+        //note: --
+        function render() {
+            let str = "";
+            for (var i = 0; i < arr.length; i++) {
+                str += `<div class="cardspace col-lg-4">
+                                                                                    <div class="card">
+                                                                                        <img class="card-image" src="../images/flat.jpg"/>
+
+                                                                                        <div class="card-description">CITY: ${arr[i].city}</div>
+                                                                                        <div class="card-description">ADDRESS: ${arr[i].address}</div>
+                                                                                        <div class="card-description">ROOMS: ${arr[i].numberOfRooms}</div>
+                                                                                        <div class="card-description">PRICE: ${arr[i].price}$</div>`
+                if (cgroup35.userEmail == "") {
+                    str += `<div class="card-description"><input type="button" value="make order" id=${arr[i].id} class="btn btn-primary " data-toggle="modal" data-target="#modalPushLogin" onclick="Addtomemory(this)"></div></div></div>`
+
+                }
+                else {
+                    str += `<div class="card-description" > <input type="button" value="make order" id=${arr[i].id} class="btn btn-primary " onclick="orderFlat(this)"></div></div ></div >`
+                }
+
+
+            }
+            document.getElementById("phCard").innerHTML = str;
+
+        }
+
+        //Function name:orderFlat
+        //parameters:btn-for use the id of the button
+        //Purpose: go to vacation page
+        function orderFlat(btn) {
+
+            cgroup35.flatID = btn.id;
+            sessionStorage["cgroup35"] = JSON.stringify(cgroup35);
+            window.location.href = `vacation.html`;
+
+
+        }
+        //Function name:setfaltid
+        //parameters:---
+        //Purpose:set 0 on flat id when user is log out
+        function setfaltid() {
+            cgroup35.flatID = 0;
+            sessionStorage["cgroup35"] = JSON.stringify(cgroup35);
+        }
+        function Addtomemory(btn) {
+            cgroup35.flatID = btn.id;
+            sessionStorage["cgroup35"] = JSON.stringify(cgroup35);
+
+        }
+        //Function name:datalistValueCheck
+        //parameters:---
+        //Purpose: check that the entered value is part of the datalist
+        //note: use qurey string to pass the relevant id
+        function datalistValueCheck() {
+            var inputs = document.querySelectorAll('input[list]');
+            for (var i = 0; i < inputs.length; i++) {
+                // When the value of the input changes...
+                inputs[i].addEventListener('change', function () {
+                    var optionFound = false,
+                        datalist = this.list;
+                    // Determine whether an option exists with the current value of the input.
+                    for (var j = 0; j < datalist.options.length; j++) {
+                        if (this.value == datalist.options[j].value) {
+                            optionFound = true;
+                            break;
+                        }
+                    }
+                    // use the setCustomValidity function of the Validation API
+                    // to provide an user feedback if the value does not exist in the datalist
+                    if (optionFound) {
+                        this.setCustomValidity('');
+                    } else {
+                        this.setCustomValidity('Please select a valid value.');
+                    }
+                });
+            }
+        }
+        //Function name:logOut
+        //parameters:---
+        //Purpose: clean the session storage and show message that user is not conccted
+        //note: re render vacation
+        function logOut() {
+
+            document.body.classList.remove("offcanvas-menu")
+            cgroup35.flatID = "",
+                cgroup35.userEmail = "";
+            cgroup35.userFirstName = "";
+            cgroup35.userlastName = "";
+            sessionStorage["cgroup35"] = JSON.stringify(cgroup35);
+            showErrorupdate();
+            render();
+        }
+        //Function name:ansValidation
+        //parameters:---
+        //Purpose: Checking if both paswword are the same
+        //note: if not the form get validity.valid = false
+        function ansValidation() {
+
+            var passValue = document.getElementById("Password1").value
+            var confpassValue = document.getElementById("Password2").value
+
+            if (passValue !== confpassValue) {
+                this.validity.valid = false; // must set it to false to prevent the submit to the server
+                this.setCustomValidity('Your password and confirmation password do not match');
+            }
+            else {
+                this.validity.valid = true;
+                this.setCustomValidity('');
+            }
+        }
+        //Function name:sumbitUpdateform
+        //parameters:---
+        //Purpose:upadte user on DB
+        //note: return false to prevent deletion of the dynamic elements
+        //Trigger function updateUserInDB();
+        function sumbitUpdateform() {
+            updateUserInDB();
+            return false;
+        }
+        //Function name:updateUserInDB
+        //parameters:---
+        //Purpose:upadte user on DB with AJAX call PUT
+        //note: --
+        function updateUserInDB() {
+
+            let firstName = $("#Fname").val();
+            let lastName = $("#Lname").val();
+            let email = $("#Email").val();
+            let Password1 = $("#Password1").val();
+
+
+            let UserToAdd = {
+
+                FirstName: firstName,
+                FamilyName: lastName,
+                Email: email,
+                Password: Password1
+            }
+            let apiForUser;
+            if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+                apiForUser = "https://localhost:7294/api/Users";
+            }
+            else {
+
+                apiForUser = "https://proj.ruppin.ac.il/cgroup35/test2/tar1/api/Users";
+            }
+            ajaxCall("PUT", apiForUser, JSON.stringify(UserToAdd), PutSCB, PutECB);
+        }
+        //Function name:PutSCB
+        //parameters: data- number of rows affected in DB
+        //Purpose:show success update message and update the session storge
+        //note: ---
+        function PutSCB(data) {
+            if (data == 1) {
+                jQuery(document.elementFromPoint(100, 100)).click()
+                showSuccessupdate();
+                cgroup35.userFirstName = $("#Fname").val();
+                cgroup35.userlastName = $("#Lname").val();
+                sessionStorage["cgroup35"] = JSON.stringify(cgroup35);
+            }
+
+        }
+        //Function name:PutECB
+        //parameters: err- if ther is eny exepction
+        //Purpose: to  console log the error
+        //note: ---
+        function PutECB(err) {
+            console.log(err);
+        }
+        //Function name:sumbitLoginform
+        //parameters:---
+        //Purpose:log in user
+        //note: return false to prevent deletion of the dynamic elements
+        //Trigger function getUserFromServer();
+        function sumbitLoginform() {
+            getUserFromServer();
+            return false;
+        }
+        //Function name:getUserFromServer
+        //parameters:---
+        //Purpose:checkin if the user name and password are the same as in DB
+        //note:---
+        function getUserFromServer() {
+            let email = $("#loginEmail").val();
+            let password = $("#loginPassword").val();
+
+
+            let UserToGet = {
+                Email: email,
+                Password: password
+            }
+            if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+                apiForUser = "https://localhost:7294/api/Users";
+            }
+            else {
+
+                apiForUser = "https://proj.ruppin.ac.il/cgroup35/test2/tar1/api/Users";
+            }
+            let qString = `${apiForUser}/email/${UserToGet.Email}/password/${UserToGet.Password}`;
+            qString.replace("@", "%40");
+            ajaxCall("GET", qString, JSON.stringify(UserToGet), GetSCBUser, GetECBUser);
+        }
+        //Function name:GetSCBUser
+        //parameters: data- number of rows affected in DB
+        //Purpose:update the seesion storhe with the connecting user data and mobe to vacation page
+        //note: if user is admin move to admin page
+
+        function GetSCBUser(data) {
+            if (data.length != 1) {
+                showError("errorModal","Your password or email are incorrect");
+            }
+            else {
+
+                cgroup35.userEmail = data[0].email;
+                cgroup35.userFirstName = data[0].firstName;
+                cgroup35.userlastName = data[0].familyName;
+                sessionStorage["cgroup35"] = JSON.stringify(cgroup35);
+                if (cgroup35.userEmail == "admin" || cgroup35.userEmail == "Admin" || cgroup35.userEmail == "ADMIN") {
+                    window.location.href = `../adminMain/userManager.html`;
+
+                    return;
+                }
+                render();
+                if (cgroup35.flatID != 0) {
+                    window.location.href = `vacation.html`;
+                }
+                else {
+                    jQuery(document.elementFromPoint(100, 100)).click()
+                    document.getElementById('errorLogout').style.display = 'none';
+                }
+            }
+        }
+        //Function name:GetECBUser
+        //parameters: err- if ther is eny exepction
+        //Purpose: to show error message
+        //note: ---
+        function GetECBUser(err) {
+            showError("errorModal", "Something went wrong-check if serever is connected");
+        }
+        //Function name:closemenu
+        //parameters: ---
+        //Purpose: close the menu side bar.
+        //note: for phone!!
+        function closemenu() {
+            let name = cgroup35.userFirstName;
+            let lastname = cgroup35.userlastName;
+            let email = cgroup35.userEmail
+            $("#Fname").val(name);
+            $("#Lname").val(lastname);
+            $("#Email").val(email);
+            modalBodyRender();
+
+
+            document.body.classList.remove("offcanvas-menu")
+        }
+        //Function name:modalBodyRender
+        //parameters: ---
+        //Purpose: if user try to update but is not connected
+        //note: send to connection modal --if user is connected modal not change
+        function modalBodyRender() {
+            if (cgroup35.userEmail == "") {
+
+                let str = `<div class="alert alert-danger" role="alert" style="display:block">
+                                        You are not connected <a href="login.html" class="alert-link">click here to log in</a>.
+                                    </div>`
+                document.getElementById("modalph").innerHTML = str;
+            }
+        }
+        //Function name:showPassword
+        //parameters: id- id of password input, iconid-id of the icon tag
+        //Purpose: if user try to update but is not connected
+        //note: send to connection modal
+        function showPassword(id, iconid) {
+            var pas1 = document.getElementById(id);
+            if (pas1.type === "password") {
+                pas1.type = "text";
+                document.getElementById(iconid).classList.add("fa-eye-slash")
+                document.getElementById(iconid).classList.remove("fa-eye")
+            } else {
+                pas1.type = "password";
+                document.getElementById(iconid).classList.remove("fa-eye-slash")
+                document.getElementById(iconid).classList.add("fa-eye")
+            }
+
+        }
+    </script>
+
+</head>
+<body>
+
+
+    <!--Modal: modalPush-->
+    <div class="modal fade" id="modalPush" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-info" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Header-->
+                <!--<div class="modal-header d-flex justify-content-center">
+                    <p class="heading">Be always up to date</p>
+
+                </div>-->
+                <!--Body-->
+                <div class="modal-body" id="modalph">
+                    <div class="form-container sign-up-container">
+                        <form action="#" class="contactForm" id="updateForm">
+                            <h3>Update Account</h3>
+                            <input type="text" id="Fname" placeholder="First Name" class="form-control" required />
+                            <input type="text" id="Lname" placeholder="Last Name" class="form-control" required />
+                            <input type="email" id="Email" placeholder="Email" class="form-control" required readonly />
+                            <div class="showpass">
+                                <input type="password" id="Password1" placeholder="Password" class="form-control" required
+                                       pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                       oninvalid="this.setCustomValidity('Password Minimum eight characters, at least one uppercase letter, one lowercase letter and one number')"
+                                       oninput="this.setCustomValidity('')" />
+                                <a onclick="showPassword('Password1','showpasseye1')"><i id="showpasseye1" class="fa fa-eye" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="showpass">
+                                <input type="password" id="Password2" placeholder="Confirm Password" class="form-control" required />
+                                <a onclick="showPassword('Password2','showpasseye2')">  <i id="showpasseye2" class="fa fa-eye" aria-hidden="true"></i></a>
+                            </div>
+                            <input type="submit" id="btnUpdate" class="btn btn-primary" value="Update" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modalPush-->
+
+    <div class="modal fade" id="modalPushLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-info" role="document">
+            <!--Content-->
+            <div class="modal-content text-center">
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="form-container sign-up-container">
+                        <form action="#" class="contactForm" id="LoginForm">
+                            <h3>Login Account</h3>
+                            <input type="text" id="loginEmail" placeholder="Email" class="form-control" required />
+                            <div class="showpass">
+                                <input type="password" id="loginPassword" placeholder="Password" class="form-control" required />
+                                <a onclick="showPassword('loginPassword','showpasseyeLogin')"><i id="showpasseyeLogin" class="fa fa-eye"></i></a>
+                            </div>
+                            <div id="errorModal" class="alert alert-danger" role="alert"></div>
+                            <button class="btn btn-primary" id="btnSingIn">Sign In</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modalPush-->
+
+
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+
+
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+        <div class="container">
+            <div class="row align-items-center position-relative">
+
+
+                <div class="site-logo">
+                    <a href="index.html" class="text-black"><span class="text-primary">FLATS</a>
+                </div>
+
+                <div class="col-12">
+                    <nav class="site-navigation text-right ml-auto " role="navigation">
+
+                        <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                            <li><a href="#modalPush" data-toggle="modal" data-target="#modalPush" id="nav-link" onclick="closemenu()">Update Details</a></li>
+                            <li><a href="#" onclick="logOut()" class="nav-link" id="logOutLink">Log Out</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <div class="toggle-button d-inline-block d-lg-none">
+                    <a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black">
+                        <span class="icon-menu h3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" color="#c5b5ae">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <section class="ftco-section">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="alert alert-warning alert-dismissible alertwidth" id="errorLogout">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>Warning!</strong> you are not connected. for sign in <a href="#modalPushLogin" data-toggle="modal" data-target="#modalPushLogin" onclick="setfaltid()">click here</a>
+                </div>
+                <!--<div id="errorLogout" class="alert alert-danger" role="alert"></div>-->
+                <div id="successAlertUpdate" class="alert alert-success" role="alert">Your personal details have been successfully updated </div>
+                <div class="col-md-12">
+                    <div class="wrapper">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6 d-flex align-items-stretch">
+                                <div class="info-wrap w-100 p-5 img" style="background-image: url(../images/img.jpg);"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="contact-wrap w-100 p-md-5 p-4">
+                                    <h3>Add new flat</h3>
+                                    <form id="AddFlatForm" class="contactForm">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="FlatCity" placeholder="City" list="state_list" autocomplete="off" required>
+                                                    <datalist id="state_list">
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="FlatAddress" placeholder="Address" pattern="[A-z0-9\-.\s]{0,30}" oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Address cannot exceed 30 characters')" autocomplete="off" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control" id="FlatRooms" placeholder="Number of rooms" min=1 max=10 autocomplete="off" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control" id="FlatPrice" placeholder="Price" autocomplete="off" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="submit" value="Add flat" class="btn btn-primary">
+                                                    <div class="submitting"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="error" class="alert alert-danger" role="alert"></div>
+            <div id="successAlert" class="alert alert-success" role="alert">Flat was added successfully! </div>
+            <div class="cards style-1  wrapper" id="ph">
+                <div class="row" id="phCard">
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+</body>
+</html>
+

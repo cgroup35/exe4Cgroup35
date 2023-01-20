@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Users Manager</title>
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link href="css/databootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">-->
+    <link href="css/datatable.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+    <style type="text/css">
+
+        button {
+            margin-left: 10px;
+        }
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="js/ajaxCalls.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+        // will run when the document is ready
+        $(document).ready(function () {
+
+            if (location.hostname === "localhost" || location.hostname === "127.0.0.1") { //Checking if run on local host ot server
+                api = "https://localhost:7294/api/Users";
+            }
+            else {
+                api = "https://proj.ruppin.ac.il/cgroup35/test2/tar1/api/Users";
+
+            }
+
+
+            // once the document is ready we fetch a list of cars from the server
+            ajaxCall("GET", api, "", getSuccess, error);
+
+            $("#carForm").submit(onSubmitFunc); // wire the submit event to a function called f1
+            $("#editDiv").hide();
+        });
+
+        // wire all the buttons to their functions
+        function buttonEvents() {
+
+            $(document).on("click", ".editBtn", function () {
+                markSelected(this);
+                $("#editDiv :input").prop("disabled", false); // edit mode: enable all controls in the form
+                populateFields(this.getAttribute('data-flatid')); // fill the form fields according to the selected row
+                $("#editDiv").show();
+            });
+
+            $(document).on("click", ".viewBtn", function () {
+                markSelected(this);
+                $("#editDiv").show();
+                row.className = 'selected';
+                $("#editDiv :input").attr("disabled", "disabled"); // view mode: disable all controls in the form
+                populateFields(this.getAttribute('data-flatid'));
+            });
+
+            $(document).on("click", ".deleteBtn", function () {
+                markSelected(this);
+                var userID = this.getAttribute('data-flatid');
+                swal({ // this will open a dialouge
+                    title: "Are you sure ??",
+                    text: "",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true
+                })
+                    .then(function (willDelete) {
+                        if (willDelete) DeleteFlat(userID);
+                        else swal("Not Deleted!");
+                    });
+            });
+        }
+
+        // mark the selected row
+        function markSelected(btn) {
+            $("#usersTable tr").removeClass("selected"); // remove seleced class from rows that were selected before
+            row = (btn.parentNode).parentNode; // button is in TD which is in Row
+            row.className = 'selected'; // mark as selected
+        }
+
+        // Delete a car from the server
+        function DeleteFlat(id) {
+            let qString = `${api}/${id}`;
+            qString.replace("@", "%40");
+            ajaxCall("DELETE", qString, '', deleteSuccess, error);
+        }
+
+        function onSubmitFunc() {
+            let userAfterEdit = {
+                FirstName: $("#firstName").val(),
+                FamilyName: $("#lastName").val(),
+                Email: $("#userEmail").val(),
+                Password: $("#userPassword").val(),
+                IsActive: $("#isActive").is(":checked"),
+                IsAdmin: $("#isAdmin").is(":checked")
+                //הid זה של הטופס
+            }
+
+            // update a new Car record to the server
+            ajaxCall("PUT", api+"/admin", JSON.stringify(userAfterEdit), updateSuccess, error);
+            return false;
+        }
+        // fill the form fields
+        function populateFields(userid) {
+            user = getUser(userid);
+            $("#firstName").val(user.firstName),
+                $("#lastName").val(user.familyName)
+            $("#userPassword").val(user.password);
+            $("#userEmail").val(user.email);
+            if (user.isActive) {
+                $("#isActive").prop("checked", true);
+            }
+            else {
+                $("#isActive").prop("checked", false);
+            }
+            if (user.isAdmin) {
+                $("#isAdmin").prop("checked", true);
+            }
+            else {
+                $("#isAdmin").prop("checked", false);
+            }
+
+        }
+
+        // get a car according to its Id
+        function getUser(id) {
+            for (i in _users) {
+                if (_users[i].email == id)
+                    return _users[i];
+            }
+            return null;
+        }
+
+        // success callback function after update
+        function updateSuccess(usersdata) {
+
+            tbl.clear();
+            redrawTable(tbl, usersdata);
+            buttonEvents();
+            $("#editDiv").hide();
+            swal("Updated Successfuly!", "Great Job", "success");
+            location.reload();
+        }
+  
+
+        // success callback function after delete
+        function deleteSuccess(carsdata) {
+            
+            redrawTable(tbl, carsdata);
+            buttonEvents(); // after redrawing the table, we must wire the new buttons
+            $("#editDiv").hide();
+            swal("Deleted Successfuly!", "Great Job", "success");
+        }
+
+        // redraw a datatable with new data
+        function redrawTable(tbl, data) {
+            tbl.clear();
+            for (var i = 0; i < data.length; i++) {
+                tbl.row.add(data[i]);
+            }
+            tbl.draw();
+        }
+
+        // this function is activated in case of a success
+        function getSuccess(usersdata) {
+            _users = usersdata; // keep the cars array in a global variable;
+            try {
+                tbl = $('#usersTable').DataTable({
+                    data: usersdata,
+                    pageLength: 10,
+                    columns: [
+                        {
+                            render: function (data, type, row, meta) {
+                                let userdata = "data-flatid='" + row.email + "'";
+
+                                editBtn = "<button type='button' class = 'editBtn btn btn-success' " + userdata + "> Edit </button>";
+                                viewBtn = "<button type='button' class = 'viewBtn btn btn-info' " + userdata + "> View </button>";
+                                deleteBtn = "<button type='button' class = 'deleteBtn btn btn-danger' " + userdata + "> Delete </button>";
+                                return editBtn + viewBtn + deleteBtn;
+                            }
+                        },
+                        { data: "email" },
+                        { data: "firstName" },
+                        { data: "familyName" },
+                        { data: "password" },
+                        {
+                            data: "isActive",
+                            render: function (data, type, row, meta) {
+                                if (data == true)
+                                    return '<input type="checkbox" checked disabled="disabled" />';
+                                else
+                                    return '<input type="checkbox" disabled="disabled"/>';
+                            }
+                        },
+                        {
+                            data: "isAdmin",
+                            render: function (data, type, row, meta) {
+                                if (data == true)
+                                    return '<input type="checkbox" checked disabled="disabled" />';
+                                else
+                                    return '<input type="checkbox" disabled="disabled"/>';
+                            }
+                        },
+
+
+                    ],
+                });
+                buttonEvents();
+            }
+
+            catch (err) {
+                alert(err);
+            }
+        }
+
+        // this function is activated in case of a failure
+        function error(err) {
+            //if (err.responseText != undefined) {
+            //    if (err.responseText.includes("FK")) {
+            //        swal("Error: This user have at least one vication. can't delete user with an order.");
+            //    }
+            //}
+            //else {
+                swal(err.responseText);
+          /*  }*/
+        }
+
+    </script>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="wrapper d-flex align-items-stretch">
+            <nav id="sidebar">
+                <div class="custom-menu">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    </button>
+                </div>
+                <div class="img bg-wrap text-center py-4" style="background-image: url(images/bg_1.jpg); ">
+                    <div class="user-logo">
+                        <div class="img" style="background-image: url(images/adminpng.png);"></div>
+                        <h3>Cgroup35 Administrator</h3>
+                    </div>
+                </div>
+                <ul class="list-unstyled components mb-5">
+                    <li class="active">
+                        <a href="#"><span class="fa fa-user mr-3"></span> Users</a>
+                    </li>
+                    <!--<li>
+        <a href="#"><span class="fa fa-download mr-3 notif"><small class="d-flex align-items-center justify-content-center">5</small></span> Download</a>
+    </li>-->
+                    <li>
+                        <a href="flatManager.html"><span class="fa fa-home mr-3"></span> Flats</a>
+                    </li>
+                    <li>
+                        <a href="vacationManager.html"><span class="fa fa-calendar mr-3"></span> Vacations</a>
+                    </li>
+                    <li>
+                        <a href="report.html"><span class="fa fa-file mr-3"></span> report</a>
+                    </li>
+                    <li>
+                        <a href="../pages/login.html"><span class="fa fa-sign-out mr-3"></span> Sign Out</a>
+
+                    </li>
+                </ul>
+
+            </nav>
+
+
+
+
+
+
+            <!-- Page Content  -->
+
+
+
+            <div id="content" class="p-4 p-md-5 pt-5">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <span id="mainTitelnav">Users Manager</span>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="container">
+                    <form id="pForm">
+                        <table id="usersTable" class="display nowrap" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Email</th>
+                                    <th>First name</th>
+                                    <th>Last name</th>
+                                    <th>Password</th>
+                                    <th>Active</th>
+                                    <th>Admin</th>
+                                </tr>
+                            </thead>
+                        </table>
+
+                    </form>
+
+                    <div id="editDiv">
+                        <form id="carForm">
+                            <div class="form-group row">
+
+                                <div class="form-group col-sm-3">
+                                    <label for="price"><span class="red-star">★ </span>User Email</label>
+                                    <input type="text" class="form-control" id="userEmail" readonly required>
+                                </div>
+
+                                <div class="form-group col-sm-3">
+                                    <label for="manufacturer"><span class="red-star">★ </span>First name</label>
+                                    <input type="text" class="form-control" id="firstName" list="state_list" autocomplete="off" required>
+                                </div>
+
+
+                                <div class="form-group col-sm-3">
+                                    <label for="model"><span class="red-star">★ </span>Last name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+
+
+                                <div class="form-group col-sm-3">
+                                    <label for="year"><span class="red-star">★ </span>Password</label>
+                                    <input type="text" class="form-control" id="userPassword"
+                                           pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                           oninvalid="this.setCustomValidity('Password Minimum eight characters, at least one uppercase letter, one lowercase letter and one number')"
+                                           oninput="this.setCustomValidity('')" required />
+                                </div>
+                                <div class="form-group col-sm-3">
+                                    <label for="isActive"><span class="red-star">★ </span>Active?</label>
+                                    <input type="checkbox" class="form-control" id="isActive"  />
+                                </div>
+                                <div class="form-group col-sm-3">
+                                    <label for="isAdmin"><span class="red-star">★ </span>Admin?</label>
+                                    <input type="checkbox" class="form-control" id="isAdmin"  />
+                                </div>
+
+
+
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg" id="saveBTN">Save</button>
+
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--<script src="js/jquery.min.js"></script>-->
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

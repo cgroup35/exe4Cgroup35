@@ -1,0 +1,36 @@
+2022-11-12 10:28:54.850   [INF]  Now listening on: https://localhost:7294
+2022-11-12 10:28:54.908   [INF]  Now listening on: http://localhost:5294
+2022-11-12 10:28:54.915   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-12 10:28:54.918   [INF]  Hosting environment: Development
+2022-11-12 10:28:54.919   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-12 10:28:55.565   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-12 10:28:56.210   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 655.4006ms
+2022-11-12 10:28:56.269   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-12 10:28:56.282   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-12 10:28:56.309   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 39.2219ms
+2022-11-12 10:28:56.403   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 120.2670ms
+2022-11-12 10:28:57.566   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-12 10:28:57.992   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 426.4418ms
+2022-11-12 10:29:21.671   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 127
+2022-11-12 10:29:21.687   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-12 10:29:21.738   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-12 10:29:21.787   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-12 10:29:21.800   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 50.3033ms
+2022-11-12 10:29:21.804   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-12 10:29:21.805   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 127 - 200 - application/json;+charset=utf-8 134.5795ms
+2022-11-12 10:29:29.741   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 127
+2022-11-12 10:29:29.749   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-12 10:29:29.757   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-12 10:29:29.762   [ERR]  Id should be unique, order ID 1 already exist in the List
+2022-11-12 10:29:29.764   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-12 10:29:29.769   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 8.7751ms
+2022-11-12 10:29:29.778   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-12 10:29:29.780   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 127 - 200 - application/json;+charset=utf-8 39.9663ms
+2022-11-12 10:30:08.998   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 127
+2022-11-12 10:30:09.025   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-12 10:30:09.027   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-12 10:30:09.032   [ERR]  Cannot rent an apartment (1) the selected dates are not available
+2022-11-12 10:30:09.035   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-12 10:30:09.038   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 6.4616ms
+2022-11-12 10:30:09.043   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-12 10:30:09.058   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 127 - 200 - application/json;+charset=utf-8 60.5425ms

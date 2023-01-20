@@ -1,0 +1,614 @@
+2022-12-27 16:42:28.847   [INF]  Now listening on: https://localhost:7294
+2022-12-27 16:42:29.152   [INF]  Now listening on: http://localhost:5294
+2022-12-27 16:42:29.549   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-27 16:42:29.583   [INF]  Hosting environment: Development
+2022-12-27 16:42:29.587   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-27 16:42:58.323   [INF]  Now listening on: https://localhost:7294
+2022-12-27 16:42:58.408   [INF]  Now listening on: http://localhost:5294
+2022-12-27 16:42:58.420   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-27 16:42:58.422   [INF]  Hosting environment: Development
+2022-12-27 16:42:58.423   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-27 16:43:03.763   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-27 16:43:04.094   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 345.0399ms
+2022-12-27 16:43:04.103   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-27 16:43:05.382   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 1278.8729ms
+2022-12-27 16:43:05.390   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-27 16:43:05.406   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-27 16:43:05.415   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-27 16:43:05.416   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-27 16:43:05.421   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-27 16:43:05.461   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 45.3867ms
+2022-12-27 16:43:05.790   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-27 16:43:05.794   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-27 16:43:05.884   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-27 16:43:05.915   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 524.5037ms
+2022-12-27 16:43:06.041   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 619.4805ms
+2022-12-27 16:43:06.042   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 636.3873ms
+2022-12-27 16:43:06.044   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 628.8796ms
+2022-12-27 16:43:07.261   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-27 16:43:07.715   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 453.7206ms
+2022-12-27 16:44:31.229   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1672152270124 - -
+2022-12-27 16:44:31.243   [INF]  CORS policy execution successful.
+2022-12-27 16:44:31.247   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1672152270124 - - - 204 - - 18.8520ms
+2022-12-27 16:44:31.335   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1672152270124 application/json -
+2022-12-27 16:44:31.441   [INF]  CORS policy execution successful.
+2022-12-27 16:44:31.682   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-27 16:44:31.797   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-27 16:44:32.779   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-27 16:44:32.821   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 949.6682ms
+2022-12-27 16:44:32.840   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-27 16:44:32.844   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1672152270124 application/json - - 200 - application/json;+charset=utf-8 1508.4198ms
+2022-12-27 16:44:39.892   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations/1 - -
+2022-12-27 16:44:39.895   [INF]  CORS policy execution successful.
+2022-12-27 16:44:39.897   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations/1 - - - 204 - - 5.7597ms
+2022-12-27 16:44:39.904   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Vacations/1 application/json -
+2022-12-27 16:44:39.905   [INF]  CORS policy execution successful.
+2022-12-27 16:44:39.908   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Delete (exe1HW)'
+2022-12-27 16:44:39.956   [INF]  Route matched with {action = "Delete", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.Vacation] Delete(Int32) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-27 16:44:40.337   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-27 16:44:40.341   [INF]  Executed action exe1.Controllers.VacationsController.Delete (exe1HW) in 378.4113ms
+2022-12-27 16:44:40.344   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Delete (exe1HW)'
+2022-12-27 16:44:40.348   [INF]  Request finished HTTP/2 DELETE https://localhost:7294/api/Vacations/1 application/json - - 200 - application/json;+charset=utf-8 443.9152ms
+2022-12-27 16:45:47.880   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672152346052 - -
+2022-12-27 16:45:47.887   [INF]  CORS policy execution successful.
+2022-12-27 16:45:47.890   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672152346052 - - - 204 - - 9.7584ms
+2022-12-27 16:45:47.945   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users?_=1672152346052 application/json -
+2022-12-27 16:45:48.348   [INF]  CORS policy execution successful.
+2022-12-27 16:45:48.350   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 16:45:48.356   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.User] Get() on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 16:45:48.436   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-27 16:45:48.448   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 84.5271ms
+2022-12-27 16:45:48.461   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 16:45:48.463   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users?_=1672152346052 application/json - - 200 - application/json;+charset=utf-8 522.7496ms
+2022-12-27 16:45:59.056   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - -
+2022-12-27 16:45:59.060   [INF]  CORS policy execution successful.
+2022-12-27 16:45:59.084   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - - - 204 - - 31.2195ms
+2022-12-27 16:45:59.093   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json -
+2022-12-27 16:45:59.101   [INF]  CORS policy execution successful.
+2022-12-27 16:45:59.103   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 16:45:59.110   [INF]  Route matched with {action = "Delete", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Delete(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 16:48:32.404   [INF]  Executed action exe1HW.Controllers.UsersController.Delete (exe1HW) in 153288.4198ms
+2022-12-27 16:48:32.410   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 16:48:32.418   [ERR]  An unhandled exception has occurred while executing the request.System.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK__Vacations__UserE__4BAC3F29". The conflict occurred in database "igroup135_test2", table "dbo.VacationsTable", column 'UserEmail'.
+The statement has been terminated.
+   at DBservices.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\DAL\DBservices.cs:line 533
+   at exe1HW.Models.User.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\User.cs:line 39
+   at exe1HW.Controllers.UsersController.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Controllers\UsersController.cs:line 54
+   at lambda_method9(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:d8d7a4a1-77aa-4ef5-a196-2cd96002032a
+Error Number:547,State:0,Class:16
+
+2022-12-27 16:48:33.016   [INF]  Request finished HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json - - 500 - text/plain;+charset=utf-8 153922.5994ms
+2022-12-27 16:49:09.440   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - -
+2022-12-27 16:49:09.470   [INF]  CORS policy execution successful.
+2022-12-27 16:49:09.472   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - - - 204 - - 34.4620ms
+2022-12-27 16:49:09.476   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json -
+2022-12-27 16:49:09.478   [INF]  CORS policy execution successful.
+2022-12-27 16:49:09.479   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 16:49:09.482   [INF]  Route matched with {action = "Delete", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Delete(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 16:49:24.797   [INF]  Executed action exe1HW.Controllers.UsersController.Delete (exe1HW) in 15305.6725ms
+2022-12-27 16:49:24.802   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 16:49:24.807   [ERR]  An unhandled exception has occurred while executing the request.System.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK__Vacations__UserE__4BAC3F29". The conflict occurred in database "igroup135_test2", table "dbo.VacationsTable", column 'UserEmail'.
+The statement has been terminated.
+   at DBservices.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\DAL\DBservices.cs:line 533
+   at exe1HW.Models.User.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\User.cs:line 39
+   at exe1HW.Controllers.UsersController.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Controllers\UsersController.cs:line 54
+   at lambda_method9(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:d8d7a4a1-77aa-4ef5-a196-2cd96002032a
+Error Number:547,State:0,Class:16
+
+2022-12-27 16:49:24.862   [INF]  Request finished HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json - - 500 - text/plain;+charset=utf-8 15385.6002ms
+2022-12-27 16:50:41.786   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672152641187 - -
+2022-12-27 16:50:41.801   [INF]  CORS policy execution successful.
+2022-12-27 16:50:41.802   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672152641187 - - - 204 - - 16.8415ms
+2022-12-27 16:50:41.816   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users?_=1672152641187 application/json -
+2022-12-27 16:50:41.818   [INF]  CORS policy execution successful.
+2022-12-27 16:50:41.822   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 16:50:41.825   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.User] Get() on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 16:50:41.866   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-27 16:50:41.870   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 29.3196ms
+2022-12-27 16:50:41.872   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 16:50:41.874   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users?_=1672152641187 application/json - - 200 - application/json;+charset=utf-8 58.1680ms
+2022-12-27 16:50:45.476   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - -
+2022-12-27 16:50:45.510   [INF]  CORS policy execution successful.
+2022-12-27 16:50:45.520   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - - - 204 - - 43.1692ms
+2022-12-27 16:50:45.526   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json -
+2022-12-27 16:50:45.536   [INF]  CORS policy execution successful.
+2022-12-27 16:50:45.538   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 16:50:45.540   [INF]  Route matched with {action = "Delete", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Delete(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 16:50:55.839   [INF]  Executed action exe1HW.Controllers.UsersController.Delete (exe1HW) in 10295.9058ms
+2022-12-27 16:50:55.853   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 16:50:55.859   [ERR]  An unhandled exception has occurred while executing the request.System.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK__Vacations__UserE__4BAC3F29". The conflict occurred in database "igroup135_test2", table "dbo.VacationsTable", column 'UserEmail'.
+The statement has been terminated.
+   at DBservices.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\DAL\DBservices.cs:line 533
+   at exe1HW.Models.User.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\User.cs:line 39
+   at exe1HW.Controllers.UsersController.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Controllers\UsersController.cs:line 54
+   at lambda_method9(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:d8d7a4a1-77aa-4ef5-a196-2cd96002032a
+Error Number:547,State:0,Class:16
+
+2022-12-27 16:50:55.886   [INF]  Request finished HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json - - 500 - text/plain;+charset=utf-8 10359.4763ms
+2022-12-27 16:51:04.885   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - -
+2022-12-27 16:51:04.887   [INF]  CORS policy execution successful.
+2022-12-27 16:51:04.889   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - - - 204 - - 4.1725ms
+2022-12-27 16:51:04.929   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json -
+2022-12-27 16:51:05.052   [INF]  CORS policy execution successful.
+2022-12-27 16:51:05.053   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 16:51:05.104   [INF]  Route matched with {action = "Delete", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Delete(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 17:19:43.483   [INF]  Now listening on: https://localhost:7294
+2022-12-27 17:19:44.001   [INF]  Now listening on: http://localhost:5294
+2022-12-27 17:19:44.068   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-27 17:19:44.182   [INF]  Hosting environment: Development
+2022-12-27 17:19:44.186   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-27 17:19:50.820   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-27 17:19:51.252   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 440.5879ms
+2022-12-27 17:19:51.278   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-27 17:19:51.942   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 663.1744ms
+2022-12-27 17:19:52.064   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-27 17:19:52.064   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-27 17:19:52.065   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-27 17:19:52.065   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-27 17:19:52.065   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-27 17:19:52.257   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 191.8857ms
+2022-12-27 17:19:52.585   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-27 17:19:52.588   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-27 17:19:52.681   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 616.8105ms
+2022-12-27 17:19:52.682   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 617.4080ms
+2022-12-27 17:19:52.729   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-27 17:19:52.734   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 669.0555ms
+2022-12-27 17:19:52.745   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 680.6096ms
+2022-12-27 17:19:54.124   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-27 17:19:54.702   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 574.6038ms
+2022-12-27 17:21:27.809   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672154486495 - -
+2022-12-27 17:21:27.840   [INF]  CORS policy execution successful.
+2022-12-27 17:21:27.843   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672154486495 - - - 204 - - 34.0660ms
+2022-12-27 17:21:27.850   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users?_=1672154486495 application/json -
+2022-12-27 17:21:27.855   [INF]  CORS policy execution successful.
+2022-12-27 17:21:27.864   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 17:21:27.885   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.User] Get() on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 17:21:28.764   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-27 17:21:28.797   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 890.9937ms
+2022-12-27 17:21:28.806   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 17:21:28.809   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users?_=1672154486495 application/json - - 200 - application/json;+charset=utf-8 958.3686ms
+2022-12-27 17:21:35.609   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - -
+2022-12-27 17:21:35.613   [INF]  CORS policy execution successful.
+2022-12-27 17:21:35.615   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - - - 204 - - 5.7363ms
+2022-12-27 17:21:35.620   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json -
+2022-12-27 17:21:35.624   [INF]  CORS policy execution successful.
+2022-12-27 17:21:35.626   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 17:21:35.662   [INF]  Route matched with {action = "Delete", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Delete(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 17:21:53.419   [INF]  Executed action exe1HW.Controllers.UsersController.Delete (exe1HW) in 17753.6209ms
+2022-12-27 17:21:53.435   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 17:21:53.502   [ERR]  An unhandled exception has occurred while executing the request.System.Exception: The DELETE statement conflicted with the REFERENCE constraint "FK__Vacations__UserE__4BAC3F29". The conflict occurred in database "igroup135_test2", table "dbo.VacationsTable", column 'UserEmail'.
+The statement has been terminated.
+   at DBservices.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\DAL\DBservices.cs:line 535
+   at exe1HW.Models.User.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\User.cs:line 39
+   at exe1HW.Controllers.UsersController.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Controllers\UsersController.cs:line 54
+   at lambda_method5(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2022-12-27 17:21:53.751   [INF]  Request finished HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json - - 500 - text/plain;+charset=utf-8 18130.3702ms
+2022-12-27 17:22:24.506   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-27 17:22:24.687   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 180.8055ms
+2022-12-27 17:22:24.773   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-27 17:22:24.773   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-27 17:22:24.785   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-27 17:22:24.785   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-27 17:22:24.786   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-27 17:22:25.019   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-27 17:22:25.582   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 808.8769ms
+2022-12-27 17:22:25.586   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 800.5809ms
+2022-12-27 17:22:26.016   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-27 17:22:26.026   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1240.0127ms
+2022-12-27 17:22:26.017   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-27 17:22:26.090   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 1316.5794ms
+2022-12-27 17:22:26.322   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 1535.7342ms
+2022-12-27 17:22:44.142   [INF]  Now listening on: https://localhost:7294
+2022-12-27 17:22:44.304   [INF]  Now listening on: http://localhost:5294
+2022-12-27 17:22:44.314   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-27 17:22:44.321   [INF]  Hosting environment: Development
+2022-12-27 17:22:44.324   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-27 17:22:49.869   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-27 17:22:50.274   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 416.3390ms
+2022-12-27 17:22:50.278   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-27 17:22:51.383   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 1104.8855ms
+2022-12-27 17:22:51.998   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-27 17:22:51.998   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-27 17:22:52.001   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-27 17:22:52.106   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-27 17:22:52.106   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-27 17:22:52.114   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 115.7044ms
+2022-12-27 17:22:52.135   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-27 17:22:52.136   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 134.1829ms
+2022-12-27 17:22:52.138   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 140.2002ms
+2022-12-27 17:22:52.206   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-27 17:22:52.214   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 7.0965ms
+2022-12-27 17:22:52.350   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-27 17:22:52.436   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 85.6085ms
+2022-12-27 17:22:55.064   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-27 17:22:55.489   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 424.2272ms
+2022-12-27 17:22:56.312   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/favicon-32x32.png - -
+2022-12-27 17:22:56.315   [INF]  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-12-27 17:22:56.319   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/favicon-32x32.png - - - 200 628 image/png 6.7577ms
+2022-12-27 17:23:14.596   [INF]  Now listening on: https://localhost:7294
+2022-12-27 17:23:14.711   [INF]  Now listening on: http://localhost:5294
+2022-12-27 17:23:14.724   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-27 17:23:14.725   [INF]  Hosting environment: Development
+2022-12-27 17:23:14.727   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-27 17:23:23.604   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-27 17:23:23.994   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 396.0791ms
+2022-12-27 17:23:24.054   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-27 17:23:24.897   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 842.5557ms
+2022-12-27 17:23:24.944   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-27 17:23:24.945   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-27 17:23:24.949   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-27 17:23:24.949   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-27 17:23:24.950   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-27 17:23:25.273   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 323.6995ms
+2022-12-27 17:23:25.353   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-27 17:23:25.353   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-27 17:23:25.441   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 497.2533ms
+2022-12-27 17:23:25.441   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 492.3568ms
+2022-12-27 17:23:25.611   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-27 17:23:25.692   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 742.1616ms
+2022-12-27 17:23:25.719   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 774.9471ms
+2022-12-27 17:23:26.849   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-27 17:23:27.352   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 502.9431ms
+2022-12-27 17:24:07.118   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672154646372 - -
+2022-12-27 17:24:07.134   [INF]  CORS policy execution successful.
+2022-12-27 17:24:07.138   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672154646372 - - - 204 - - 20.6437ms
+2022-12-27 17:24:07.144   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users?_=1672154646372 application/json -
+2022-12-27 17:24:07.150   [INF]  CORS policy execution successful.
+2022-12-27 17:24:07.175   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 17:24:07.214   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.User] Get() on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 17:24:08.070   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-27 17:24:08.563   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 1324.9767ms
+2022-12-27 17:24:08.570   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 17:24:08.576   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users?_=1672154646372 application/json - - 200 - application/json;+charset=utf-8 1431.4750ms
+2022-12-27 17:24:11.068   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - -
+2022-12-27 17:24:11.108   [INF]  CORS policy execution successful.
+2022-12-27 17:24:11.115   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - - - 204 - - 48.9555ms
+2022-12-27 17:24:11.138   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json -
+2022-12-27 17:24:11.148   [INF]  CORS policy execution successful.
+2022-12-27 17:24:11.150   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 17:24:11.195   [INF]  Route matched with {action = "Delete", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Delete(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 17:24:15.033   [INF]  Executed action exe1HW.Controllers.UsersController.Delete (exe1HW) in 3831.4239ms
+2022-12-27 17:24:15.036   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 17:24:15.045   [ERR]  An unhandled exception has occurred while executing the request.System.Exception: The DELETE statement conflicted with the REFERENCE constraint "FK__Vacations__UserE__4BAC3F29". The conflict occurred in database "igroup135_test2", table "dbo.VacationsTable", column 'UserEmail'.
+The statement has been terminated.
+   at DBservices.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\DAL\DBservices.cs:line 535
+   at exe1HW.Models.User.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\User.cs:line 39
+   at exe1HW.Controllers.UsersController.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Controllers\UsersController.cs:line 54
+   at lambda_method5(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2022-12-27 17:24:15.176   [INF]  Request finished HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json - - 500 - text/plain;+charset=utf-8 4038.0283ms
+2022-12-27 17:28:51.826   [INF]  Now listening on: https://localhost:7294
+2022-12-27 17:28:51.937   [INF]  Now listening on: http://localhost:5294
+2022-12-27 17:28:51.943   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-27 17:28:51.944   [INF]  Hosting environment: Development
+2022-12-27 17:28:51.947   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-27 17:28:56.614   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-27 17:28:56.930   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 324.8966ms
+2022-12-27 17:28:57.032   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-27 17:28:57.771   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 739.3779ms
+2022-12-27 17:28:57.807   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-27 17:28:57.807   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-27 17:28:57.807   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-27 17:28:57.807   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-27 17:28:57.807   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-27 17:28:57.963   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 138.2441ms
+2022-12-27 17:28:58.076   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-27 17:28:58.076   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-27 17:28:58.204   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 396.9623ms
+2022-12-27 17:28:58.205   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 397.7713ms
+2022-12-27 17:28:58.269   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-27 17:28:58.283   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 470.9321ms
+2022-12-27 17:28:58.293   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 485.3947ms
+2022-12-27 17:28:59.704   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-27 17:29:00.162   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 457.9812ms
+2022-12-27 17:29:24.719   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672154964257 - -
+2022-12-27 17:29:24.751   [INF]  CORS policy execution successful.
+2022-12-27 17:29:24.759   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672154964257 - - - 204 - - 39.2996ms
+2022-12-27 17:29:24.766   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users?_=1672154964257 application/json -
+2022-12-27 17:29:24.771   [INF]  CORS policy execution successful.
+2022-12-27 17:29:24.789   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 17:29:24.836   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.User] Get() on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 17:29:26.803   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-27 17:29:26.972   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 2098.14ms
+2022-12-27 17:29:27.125   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 17:29:27.129   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users?_=1672154964257 application/json - - 200 - application/json;+charset=utf-8 2363.6043ms
+2022-12-27 17:29:29.819   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - -
+2022-12-27 17:29:29.823   [INF]  CORS policy execution successful.
+2022-12-27 17:29:29.829   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - - - 204 - - 9.4663ms
+2022-12-27 17:29:29.857   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json -
+2022-12-27 17:29:29.895   [INF]  CORS policy execution successful.
+2022-12-27 17:29:29.897   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 17:29:30.030   [INF]  Route matched with {action = "Delete", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Delete(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 17:29:57.089   [INF]  Executed action exe1HW.Controllers.UsersController.Delete (exe1HW) in 27050.3548ms
+2022-12-27 17:29:57.111   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 17:29:57.115   [ERR]  An unhandled exception has occurred while executing the request.System.Exception: The DELETE statement conflicted with the REFERENCE constraint "FK__Vacations__UserE__4BAC3F29". The conflict occurred in database "igroup135_test2", table "dbo.VacationsTable", column 'UserEmail'.
+The statement has been terminated.
+   at exe1HW.Models.User.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\User.cs:line 46
+   at exe1HW.Controllers.UsersController.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Controllers\UsersController.cs:line 54
+   at lambda_method5(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2022-12-27 17:29:57.245   [INF]  Request finished HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json - - 500 - text/plain;+charset=utf-8 27388.6172ms
+2022-12-27 17:30:14.193   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - -
+2022-12-27 17:30:14.426   [INF]  CORS policy execution successful.
+2022-12-27 17:30:14.442   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - - - 204 - - 249.4611ms
+2022-12-27 17:30:14.459   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json -
+2022-12-27 17:30:14.471   [INF]  CORS policy execution successful.
+2022-12-27 17:30:14.474   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 17:30:14.479   [INF]  Route matched with {action = "Delete", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Delete(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 17:30:16.881   [INF]  Executed action exe1HW.Controllers.UsersController.Delete (exe1HW) in 2392.6492ms
+2022-12-27 17:30:16.889   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 17:30:16.893   [ERR]  An unhandled exception has occurred while executing the request.System.Exception: The DELETE statement conflicted with the REFERENCE constraint "FK__Vacations__UserE__4BAC3F29". The conflict occurred in database "igroup135_test2", table "dbo.VacationsTable", column 'UserEmail'.
+The statement has been terminated.
+   at exe1HW.Models.User.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\User.cs:line 46
+   at exe1HW.Controllers.UsersController.Delete(String email) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Controllers\UsersController.cs:line 54
+   at lambda_method5(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2022-12-27 17:30:16.928   [INF]  Request finished HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json - - 500 - text/plain;+charset=utf-8 2469.8094ms
+2022-12-27 17:34:50.198   [INF]  Now listening on: https://localhost:7294
+2022-12-27 17:34:50.358   [INF]  Now listening on: http://localhost:5294
+2022-12-27 17:34:50.375   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-27 17:34:50.378   [INF]  Hosting environment: Development
+2022-12-27 17:34:50.379   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-27 17:34:55.621   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-27 17:34:56.037   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 428.0768ms
+2022-12-27 17:34:56.072   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-27 17:36:27.571   [INF]  Now listening on: https://localhost:7294
+2022-12-27 17:36:27.861   [INF]  Now listening on: http://localhost:5294
+2022-12-27 17:36:28.115   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-27 17:36:28.118   [INF]  Hosting environment: Development
+2022-12-27 17:36:28.121   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-27 17:36:31.698   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-27 17:36:32.078   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 388.8769ms
+2022-12-27 17:36:32.156   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-27 17:36:32.902   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 746.3320ms
+2022-12-27 17:36:32.932   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-27 17:36:32.955   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-27 17:36:32.956   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-27 17:36:32.956   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-27 17:36:32.957   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-27 17:36:33.178   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 221.7247ms
+2022-12-27 17:36:33.320   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-27 17:36:33.320   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-27 17:36:33.364   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-27 17:36:33.367   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 435.3768ms
+2022-12-27 17:36:33.451   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 495.0741ms
+2022-12-27 17:36:33.452   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 499.8070ms
+2022-12-27 17:36:33.520   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 563.1457ms
+2022-12-27 17:36:34.663   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-27 17:36:35.302   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 639.9612ms
+2022-12-27 17:37:00.384   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672155419609 - -
+2022-12-27 17:37:00.393   [INF]  CORS policy execution successful.
+2022-12-27 17:37:00.397   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672155419609 - - - 204 - - 12.7545ms
+2022-12-27 17:37:00.405   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users?_=1672155419609 application/json -
+2022-12-27 17:37:00.408   [INF]  CORS policy execution successful.
+2022-12-27 17:37:00.418   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 17:37:00.459   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.User] Get() on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 17:37:01.330   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-27 17:37:01.360   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 880.1004ms
+2022-12-27 17:37:01.382   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 17:37:01.415   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users?_=1672155419609 application/json - - 200 - application/json;+charset=utf-8 1008.6199ms
+2022-12-27 17:37:11.654   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - -
+2022-12-27 17:37:11.660   [INF]  CORS policy execution successful.
+2022-12-27 17:37:11.662   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - - - 204 - - 10.0593ms
+2022-12-27 17:37:11.667   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json -
+2022-12-27 17:37:11.671   [INF]  CORS policy execution successful.
+2022-12-27 17:37:11.675   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 17:37:11.711   [INF]  Route matched with {action = "Delete", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 17:37:57.991   [INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2022-12-27 17:37:57.996   [INF]  Executed action exe1HW.Controllers.UsersController.Delete (exe1HW) in 46281.982ms
+2022-12-27 17:37:58.016   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 17:37:58.018   [INF]  Request finished HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json - - 400 - text/plain;+charset=utf-8 46351.8050ms
+2022-12-27 17:38:50.638   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672155530193 - -
+2022-12-27 17:38:50.644   [INF]  CORS policy execution successful.
+2022-12-27 17:38:50.646   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users?_=1672155530193 - - - 204 - - 9.3742ms
+2022-12-27 17:38:50.654   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users?_=1672155530193 application/json -
+2022-12-27 17:38:50.655   [INF]  CORS policy execution successful.
+2022-12-27 17:38:50.656   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 17:38:50.658   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.User] Get() on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 17:38:50.684   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-27 17:38:50.686   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 23.0763ms
+2022-12-27 17:38:50.688   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-27 17:38:50.695   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users?_=1672155530193 application/json - - 200 - application/json;+charset=utf-8 41.1055ms
+2022-12-27 17:38:57.193   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - -
+2022-12-27 17:38:57.208   [INF]  CORS policy execution successful.
+2022-12-27 17:38:57.212   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/dan@gmail.com - - - 204 - - 18.9662ms
+2022-12-27 17:38:57.245   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json -
+2022-12-27 17:38:57.247   [INF]  CORS policy execution successful.
+2022-12-27 17:38:57.255   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 17:38:57.257   [INF]  Route matched with {action = "Delete", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-27 17:39:01.288   [INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2022-12-27 17:39:01.290   [INF]  Executed action exe1HW.Controllers.UsersController.Delete (exe1HW) in 4029.4978ms
+2022-12-27 17:39:01.294   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Delete (exe1HW)'
+2022-12-27 17:39:01.296   [INF]  Request finished HTTP/2 DELETE https://localhost:7294/api/Users/dan@gmail.com application/json - - 400 - text/plain;+charset=utf-8 4051.2048ms
+2022-12-27 17:43:50.258   [INF]  Now listening on: https://localhost:7294
+2022-12-27 17:43:51.294   [INF]  Now listening on: http://localhost:5294
+2022-12-27 17:43:51.311   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-27 17:43:51.324   [INF]  Hosting environment: Development
+2022-12-27 17:43:51.327   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-27 17:44:01.490   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-27 17:44:02.664   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 1216.6524ms
+2022-12-27 17:44:05.633   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-27 17:44:06.860   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 1226.7997ms
+2022-12-27 17:44:07.226   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-27 17:44:07.242   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-27 17:44:07.243   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-27 17:44:07.246   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-27 17:44:07.246   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-27 17:44:07.291   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 30.9998ms
+2022-12-27 17:44:07.738   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-27 17:44:07.738   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-27 17:44:07.814   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 603.6604ms
+2022-12-27 17:44:07.828   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 584.9666ms
+2022-12-27 17:44:08.003   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-27 17:44:08.004   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 760.9685ms
+2022-12-27 17:44:08.010   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 767.1815ms
+2022-12-27 17:44:10.129   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-27 17:44:11.174   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1045.2852ms
+2022-12-27 17:46:23.005   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Flats/1 - -
+2022-12-27 17:46:23.013   [INF]  CORS policy execution successful.
+2022-12-27 17:46:23.027   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Delete (exe1HW)'
+2022-12-27 17:46:23.111   [INF]  Route matched with {action = "Delete", controller = "Flats"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(Int32) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-27 17:46:57.676   [INF]  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-27 17:46:57.756   [INF]  Executed action exe1.Controllers.FlatsController.Delete (exe1HW) in 34573.0441ms
+2022-12-27 17:46:57.823   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Delete (exe1HW)'
+2022-12-27 17:46:57.825   [INF]  Request finished HTTP/2 DELETE https://localhost:7294/api/Flats/1 - - - 200 - application/json;+charset=utf-8 34827.8007ms
+2022-12-27 17:47:23.314   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations - -
+2022-12-27 17:47:23.329   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-27 17:47:23.335   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-27 17:47:23.384   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-27 17:47:23.418   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 74.9033ms
+2022-12-27 17:47:23.478   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-27 17:47:23.481   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations - - - 200 - application/json;+charset=utf-8 166.4642ms
+2022-12-27 17:47:40.570   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Flats/3 - -
+2022-12-27 17:47:40.573   [INF]  CORS policy execution successful.
+2022-12-27 17:47:40.575   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Delete (exe1HW)'
+2022-12-27 17:47:40.609   [INF]  Route matched with {action = "Delete", controller = "Flats"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(Int32) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-27 17:47:56.589   [INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2022-12-27 17:47:56.593   [INF]  Executed action exe1.Controllers.FlatsController.Delete (exe1HW) in 15975.2611ms
+2022-12-27 17:47:56.595   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Delete (exe1HW)'
+2022-12-27 17:47:56.598   [INF]  Request finished HTTP/2 DELETE https://localhost:7294/api/Flats/3 - - - 400 - text/plain;+charset=utf-8 16028.2090ms
+2022-12-27 17:51:30.947   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1672156288924 - -
+2022-12-27 17:51:31.287   [INF]  CORS policy execution successful.
+2022-12-27 17:51:31.430   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1672156288924 - - - 204 - - 523.2705ms
+2022-12-27 17:51:31.602   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1672156288924 application/json -
+2022-12-27 17:51:31.703   [INF]  CORS policy execution successful.
+2022-12-27 17:51:31.710   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-27 17:51:31.993   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-27 17:51:32.033   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-27 17:51:32.040   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 34.8953ms
+2022-12-27 17:51:32.044   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-27 17:51:32.047   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1672156288924 application/json - - 200 - application/json;+charset=utf-8 444.3163ms
+2022-12-27 17:51:38.267   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats/3 - -
+2022-12-27 17:51:38.303   [INF]  CORS policy execution successful.
+2022-12-27 17:51:38.304   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats/3 - - - 204 - - 37.2664ms
+2022-12-27 17:51:38.312   [INF]  Request starting HTTP/2 DELETE https://localhost:7294/api/Flats/3 application/json -
+2022-12-27 17:51:38.314   [INF]  CORS policy execution successful.
+2022-12-27 17:51:38.316   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Delete (exe1HW)'
+2022-12-27 17:51:38.319   [INF]  Route matched with {action = "Delete", controller = "Flats"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(Int32) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-27 17:51:56.083   [INF]  Executing BadRequestObjectResult, writing value of type 'System.String'.
+2022-12-27 17:51:56.147   [INF]  Executed action exe1.Controllers.FlatsController.Delete (exe1HW) in 17824.3931ms
+2022-12-27 17:51:56.151   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Delete (exe1HW)'
+2022-12-27 17:51:56.167   [INF]  Request finished HTTP/2 DELETE https://localhost:7294/api/Flats/3 application/json - - 400 - text/plain;+charset=utf-8 17855.1172ms

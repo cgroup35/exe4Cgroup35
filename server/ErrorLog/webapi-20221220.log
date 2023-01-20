@@ -1,0 +1,1339 @@
+2022-12-20 18:05:54.680   [INF]  Now listening on: https://localhost:7294
+2022-12-20 18:05:54.850   [INF]  Now listening on: http://localhost:5294
+2022-12-20 18:05:54.862   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-20 18:05:54.865   [INF]  Hosting environment: Development
+2022-12-20 18:05:54.868   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-20 18:06:04.348   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-20 18:06:05.540   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 1203.4504ms
+2022-12-20 18:06:07.820   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-20 18:06:09.300   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 1479.5542ms
+2022-12-20 18:06:09.345   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-20 18:06:09.345   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-20 18:06:09.346   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-20 18:06:09.346   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-20 18:06:09.346   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-20 18:06:09.798   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-20 18:06:09.800   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-20 18:06:09.830   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 483.9344ms
+2022-12-20 18:06:09.830   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 484.0970ms
+2022-12-20 18:06:09.834   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 489.0010ms
+2022-12-20 18:06:09.920   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-20 18:06:09.954   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 608.2163ms
+2022-12-20 18:06:10.855   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1508.6615ms
+2022-12-20 18:06:11.097   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-20 18:06:11.549   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 451.6726ms
+2022-12-20 18:07:19.656   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671552439454 - -
+2022-12-20 18:07:19.674   [INF]  CORS policy execution successful.
+2022-12-20 18:07:19.685   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671552439454 - - - 204 - - 28.4029ms
+2022-12-20 18:07:19.689   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671552439454 application/json -
+2022-12-20 18:07:19.697   [INF]  CORS policy execution successful.
+2022-12-20 18:07:19.717   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 18:07:19.753   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 18:07:20.621   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:07:20.645   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 878.1958ms
+2022-12-20 18:07:20.649   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 18:07:20.651   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671552439454 application/json - - 200 - application/json;+charset=utf-8 962.6424ms
+2022-12-20 18:09:59.821   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671552599524 - -
+2022-12-20 18:09:59.830   [INF]  CORS policy execution successful.
+2022-12-20 18:09:59.832   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671552599524 - - - 204 - - 10.6091ms
+2022-12-20 18:09:59.835   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671552599524 application/json -
+2022-12-20 18:09:59.837   [INF]  CORS policy execution successful.
+2022-12-20 18:09:59.844   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:09:59.847   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:09:59.885   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:09:59.897   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 45.6539ms
+2022-12-20 18:09:59.899   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:09:59.901   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671552599524 application/json - - 200 - application/json;+charset=utf-8 65.4630ms
+2022-12-20 18:10:16.468   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671552599525 - -
+2022-12-20 18:10:16.471   [INF]  CORS policy execution successful.
+2022-12-20 18:10:16.473   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671552599525 - - - 204 - - 6.5264ms
+2022-12-20 18:10:16.480   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671552599525 application/json -
+2022-12-20 18:10:16.483   [INF]  CORS policy execution successful.
+2022-12-20 18:10:16.486   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:10:16.511   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:10:16.651   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:10:16.657   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 137.8826ms
+2022-12-20 18:10:16.661   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:10:16.665   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671552599525 application/json - - 200 - application/json;+charset=utf-8 184.8691ms
+2022-12-20 18:11:46.069   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671552705752 - -
+2022-12-20 18:11:46.079   [INF]  CORS policy execution successful.
+2022-12-20 18:11:46.081   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671552705752 - - - 204 - - 12.2979ms
+2022-12-20 18:11:46.088   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671552705752 application/json -
+2022-12-20 18:11:46.097   [INF]  CORS policy execution successful.
+2022-12-20 18:11:46.098   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:11:46.100   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:11:46.130   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:11:46.132   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 23.8889ms
+2022-12-20 18:11:46.137   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:11:46.139   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671552705752 application/json - - 200 - application/json;+charset=utf-8 50.8545ms
+2022-12-20 18:11:50.359   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671552710097 - -
+2022-12-20 18:11:50.407   [INF]  CORS policy execution successful.
+2022-12-20 18:11:50.416   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671552710097 - - - 204 - - 57.3081ms
+2022-12-20 18:11:50.422   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671552710097 application/json -
+2022-12-20 18:11:50.436   [INF]  CORS policy execution successful.
+2022-12-20 18:11:50.438   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:11:50.441   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:11:50.466   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:11:50.471   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 24.1833ms
+2022-12-20 18:11:50.474   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:11:50.476   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671552710097 application/json - - 200 - application/json;+charset=utf-8 54.2121ms
+2022-12-20 18:12:08.950   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671552710098 - -
+2022-12-20 18:12:08.960   [INF]  CORS policy execution successful.
+2022-12-20 18:12:08.961   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671552710098 - - - 204 - - 11.7191ms
+2022-12-20 18:12:08.974   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671552710098 application/json -
+2022-12-20 18:12:08.977   [INF]  CORS policy execution successful.
+2022-12-20 18:12:08.978   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:12:08.979   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:12:09.012   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:12:09.016   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 25.9411ms
+2022-12-20 18:12:09.018   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:12:09.024   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671552710098 application/json - - 200 - application/json;+charset=utf-8 49.2482ms
+2022-12-20 18:19:38.514   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553178238 - -
+2022-12-20 18:19:38.528   [INF]  CORS policy execution successful.
+2022-12-20 18:19:38.530   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553178238 - - - 204 - - 16.5475ms
+2022-12-20 18:19:38.583   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553178238 application/json -
+2022-12-20 18:19:38.591   [INF]  CORS policy execution successful.
+2022-12-20 18:19:38.594   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:19:38.596   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:19:38.811   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:19:38.831   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 231.0323ms
+2022-12-20 18:19:38.834   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:19:38.839   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553178238 application/json - - 200 - application/json;+charset=utf-8 255.6022ms
+2022-12-20 18:19:53.640   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553178239 - -
+2022-12-20 18:19:53.676   [INF]  CORS policy execution successful.
+2022-12-20 18:19:53.677   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553178239 - - - 204 - - 37.6159ms
+2022-12-20 18:19:53.691   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553178239 application/json -
+2022-12-20 18:19:53.694   [INF]  CORS policy execution successful.
+2022-12-20 18:19:53.696   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:19:53.698   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:19:53.740   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:19:53.743   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 37.4596ms
+2022-12-20 18:19:53.745   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:19:53.749   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553178239 application/json - - 200 - application/json;+charset=utf-8 57.3069ms
+2022-12-20 18:21:05.584   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553265380 - -
+2022-12-20 18:21:05.677   [INF]  CORS policy execution successful.
+2022-12-20 18:21:05.680   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553265380 - - - 204 - - 95.9446ms
+2022-12-20 18:21:05.692   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553265380 application/json -
+2022-12-20 18:21:05.694   [INF]  CORS policy execution successful.
+2022-12-20 18:21:05.695   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:21:05.697   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:21:05.734   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:21:05.743   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 38.0256ms
+2022-12-20 18:21:05.745   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:21:05.746   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553265380 application/json - - 200 - application/json;+charset=utf-8 54.2790ms
+2022-12-20 18:21:15.566   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553265381 - -
+2022-12-20 18:21:15.568   [INF]  CORS policy execution successful.
+2022-12-20 18:21:15.569   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553265381 - - - 204 - - 3.6277ms
+2022-12-20 18:21:15.572   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553265381 application/json -
+2022-12-20 18:21:15.582   [INF]  CORS policy execution successful.
+2022-12-20 18:21:15.584   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:21:15.586   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:21:15.611   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:21:15.617   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 27.9895ms
+2022-12-20 18:21:15.619   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:21:15.621   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553265381 application/json - - 200 - application/json;+charset=utf-8 49.0452ms
+2022-12-20 18:21:46.049   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553305164 - -
+2022-12-20 18:21:46.101   [INF]  CORS policy execution successful.
+2022-12-20 18:21:46.119   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553305164 - - - 204 - - 69.5357ms
+2022-12-20 18:21:46.133   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553305164 application/json -
+2022-12-20 18:21:46.146   [INF]  CORS policy execution successful.
+2022-12-20 18:21:46.149   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:21:46.151   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:21:46.202   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:21:46.212   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 54.7692ms
+2022-12-20 18:21:46.214   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:21:46.215   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553305164 application/json - - 200 - application/json;+charset=utf-8 82.2657ms
+2022-12-20 18:21:58.516   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553305165 - -
+2022-12-20 18:21:58.527   [INF]  CORS policy execution successful.
+2022-12-20 18:21:58.528   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553305165 - - - 204 - - 11.9864ms
+2022-12-20 18:21:58.542   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553305165 application/json -
+2022-12-20 18:21:58.544   [INF]  CORS policy execution successful.
+2022-12-20 18:21:58.545   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:21:58.550   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:21:58.577   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:21:58.582   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 26.3584ms
+2022-12-20 18:21:58.586   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:21:58.587   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553305165 application/json - - 200 - application/json;+charset=utf-8 45.3739ms
+2022-12-20 18:22:34.085   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553353871 - -
+2022-12-20 18:22:34.105   [INF]  CORS policy execution successful.
+2022-12-20 18:22:34.106   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553353871 - - - 204 - - 21.4016ms
+2022-12-20 18:22:34.122   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553353871 application/json -
+2022-12-20 18:22:34.125   [INF]  CORS policy execution successful.
+2022-12-20 18:22:34.127   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:22:34.129   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:22:34.160   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:22:34.167   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 28.4662ms
+2022-12-20 18:22:34.170   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:22:34.172   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553353871 application/json - - 200 - application/json;+charset=utf-8 49.6914ms
+2022-12-20 18:22:45.347   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553353872 - -
+2022-12-20 18:22:45.350   [INF]  CORS policy execution successful.
+2022-12-20 18:22:45.351   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553353872 - - - 204 - - 4.1190ms
+2022-12-20 18:22:45.364   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553353872 application/json -
+2022-12-20 18:22:45.367   [INF]  CORS policy execution successful.
+2022-12-20 18:22:45.368   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:22:45.372   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:22:45.398   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:22:45.409   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 29.8701ms
+2022-12-20 18:22:45.412   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:22:45.415   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553353872 application/json - - 200 - application/json;+charset=utf-8 51.2608ms
+2022-12-20 18:23:01.109   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553380911 - -
+2022-12-20 18:23:01.117   [INF]  CORS policy execution successful.
+2022-12-20 18:23:01.120   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553380911 - - - 204 - - 10.8242ms
+2022-12-20 18:23:01.125   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553380911 application/json -
+2022-12-20 18:23:01.131   [INF]  CORS policy execution successful.
+2022-12-20 18:23:01.132   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:23:01.134   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:23:01.168   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:23:01.170   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 32.3614ms
+2022-12-20 18:23:01.173   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:23:01.175   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553380911 application/json - - 200 - application/json;+charset=utf-8 49.7647ms
+2022-12-20 18:27:15.011   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553634597 - -
+2022-12-20 18:27:15.030   [INF]  CORS policy execution successful.
+2022-12-20 18:27:15.034   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553634597 - - - 204 - - 22.8376ms
+2022-12-20 18:27:15.078   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553634597 application/json -
+2022-12-20 18:27:15.101   [INF]  CORS policy execution successful.
+2022-12-20 18:27:15.106   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:27:15.133   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:27:15.363   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:27:15.368   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 229.7484ms
+2022-12-20 18:27:15.375   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:27:15.377   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553634597 application/json - - 200 - application/json;+charset=utf-8 298.9848ms
+2022-12-20 18:27:21.397   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553634598 - -
+2022-12-20 18:27:21.426   [INF]  CORS policy execution successful.
+2022-12-20 18:27:21.428   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553634598 - - - 204 - - 31.6069ms
+2022-12-20 18:27:21.433   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553634598 application/json -
+2022-12-20 18:27:21.438   [INF]  CORS policy execution successful.
+2022-12-20 18:27:21.439   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:27:21.441   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:27:21.480   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:27:21.482   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 39.259ms
+2022-12-20 18:27:21.484   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:27:21.485   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553634598 application/json - - 200 - application/json;+charset=utf-8 51.4970ms
+2022-12-20 18:27:31.671   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553651537 - -
+2022-12-20 18:27:31.681   [INF]  CORS policy execution successful.
+2022-12-20 18:27:31.684   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553651537 - - - 204 - - 13.2230ms
+2022-12-20 18:27:31.696   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553651537 application/json -
+2022-12-20 18:27:31.699   [INF]  CORS policy execution successful.
+2022-12-20 18:27:31.701   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:27:31.704   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:27:31.889   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:27:31.915   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 202.8194ms
+2022-12-20 18:27:31.917   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:27:31.919   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553651537 application/json - - 200 - application/json;+charset=utf-8 222.7268ms
+2022-12-20 18:28:03.874   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553682110 - -
+2022-12-20 18:28:03.906   [INF]  CORS policy execution successful.
+2022-12-20 18:28:03.915   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553682110 - - - 204 - - 40.8913ms
+2022-12-20 18:28:03.922   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553682110 application/json -
+2022-12-20 18:28:03.932   [INF]  CORS policy execution successful.
+2022-12-20 18:28:03.934   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:28:03.942   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:28:03.991   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:28:03.999   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 42.3576ms
+2022-12-20 18:28:04.002   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:28:04.005   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553682110 application/json - - 200 - application/json;+charset=utf-8 82.9338ms
+2022-12-20 18:28:10.543   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553682111 - -
+2022-12-20 18:28:10.545   [INF]  CORS policy execution successful.
+2022-12-20 18:28:10.546   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553682111 - - - 204 - - 2.8402ms
+2022-12-20 18:28:10.555   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553682111 application/json -
+2022-12-20 18:28:10.559   [INF]  CORS policy execution successful.
+2022-12-20 18:28:10.560   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:28:10.562   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:28:10.599   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:28:10.602   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 34.448ms
+2022-12-20 18:28:10.604   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:28:10.608   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553682111 application/json - - 200 - application/json;+charset=utf-8 52.6059ms
+2022-12-20 18:28:41.000   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553720576 - -
+2022-12-20 18:28:41.002   [INF]  CORS policy execution successful.
+2022-12-20 18:28:41.003   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553720576 - - - 204 - - 3.5023ms
+2022-12-20 18:28:41.007   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553720576 application/json -
+2022-12-20 18:28:41.013   [INF]  CORS policy execution successful.
+2022-12-20 18:28:41.014   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:28:41.016   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:28:41.039   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:28:41.041   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 22.3198ms
+2022-12-20 18:28:41.045   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:28:41.047   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553720576 application/json - - 200 - application/json;+charset=utf-8 40.0634ms
+2022-12-20 18:29:36.866   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553776629 - -
+2022-12-20 18:29:36.911   [INF]  CORS policy execution successful.
+2022-12-20 18:29:36.915   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553776629 - - - 204 - - 49.2657ms
+2022-12-20 18:29:36.926   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553776629 application/json -
+2022-12-20 18:29:36.929   [INF]  CORS policy execution successful.
+2022-12-20 18:29:36.938   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:29:36.944   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:29:36.980   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:29:36.985   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 34.2313ms
+2022-12-20 18:29:36.987   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:29:36.991   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553776629 application/json - - 200 - application/json;+charset=utf-8 64.3007ms
+2022-12-20 18:29:43.202   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553776630 - -
+2022-12-20 18:29:43.212   [INF]  CORS policy execution successful.
+2022-12-20 18:29:43.215   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553776630 - - - 204 - - 12.9428ms
+2022-12-20 18:29:43.229   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553776630 application/json -
+2022-12-20 18:29:43.231   [INF]  CORS policy execution successful.
+2022-12-20 18:29:43.233   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:29:43.234   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:29:43.268   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:29:43.271   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 34.6065ms
+2022-12-20 18:29:43.273   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:29:43.274   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553776630 application/json - - 200 - application/json;+charset=utf-8 44.9694ms
+2022-12-20 18:29:51.863   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553791785 - -
+2022-12-20 18:29:51.885   [INF]  CORS policy execution successful.
+2022-12-20 18:29:51.888   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553791785 - - - 204 - - 25.0347ms
+2022-12-20 18:29:51.894   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553791785 application/json -
+2022-12-20 18:29:51.911   [INF]  CORS policy execution successful.
+2022-12-20 18:29:51.915   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:29:51.925   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:29:51.966   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:29:51.972   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 42.6539ms
+2022-12-20 18:29:51.974   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:29:51.977   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553791785 application/json - - 200 - application/json;+charset=utf-8 82.1357ms
+2022-12-20 18:30:28.042   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553826682 - -
+2022-12-20 18:30:28.073   [INF]  CORS policy execution successful.
+2022-12-20 18:30:30.955   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553826682 - - - 204 - - 2912.8351ms
+2022-12-20 18:30:30.994   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553826682 application/json -
+2022-12-20 18:30:31.107   [INF]  CORS policy execution successful.
+2022-12-20 18:30:31.111   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:30:31.116   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:30:31.152   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:30:31.155   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 28.3278ms
+2022-12-20 18:30:31.156   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:30:31.158   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553826682 application/json - - 200 - application/json;+charset=utf-8 175.1297ms
+2022-12-20 18:30:33.700   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553826683 - -
+2022-12-20 18:30:33.709   [INF]  CORS policy execution successful.
+2022-12-20 18:30:33.711   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553826683 - - - 204 - - 12.8178ms
+2022-12-20 18:30:33.729   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553826683 application/json -
+2022-12-20 18:30:33.733   [INF]  CORS policy execution successful.
+2022-12-20 18:30:33.734   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:30:33.740   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:30:33.764   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:30:33.766   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 22.4795ms
+2022-12-20 18:30:33.773   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:30:33.775   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553826683 application/json - - 200 - application/json;+charset=utf-8 46.1872ms
+2022-12-20 18:31:19.262   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553878915 - -
+2022-12-20 18:31:19.264   [INF]  CORS policy execution successful.
+2022-12-20 18:31:19.266   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553878915 - - - 204 - - 4.0870ms
+2022-12-20 18:31:19.280   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553878915 application/json -
+2022-12-20 18:31:19.287   [INF]  CORS policy execution successful.
+2022-12-20 18:31:19.297   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:31:19.302   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:31:19.338   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:31:19.341   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 33.1489ms
+2022-12-20 18:31:19.343   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:31:19.346   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553878915 application/json - - 200 - application/json;+charset=utf-8 65.8671ms
+2022-12-20 18:32:29.086   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553948680 - -
+2022-12-20 18:32:29.090   [INF]  CORS policy execution successful.
+2022-12-20 18:32:29.094   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553948680 - - - 204 - - 7.8490ms
+2022-12-20 18:32:29.132   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553948680 application/json -
+2022-12-20 18:32:29.138   [INF]  CORS policy execution successful.
+2022-12-20 18:32:29.140   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:32:29.148   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:32:29.185   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:32:29.192   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 39.9186ms
+2022-12-20 18:32:29.200   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:32:29.203   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553948680 application/json - - 200 - application/json;+charset=utf-8 70.8236ms
+2022-12-20 18:32:37.059   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553948681 - -
+2022-12-20 18:32:37.062   [INF]  CORS policy execution successful.
+2022-12-20 18:32:37.069   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553948681 - - - 204 - - 9.8527ms
+2022-12-20 18:32:37.073   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553948681 application/json -
+2022-12-20 18:32:37.075   [INF]  CORS policy execution successful.
+2022-12-20 18:32:37.077   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:32:37.078   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:32:37.142   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:32:37.145   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 58.3288ms
+2022-12-20 18:32:37.149   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:32:37.155   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553948681 application/json - - 200 - application/json;+charset=utf-8 82.2345ms
+2022-12-20 18:32:38.925   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553958886 - -
+2022-12-20 18:32:38.926   [INF]  CORS policy execution successful.
+2022-12-20 18:32:38.928   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553958886 - - - 204 - - 3.5311ms
+2022-12-20 18:32:38.939   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553958886 application/json -
+2022-12-20 18:32:38.940   [INF]  CORS policy execution successful.
+2022-12-20 18:32:38.941   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:32:38.943   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:32:38.985   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:32:38.991   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 33.4611ms
+2022-12-20 18:32:38.993   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:32:38.995   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553958886 application/json - - 200 - application/json;+charset=utf-8 56.5377ms
+2022-12-20 18:32:40.175   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553960094 - -
+2022-12-20 18:32:40.185   [INF]  CORS policy execution successful.
+2022-12-20 18:32:40.190   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553960094 - - - 204 - - 14.8711ms
+2022-12-20 18:32:40.193   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553960094 application/json -
+2022-12-20 18:32:40.207   [INF]  CORS policy execution successful.
+2022-12-20 18:32:40.216   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:32:40.223   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:32:40.250   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:32:40.255   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 29.3895ms
+2022-12-20 18:32:40.258   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:32:40.259   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553960094 application/json - - 200 - application/json;+charset=utf-8 66.8907ms
+2022-12-20 18:32:41.088   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553961024 - -
+2022-12-20 18:32:41.106   [INF]  CORS policy execution successful.
+2022-12-20 18:32:41.108   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553961024 - - - 204 - - 20.1764ms
+2022-12-20 18:32:41.112   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553961024 application/json -
+2022-12-20 18:32:41.114   [INF]  CORS policy execution successful.
+2022-12-20 18:32:41.119   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:32:41.121   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:32:41.144   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:32:41.147   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 23.5474ms
+2022-12-20 18:32:41.149   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:32:41.153   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553961024 application/json - - 200 - application/json;+charset=utf-8 40.0644ms
+2022-12-20 18:33:14.604   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553994443 - -
+2022-12-20 18:33:14.646   [INF]  CORS policy execution successful.
+2022-12-20 18:33:14.647   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671553994443 - - - 204 - - 42.8462ms
+2022-12-20 18:33:14.701   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553994443 application/json -
+2022-12-20 18:33:14.707   [INF]  CORS policy execution successful.
+2022-12-20 18:33:14.709   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:33:14.712   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 18:33:14.758   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:33:14.761   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 39.9799ms
+2022-12-20 18:33:14.763   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 18:33:14.766   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671553994443 application/json - - 200 - application/json;+charset=utf-8 65.1607ms
+2022-12-20 18:33:22.449   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553994444 - -
+2022-12-20 18:33:22.453   [INF]  CORS policy execution successful.
+2022-12-20 18:33:22.455   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553994444 - - - 204 - - 6.1740ms
+2022-12-20 18:33:22.459   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553994444 application/json -
+2022-12-20 18:33:22.463   [INF]  CORS policy execution successful.
+2022-12-20 18:33:22.465   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:33:22.467   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:33:22.512   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:33:22.516   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 44.9311ms
+2022-12-20 18:33:22.519   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:33:22.522   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671553994444 application/json - - 200 - application/json;+charset=utf-8 62.7993ms
+2022-12-20 18:33:31.480   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users - -
+2022-12-20 18:33:31.483   [INF]  CORS policy execution successful.
+2022-12-20 18:33:31.485   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users - - - 204 - - 4.3558ms
+2022-12-20 18:33:31.494   [INF]  Request starting HTTP/2 PUT https://localhost:7294/api/Users application/json 95
+2022-12-20 18:33:31.497   [INF]  CORS policy execution successful.
+2022-12-20 18:33:31.497   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Put (exe1HW)'
+2022-12-20 18:33:31.528   [INF]  Route matched with {action = "Put", controller = "Users"}. Executing controller action with signature Int32 Put(exe1HW.Models.User) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:33:31.607   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 18:33:31.612   [INF]  Executed action exe1HW.Controllers.UsersController.Put (exe1HW) in 80.7575ms
+2022-12-20 18:33:31.615   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Put (exe1HW)'
+2022-12-20 18:33:31.617   [INF]  Request finished HTTP/2 PUT https://localhost:7294/api/Users application/json 95 - 200 - application/json;+charset=utf-8 123.1978ms
+2022-12-20 18:33:50.771   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671554030598 - -
+2022-12-20 18:33:50.782   [INF]  CORS policy execution successful.
+2022-12-20 18:33:50.793   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671554030598 - - - 204 - - 22.5503ms
+2022-12-20 18:33:50.803   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671554030598 application/json -
+2022-12-20 18:33:50.813   [INF]  CORS policy execution successful.
+2022-12-20 18:33:50.818   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 18:33:50.824   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 18:33:50.859   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:33:50.906   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 77.6907ms
+2022-12-20 18:33:50.912   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 18:33:50.925   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671554030598 application/json - - 200 - application/json;+charset=utf-8 122.1321ms
+2022-12-20 18:33:58.158   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671554030599 - -
+2022-12-20 18:33:58.162   [INF]  CORS policy execution successful.
+2022-12-20 18:33:58.164   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671554030599 - - - 204 - - 5.5032ms
+2022-12-20 18:33:58.174   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671554030599 application/json -
+2022-12-20 18:33:58.177   [INF]  CORS policy execution successful.
+2022-12-20 18:33:58.178   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:33:58.180   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:33:58.210   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:33:58.213   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 28.666ms
+2022-12-20 18:33:58.217   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 18:33:58.219   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671554030599 application/json - - 200 - application/json;+charset=utf-8 45.0405ms
+2022-12-20 18:34:05.437   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users - -
+2022-12-20 18:34:05.439   [INF]  CORS policy execution successful.
+2022-12-20 18:34:05.442   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users - - - 204 - - 4.3477ms
+2022-12-20 18:34:05.445   [INF]  Request starting HTTP/2 PUT https://localhost:7294/api/Users application/json 95
+2022-12-20 18:34:05.447   [INF]  CORS policy execution successful.
+2022-12-20 18:34:05.452   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Put (exe1HW)'
+2022-12-20 18:34:05.453   [INF]  Route matched with {action = "Put", controller = "Users"}. Executing controller action with signature Int32 Put(exe1HW.Models.User) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 18:34:05.484   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 18:34:05.485   [INF]  Executed action exe1HW.Controllers.UsersController.Put (exe1HW) in 30.757ms
+2022-12-20 18:34:05.487   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Put (exe1HW)'
+2022-12-20 18:34:05.489   [INF]  Request finished HTTP/2 PUT https://localhost:7294/api/Users application/json 95 - 200 - application/json;+charset=utf-8 44.0578ms
+2022-12-20 18:41:19.587   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671554479050 - -
+2022-12-20 18:41:19.594   [INF]  CORS policy execution successful.
+2022-12-20 18:41:19.596   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671554479050 - - - 204 - - 9.0872ms
+2022-12-20 18:41:19.610   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671554479050 application/json -
+2022-12-20 18:41:19.660   [INF]  CORS policy execution successful.
+2022-12-20 18:41:19.662   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 18:41:19.680   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 18:41:19.888   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 18:41:19.896   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 211.6954ms
+2022-12-20 18:41:19.898   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 18:41:19.901   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671554479050 application/json - - 200 - application/json;+charset=utf-8 291.7845ms
+2022-12-20 19:11:54.212   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556313556 - -
+2022-12-20 19:11:54.425   [INF]  CORS policy execution successful.
+2022-12-20 19:11:54.431   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556313556 - - - 204 - - 223.8766ms
+2022-12-20 19:11:54.449   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556313556 application/json -
+2022-12-20 19:11:54.455   [INF]  CORS policy execution successful.
+2022-12-20 19:11:54.458   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:11:54.468   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:11:54.821   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:11:54.827   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 354.4983ms
+2022-12-20 19:11:54.830   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:11:54.832   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556313556 application/json - - 200 - application/json;+charset=utf-8 382.1448ms
+2022-12-20 19:12:10.382   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671556329747 - -
+2022-12-20 19:12:10.395   [INF]  CORS policy execution successful.
+2022-12-20 19:12:10.400   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671556329747 - - - 204 - - 18.2723ms
+2022-12-20 19:12:10.428   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671556329747 application/json -
+2022-12-20 19:12:10.432   [INF]  CORS policy execution successful.
+2022-12-20 19:12:10.434   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:12:10.437   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 19:12:10.464   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:12:10.472   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 32.0479ms
+2022-12-20 19:12:10.476   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:12:10.481   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671556329747 application/json - - 200 - application/json;+charset=utf-8 52.6248ms
+2022-12-20 19:12:17.326   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671556329748 - -
+2022-12-20 19:12:17.333   [INF]  CORS policy execution successful.
+2022-12-20 19:12:17.335   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671556329748 - - - 204 - - 9.4640ms
+2022-12-20 19:12:17.339   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671556329748 application/json -
+2022-12-20 19:12:17.342   [INF]  CORS policy execution successful.
+2022-12-20 19:12:17.343   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 19:12:17.349   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 19:12:17.420   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:12:17.422   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 68.8075ms
+2022-12-20 19:12:17.425   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 19:12:17.429   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671556329748 application/json - - 200 - application/json;+charset=utf-8 89.3726ms
+2022-12-20 19:12:18.520   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556338318 - -
+2022-12-20 19:12:18.522   [INF]  CORS policy execution successful.
+2022-12-20 19:12:18.526   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556338318 - - - 204 - - 6.9238ms
+2022-12-20 19:12:18.608   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556338318 application/json -
+2022-12-20 19:12:18.632   [INF]  CORS policy execution successful.
+2022-12-20 19:12:18.638   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:12:18.640   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:12:18.666   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:12:18.672   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 27.7716ms
+2022-12-20 19:12:18.674   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:12:18.677   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556338318 application/json - - 200 - application/json;+charset=utf-8 72.8735ms
+2022-12-20 19:12:27.274   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations - -
+2022-12-20 19:12:27.276   [INF]  CORS policy execution successful.
+2022-12-20 19:12:27.278   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations - - - 204 - - 4.3763ms
+2022-12-20 19:12:27.286   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 95
+2022-12-20 19:12:27.291   [INF]  CORS policy execution successful.
+2022-12-20 19:12:27.294   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:12:27.316   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Int32 Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:12:27.650   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 19:12:27.654   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 312.2924ms
+2022-12-20 19:12:27.655   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:12:27.657   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 95 - 200 - application/json;+charset=utf-8 371.1686ms
+2022-12-20 19:12:42.037   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556338319 - -
+2022-12-20 19:12:42.081   [INF]  CORS policy execution successful.
+2022-12-20 19:12:42.084   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556338319 - - - 204 - - 47.2223ms
+2022-12-20 19:12:42.088   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556338319 application/json -
+2022-12-20 19:12:42.089   [INF]  CORS policy execution successful.
+2022-12-20 19:12:42.090   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:12:42.100   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:12:42.148   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:12:42.338   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 233.8717ms
+2022-12-20 19:12:42.373   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:12:42.383   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556338319 application/json - - 200 - application/json;+charset=utf-8 295.1384ms
+2022-12-20 19:13:14.050   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556393452 - -
+2022-12-20 19:13:14.064   [INF]  CORS policy execution successful.
+2022-12-20 19:13:14.068   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556393452 - - - 204 - - 17.8489ms
+2022-12-20 19:13:14.085   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556393452 application/json -
+2022-12-20 19:13:14.090   [INF]  CORS policy execution successful.
+2022-12-20 19:13:14.100   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:13:14.105   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:13:14.167   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:13:14.173   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 62.7511ms
+2022-12-20 19:13:14.176   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:13:14.179   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556393452 application/json - - 200 - application/json;+charset=utf-8 94.3663ms
+2022-12-20 19:13:16.624   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671556396175 - -
+2022-12-20 19:13:16.661   [INF]  CORS policy execution successful.
+2022-12-20 19:13:16.663   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671556396175 - - - 204 - - 39.3576ms
+2022-12-20 19:13:16.668   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671556396175 application/json -
+2022-12-20 19:13:16.692   [INF]  CORS policy execution successful.
+2022-12-20 19:13:16.693   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:13:16.696   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 19:13:16.730   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:13:16.739   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 37.7143ms
+2022-12-20 19:13:16.743   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:13:16.745   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671556396175 application/json - - 200 - application/json;+charset=utf-8 77.6934ms
+2022-12-20 19:13:20.620   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556400449 - -
+2022-12-20 19:13:20.622   [INF]  CORS policy execution successful.
+2022-12-20 19:13:20.629   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556400449 - - - 204 - - 8.2523ms
+2022-12-20 19:13:20.638   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556400449 application/json -
+2022-12-20 19:13:20.666   [INF]  CORS policy execution successful.
+2022-12-20 19:13:20.667   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:13:20.671   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:13:20.752   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:13:20.826   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 151.0894ms
+2022-12-20 19:13:20.840   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:13:20.843   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556400449 application/json - - 200 - application/json;+charset=utf-8 204.9623ms
+2022-12-20 19:13:29.156   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations - -
+2022-12-20 19:13:29.157   [INF]  CORS policy execution successful.
+2022-12-20 19:13:29.161   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations - - - 204 - - 3.8218ms
+2022-12-20 19:13:29.167   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 95
+2022-12-20 19:13:29.169   [INF]  CORS policy execution successful.
+2022-12-20 19:13:29.172   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:13:29.176   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Int32 Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:13:29.267   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 19:13:29.281   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 100.8476ms
+2022-12-20 19:13:29.301   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:13:29.305   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 95 - 200 - application/json;+charset=utf-8 138.2419ms
+2022-12-20 19:13:35.106   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556400450 - -
+2022-12-20 19:13:35.228   [INF]  CORS policy execution successful.
+2022-12-20 19:13:35.258   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556400450 - - - 204 - - 151.3881ms
+2022-12-20 19:13:35.268   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556400450 application/json -
+2022-12-20 19:13:35.277   [INF]  CORS policy execution successful.
+2022-12-20 19:13:35.279   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:13:35.281   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:13:35.318   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:13:35.322   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 36.6437ms
+2022-12-20 19:13:35.324   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:13:35.327   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556400450 application/json - - 200 - application/json;+charset=utf-8 59.0152ms
+2022-12-20 19:22:56.745   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556976301 - -
+2022-12-20 19:22:56.749   [INF]  CORS policy execution successful.
+2022-12-20 19:22:56.750   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556976301 - - - 204 - - 5.6932ms
+2022-12-20 19:22:56.755   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556976301 application/json -
+2022-12-20 19:22:56.760   [INF]  CORS policy execution successful.
+2022-12-20 19:22:56.768   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:22:56.771   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:22:56.994   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:22:57.011   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 210.5836ms
+2022-12-20 19:22:57.013   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:22:57.015   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556976301 application/json - - 200 - application/json;+charset=utf-8 260.2094ms
+2022-12-20 19:23:01.162   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671556981078 - -
+2022-12-20 19:23:01.163   [INF]  CORS policy execution successful.
+2022-12-20 19:23:01.164   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671556981078 - - - 204 - - 2.5434ms
+2022-12-20 19:23:01.175   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671556981078 application/json -
+2022-12-20 19:23:01.177   [INF]  CORS policy execution successful.
+2022-12-20 19:23:01.178   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:23:01.180   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 19:23:01.219   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:23:01.228   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 38.4773ms
+2022-12-20 19:23:01.231   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:23:01.236   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671556981078 application/json - - 200 - application/json;+charset=utf-8 60.7137ms
+2022-12-20 19:23:06.891   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671556981079 - -
+2022-12-20 19:23:06.895   [INF]  CORS policy execution successful.
+2022-12-20 19:23:06.896   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671556981079 - - - 204 - - 4.8417ms
+2022-12-20 19:23:06.899   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671556981079 application/json -
+2022-12-20 19:23:06.902   [INF]  CORS policy execution successful.
+2022-12-20 19:23:06.904   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 19:23:06.905   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 19:23:06.941   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:23:06.944   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 32.2459ms
+2022-12-20 19:23:06.947   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 19:23:06.948   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671556981079 application/json - - 200 - application/json;+charset=utf-8 49.3068ms
+2022-12-20 19:23:09.881   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556989846 - -
+2022-12-20 19:23:09.882   [INF]  CORS policy execution successful.
+2022-12-20 19:23:09.884   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671556989846 - - - 204 - - 3.3356ms
+2022-12-20 19:23:09.907   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556989846 application/json -
+2022-12-20 19:23:09.915   [INF]  CORS policy execution successful.
+2022-12-20 19:23:09.916   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:23:09.918   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:23:09.980   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:23:09.984   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 56.6298ms
+2022-12-20 19:23:09.985   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:23:09.993   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671556989846 application/json - - 200 - application/json;+charset=utf-8 87.1020ms
+2022-12-20 19:23:16.900   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations - -
+2022-12-20 19:23:16.914   [INF]  CORS policy execution successful.
+2022-12-20 19:23:16.916   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations - - - 204 - - 15.7874ms
+2022-12-20 19:23:16.918   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 95
+2022-12-20 19:23:16.920   [INF]  CORS policy execution successful.
+2022-12-20 19:23:16.921   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:23:16.926   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Int32 Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:23:17.005   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 19:23:17.008   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 79.0902ms
+2022-12-20 19:23:17.011   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:23:17.013   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 95 - 200 - application/json;+charset=utf-8 94.7423ms
+2022-12-20 19:30:00.904   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671557400664 - -
+2022-12-20 19:30:00.907   [INF]  CORS policy execution successful.
+2022-12-20 19:30:00.914   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671557400664 - - - 204 - - 10.0188ms
+2022-12-20 19:30:00.929   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671557400664 application/json -
+2022-12-20 19:30:00.971   [INF]  CORS policy execution successful.
+2022-12-20 19:30:00.978   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:30:00.984   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:30:01.231   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:30:01.235   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 241.4506ms
+2022-12-20 19:30:01.237   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:30:01.239   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671557400664 application/json - - 200 - application/json;+charset=utf-8 310.9642ms
+2022-12-20 19:30:04.053   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671557403904 - -
+2022-12-20 19:30:04.098   [INF]  CORS policy execution successful.
+2022-12-20 19:30:04.107   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671557403904 - - - 204 - - 53.7072ms
+2022-12-20 19:30:04.135   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671557403904 application/json -
+2022-12-20 19:30:04.157   [INF]  CORS policy execution successful.
+2022-12-20 19:30:04.159   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:30:04.161   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 19:30:04.203   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:30:04.211   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 45.6186ms
+2022-12-20 19:30:04.214   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:30:04.216   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671557403904 application/json - - 200 - application/json;+charset=utf-8 80.9664ms
+2022-12-20 19:31:14.687   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671557403905 - -
+2022-12-20 19:31:14.690   [INF]  CORS policy execution successful.
+2022-12-20 19:31:14.691   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671557403905 - - - 204 - - 4.6091ms
+2022-12-20 19:31:14.704   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671557403905 application/json -
+2022-12-20 19:31:14.707   [INF]  CORS policy execution successful.
+2022-12-20 19:31:14.710   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 19:31:14.721   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 19:31:14.768   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:31:14.774   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 49.2329ms
+2022-12-20 19:31:14.777   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 19:31:14.781   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671557403905 application/json - - 200 - application/json;+charset=utf-8 77.0377ms
+2022-12-20 19:31:15.359   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671557475250 - -
+2022-12-20 19:31:15.469   [INF]  CORS policy execution successful.
+2022-12-20 19:31:15.474   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671557475250 - - - 204 - - 114.5769ms
+2022-12-20 19:31:15.484   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671557475250 application/json -
+2022-12-20 19:31:15.491   [INF]  CORS policy execution successful.
+2022-12-20 19:31:15.500   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:31:15.502   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:31:15.535   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:31:15.540   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 33.5523ms
+2022-12-20 19:31:15.546   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:31:15.548   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671557475250 application/json - - 200 - application/json;+charset=utf-8 63.6635ms
+2022-12-20 19:31:26.162   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations - -
+2022-12-20 19:31:26.198   [INF]  CORS policy execution successful.
+2022-12-20 19:31:26.213   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations - - - 204 - - 51.7518ms
+2022-12-20 19:31:26.222   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 95
+2022-12-20 19:31:26.223   [INF]  CORS policy execution successful.
+2022-12-20 19:31:26.225   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:31:26.226   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Int32 Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:31:26.313   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 19:31:26.317   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 88.2276ms
+2022-12-20 19:31:26.319   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:31:26.321   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 95 - 200 - application/json;+charset=utf-8 105.1575ms
+2022-12-20 19:33:55.943   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671557635593 - -
+2022-12-20 19:33:55.955   [INF]  CORS policy execution successful.
+2022-12-20 19:33:55.956   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671557635593 - - - 204 - - 13.0744ms
+2022-12-20 19:33:55.981   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671557635593 application/json -
+2022-12-20 19:33:55.989   [INF]  CORS policy execution successful.
+2022-12-20 19:33:55.998   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:33:56.000   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:33:56.034   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:33:56.037   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 30.9291ms
+2022-12-20 19:33:56.042   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:33:56.045   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671557635593 application/json - - 200 - application/json;+charset=utf-8 64.3306ms
+2022-12-20 19:34:07.109   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671557646973 - -
+2022-12-20 19:34:07.122   [INF]  CORS policy execution successful.
+2022-12-20 19:34:07.125   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671557646973 - - - 204 - - 15.3739ms
+2022-12-20 19:34:07.128   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671557646973 application/json -
+2022-12-20 19:34:07.142   [INF]  CORS policy execution successful.
+2022-12-20 19:34:07.145   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:34:07.155   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:34:07.198   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:34:07.212   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 51.5833ms
+2022-12-20 19:34:07.216   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:34:07.221   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671557646973 application/json - - 200 - application/json;+charset=utf-8 91.1706ms
+2022-12-20 19:34:08.842   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671557648733 - -
+2022-12-20 19:34:08.845   [INF]  CORS policy execution successful.
+2022-12-20 19:34:08.853   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671557648733 - - - 204 - - 10.4475ms
+2022-12-20 19:34:08.858   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671557648733 application/json -
+2022-12-20 19:34:08.859   [INF]  CORS policy execution successful.
+2022-12-20 19:34:08.860   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:34:08.864   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 19:34:08.907   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:34:08.911   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 32.0912ms
+2022-12-20 19:34:08.920   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:34:08.923   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671557648733 application/json - - 200 - application/json;+charset=utf-8 66.8585ms
+2022-12-20 19:34:20.070   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671557648734 - -
+2022-12-20 19:34:20.074   [INF]  CORS policy execution successful.
+2022-12-20 19:34:20.077   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671557648734 - - - 204 - - 7.2982ms
+2022-12-20 19:34:20.081   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671557648734 application/json -
+2022-12-20 19:34:20.085   [INF]  CORS policy execution successful.
+2022-12-20 19:34:20.086   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 19:34:20.088   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 19:34:20.115   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:34:20.118   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 25.8075ms
+2022-12-20 19:34:20.120   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 19:34:20.123   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671557648734 application/json - - 200 - application/json;+charset=utf-8 41.6222ms
+2022-12-20 19:34:20.448   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671557660399 - -
+2022-12-20 19:34:20.461   [INF]  CORS policy execution successful.
+2022-12-20 19:34:20.465   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671557660399 - - - 204 - - 17.4964ms
+2022-12-20 19:34:20.478   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671557660399 application/json -
+2022-12-20 19:34:20.494   [INF]  CORS policy execution successful.
+2022-12-20 19:34:20.500   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:34:20.511   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:34:20.548   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:34:20.553   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 36.5367ms
+2022-12-20 19:34:20.557   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:34:20.560   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671557660399 application/json - - 200 - application/json;+charset=utf-8 82.6125ms
+2022-12-20 19:34:31.134   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations - -
+2022-12-20 19:34:31.136   [INF]  CORS policy execution successful.
+2022-12-20 19:34:31.137   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations - - - 204 - - 3.6300ms
+2022-12-20 19:34:31.139   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 95
+2022-12-20 19:34:31.141   [INF]  CORS policy execution successful.
+2022-12-20 19:34:31.142   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:34:31.145   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Int32 Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:34:31.231   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 19:34:31.234   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 85.8036ms
+2022-12-20 19:34:31.239   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:34:31.244   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 95 - 200 - application/json;+charset=utf-8 105.0754ms
+2022-12-20 19:42:41.511   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558161142 - -
+2022-12-20 19:42:41.516   [INF]  CORS policy execution successful.
+2022-12-20 19:42:41.518   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558161142 - - - 204 - - 6.7953ms
+2022-12-20 19:42:41.546   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558161142 application/json -
+2022-12-20 19:42:41.550   [INF]  CORS policy execution successful.
+2022-12-20 19:42:41.578   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:42:41.620   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:42:41.867   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:42:41.876   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 251.4311ms
+2022-12-20 19:42:41.879   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:42:41.882   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558161142 application/json - - 200 - application/json;+charset=utf-8 336.1539ms
+2022-12-20 19:42:43.526   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671558163484 - -
+2022-12-20 19:42:43.527   [INF]  CORS policy execution successful.
+2022-12-20 19:42:43.529   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671558163484 - - - 204 - - 9.9303ms
+2022-12-20 19:42:43.531   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671558163484 application/json -
+2022-12-20 19:42:43.532   [INF]  CORS policy execution successful.
+2022-12-20 19:42:43.546   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:42:43.567   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 19:42:43.653   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:42:43.664   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 55.3939ms
+2022-12-20 19:42:43.666   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:42:43.667   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671558163484 application/json - - 200 - application/json;+charset=utf-8 135.9005ms
+2022-12-20 19:42:51.585   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671558163485 - -
+2022-12-20 19:42:51.589   [INF]  CORS policy execution successful.
+2022-12-20 19:42:51.591   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671558163485 - - - 204 - - 5.3059ms
+2022-12-20 19:42:51.595   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671558163485 application/json -
+2022-12-20 19:42:51.597   [INF]  CORS policy execution successful.
+2022-12-20 19:42:51.598   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 19:42:51.602   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 19:42:51.634   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:42:51.636   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 30.2492ms
+2022-12-20 19:42:51.637   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 19:42:51.639   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671558163485 application/json - - 200 - application/json;+charset=utf-8 44.5911ms
+2022-12-20 19:42:51.935   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558171848 - -
+2022-12-20 19:42:51.938   [INF]  CORS policy execution successful.
+2022-12-20 19:42:51.949   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558171848 - - - 204 - - 13.9955ms
+2022-12-20 19:42:51.958   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558171848 application/json -
+2022-12-20 19:42:51.965   [INF]  CORS policy execution successful.
+2022-12-20 19:42:51.968   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:42:51.970   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:42:52.012   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:42:52.016   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 34.464ms
+2022-12-20 19:42:52.023   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:42:52.029   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558171848 application/json - - 200 - application/json;+charset=utf-8 70.5567ms
+2022-12-20 19:43:00.164   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations - -
+2022-12-20 19:43:00.166   [INF]  CORS policy execution successful.
+2022-12-20 19:43:00.168   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations - - - 204 - - 4.0758ms
+2022-12-20 19:43:00.170   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 95
+2022-12-20 19:43:00.171   [INF]  CORS policy execution successful.
+2022-12-20 19:43:00.172   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:43:00.173   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Int32 Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:43:00.300   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 19:43:00.303   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 127.7653ms
+2022-12-20 19:43:00.305   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:43:00.307   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 95 - 200 - application/json;+charset=utf-8 136.8313ms
+2022-12-20 19:46:29.121   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671558388561 - -
+2022-12-20 19:46:29.137   [INF]  CORS policy execution successful.
+2022-12-20 19:46:29.147   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671558388561 - - - 204 - - 26.3286ms
+2022-12-20 19:46:29.154   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671558388561 application/json -
+2022-12-20 19:46:29.157   [INF]  CORS policy execution successful.
+2022-12-20 19:46:29.159   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:46:29.163   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 19:46:29.194   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:46:29.203   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 35.2416ms
+2022-12-20 19:46:29.206   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:46:29.208   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671558388561 application/json - - 200 - application/json;+charset=utf-8 53.7184ms
+2022-12-20 19:46:34.649   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558394099 - -
+2022-12-20 19:46:34.656   [INF]  CORS policy execution successful.
+2022-12-20 19:46:34.665   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558394099 - - - 204 - - 14.9342ms
+2022-12-20 19:46:34.678   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558394099 application/json -
+2022-12-20 19:46:34.682   [INF]  CORS policy execution successful.
+2022-12-20 19:46:34.684   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:46:34.691   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:46:34.719   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:46:34.724   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 28.1239ms
+2022-12-20 19:46:34.726   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:46:34.729   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558394099 application/json - - 200 - application/json;+charset=utf-8 50.6049ms
+2022-12-20 19:46:46.815   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations - -
+2022-12-20 19:46:46.816   [INF]  CORS policy execution successful.
+2022-12-20 19:46:46.822   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations - - - 204 - - 6.6892ms
+2022-12-20 19:46:46.829   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 95
+2022-12-20 19:46:46.831   [INF]  CORS policy execution successful.
+2022-12-20 19:46:46.832   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:46:46.835   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Int32 Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:46:46.952   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 19:46:46.965   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 116.0088ms
+2022-12-20 19:46:46.967   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:46:46.968   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 95 - 200 - application/json;+charset=utf-8 139.7300ms
+2022-12-20 19:46:50.551   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558394100 - -
+2022-12-20 19:46:50.562   [INF]  CORS policy execution successful.
+2022-12-20 19:46:50.567   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558394100 - - - 204 - - 16.4278ms
+2022-12-20 19:46:50.585   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558394100 application/json -
+2022-12-20 19:46:50.600   [INF]  CORS policy execution successful.
+2022-12-20 19:46:50.601   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:46:50.604   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:46:50.637   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:46:50.641   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 26.8473ms
+2022-12-20 19:46:50.643   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:46:50.647   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558394100 application/json - - 200 - application/json;+charset=utf-8 61.8627ms
+2022-12-20 19:52:50.108   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558769784 - -
+2022-12-20 19:52:50.118   [INF]  CORS policy execution successful.
+2022-12-20 19:52:50.119   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558769784 - - - 204 - - 11.6420ms
+2022-12-20 19:52:50.125   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558769784 application/json -
+2022-12-20 19:52:50.127   [INF]  CORS policy execution successful.
+2022-12-20 19:52:50.131   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:52:50.134   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:52:50.172   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:52:50.178   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 33.6135ms
+2022-12-20 19:52:50.181   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:52:50.183   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558769784 application/json - - 200 - application/json;+charset=utf-8 57.4204ms
+2022-12-20 19:52:51.461   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671558771337 - -
+2022-12-20 19:52:51.506   [INF]  CORS policy execution successful.
+2022-12-20 19:52:51.514   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671558771337 - - - 204 - - 53.1262ms
+2022-12-20 19:52:51.517   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671558771337 application/json -
+2022-12-20 19:52:51.519   [INF]  CORS policy execution successful.
+2022-12-20 19:52:51.520   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:52:51.526   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 19:52:51.574   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:52:51.579   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 49.1782ms
+2022-12-20 19:52:51.583   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 19:52:51.586   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671558771337 application/json - - 200 - application/json;+charset=utf-8 69.3350ms
+2022-12-20 19:52:59.198   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671558771338 - -
+2022-12-20 19:52:59.202   [INF]  CORS policy execution successful.
+2022-12-20 19:52:59.204   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671558771338 - - - 204 - - 6.3102ms
+2022-12-20 19:52:59.206   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671558771338 application/json -
+2022-12-20 19:52:59.207   [INF]  CORS policy execution successful.
+2022-12-20 19:52:59.210   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 19:52:59.213   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 19:52:59.238   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:52:59.240   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 24.731ms
+2022-12-20 19:52:59.243   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 19:52:59.246   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan@gmail.com/password/Da123456?{%22Email%22:%22dan@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671558771338 application/json - - 200 - application/json;+charset=utf-8 40.2052ms
+2022-12-20 19:52:59.528   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558779450 - -
+2022-12-20 19:52:59.530   [INF]  CORS policy execution successful.
+2022-12-20 19:52:59.531   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558779450 - - - 204 - - 4.7605ms
+2022-12-20 19:52:59.534   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558779450 application/json -
+2022-12-20 19:52:59.538   [INF]  CORS policy execution successful.
+2022-12-20 19:52:59.540   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:52:59.544   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:52:59.577   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:52:59.581   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 26.382ms
+2022-12-20 19:52:59.587   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:52:59.589   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558779450 application/json - - 200 - application/json;+charset=utf-8 55.1140ms
+2022-12-20 19:53:12.310   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations - -
+2022-12-20 19:53:12.311   [INF]  CORS policy execution successful.
+2022-12-20 19:53:12.317   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations - - - 204 - - 4.5398ms
+2022-12-20 19:53:12.328   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 95
+2022-12-20 19:53:12.339   [INF]  CORS policy execution successful.
+2022-12-20 19:53:12.340   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:53:12.341   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Int32 Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:53:12.427   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 19:53:12.431   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 87.0053ms
+2022-12-20 19:53:12.436   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 19:53:12.445   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 95 - 200 - application/json;+charset=utf-8 117.2686ms
+2022-12-20 19:53:12.454   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558779451 - -
+2022-12-20 19:53:12.456   [INF]  CORS policy execution successful.
+2022-12-20 19:53:12.458   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671558779451 - - - 204 - - 3.4901ms
+2022-12-20 19:53:12.460   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558779451 application/json -
+2022-12-20 19:53:12.462   [INF]  CORS policy execution successful.
+2022-12-20 19:53:12.463   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:53:12.466   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 19:53:12.502   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 19:53:12.513   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 39.6528ms
+2022-12-20 19:53:12.518   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 19:53:12.520   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671558779451 application/json - - 200 - application/json;+charset=utf-8 60.5991ms
+2022-12-20 20:20:01.591   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671560401312 - -
+2022-12-20 20:20:01.603   [INF]  CORS policy execution successful.
+2022-12-20 20:20:01.624   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671560401312 - - - 204 - - 33.5036ms
+2022-12-20 20:20:01.675   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671560401312 application/json -
+2022-12-20 20:20:01.700   [INF]  CORS policy execution successful.
+2022-12-20 20:20:01.702   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:20:01.708   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 20:20:01.974   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:20:01.984   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 270.0271ms
+2022-12-20 20:20:01.988   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:20:01.990   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671560401312 application/json - - 200 - application/json;+charset=utf-8 314.8639ms
+2022-12-20 20:20:02.774   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671560402703 - -
+2022-12-20 20:20:02.801   [INF]  CORS policy execution successful.
+2022-12-20 20:20:02.882   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671560402703 - - - 204 - - 107.7429ms
+2022-12-20 20:20:02.894   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671560402703 application/json -
+2022-12-20 20:20:02.911   [INF]  CORS policy execution successful.
+2022-12-20 20:20:02.919   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 20:20:02.949   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 20:20:02.997   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:20:03.001   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 27.0256ms
+2022-12-20 20:20:03.004   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 20:20:03.006   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671560402703 application/json - - 200 - application/json;+charset=utf-8 111.2521ms
+2022-12-20 20:20:38.557   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users - -
+2022-12-20 20:20:38.568   [INF]  CORS policy execution successful.
+2022-12-20 20:20:38.570   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users - - - 204 - - 13.3065ms
+2022-12-20 20:20:38.578   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Users application/json 96
+2022-12-20 20:20:38.581   [INF]  CORS policy execution successful.
+2022-12-20 20:20:38.585   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-20 20:20:38.618   [INF]  Route matched with {action = "Post", controller = "Users"}. Executing controller action with signature Int32 Post(exe1HW.Models.User) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 20:22:23.910   [INF]  Executed action exe1HW.Controllers.UsersController.Post (exe1HW) in 105289.411ms
+2022-12-20 20:22:23.922   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423337 - -
+2022-12-20 20:22:23.926   [INF]  CORS policy execution successful.
+2022-12-20 20:22:23.927   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-20 20:22:23.930   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423337 - - - 0 - - 8.0557ms
+2022-12-20 20:22:23.940   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Users application/json 96
+2022-12-20 20:22:23.947   [INF]  CORS policy execution successful.
+2022-12-20 20:22:23.947   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423338 - -
+2022-12-20 20:22:23.949   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423339 - -
+2022-12-20 20:22:23.950   [ERR]  An unhandled exception has occurred while executing the request.System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__UsersTab__A9D105359CDE5DB3'. Cannot insert duplicate key in object 'dbo.UsersTable'. The duplicate key value is (dan3azoulay@gmail.com).
+The statement has been terminated.
+   at DBservices.Insert(User user) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\DAL\DBservices.cs:line 70
+   at exe1HW.Models.User.Insert() in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\User.cs:line 14
+   at exe1HW.Controllers.UsersController.Post(User user) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Controllers\UsersController.cs:line 31
+   at lambda_method13(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:c64abd71-da20-415d-85c8-47b30e7e1698
+Error Number:2627,State:1,Class:14
+
+2022-12-20 20:22:23.955   [INF]  CORS policy execution successful.
+2022-12-20 20:22:23.950   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423337 - -
+2022-12-20 20:22:23.951   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-20 20:22:23.953   [INF]  CORS policy execution successful.
+2022-12-20 20:22:24.657   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423338 - - - 0 - - 720.6338ms
+2022-12-20 20:22:24.658   [INF]  CORS policy execution successful.
+2022-12-20 20:22:24.663   [INF]  Route matched with {action = "Post", controller = "Users"}. Executing controller action with signature Int32 Post(exe1HW.Models.User) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 20:22:24.665   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423339 - - - 204 - - 716.0113ms
+2022-12-20 20:22:24.668   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423338 - -
+2022-12-20 20:22:24.672   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423337 - - - 204 - - 722.0040ms
+2022-12-20 20:22:24.688   [INF]  CORS policy execution successful.
+2022-12-20 20:22:24.688   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423339 application/json -
+2022-12-20 20:22:24.697   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423338 - - - 204 - - 29.2274ms
+2022-12-20 20:22:24.698   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423337 application/json -
+2022-12-20 20:22:24.699   [INF]  CORS policy execution successful.
+2022-12-20 20:22:24.706   [INF]  CORS policy execution successful.
+2022-12-20 20:22:24.708   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:22:24.713   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:22:24.715   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 20:22:24.719   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 20:22:24.965   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Users application/json 96 - 500 - text/plain;+charset=utf-8 106387.0684ms
+2022-12-20 20:22:28.973   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423338 application/json -
+2022-12-20 20:22:28.978   [INF]  Executed action exe1HW.Controllers.UsersController.Post (exe1HW) in 4301.7316ms
+2022-12-20 20:22:28.983   [INF]  CORS policy execution successful.
+2022-12-20 20:22:28.989   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-20 20:22:28.990   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:22:28.991   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:22:28.995   [ERR]  An unhandled exception has occurred while executing the request.System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__UsersTab__A9D105359CDE5DB3'. Cannot insert duplicate key in object 'dbo.UsersTable'. The duplicate key value is (dan3azoulay@gmail.com).
+The statement has been terminated.
+   at DBservices.Insert(User user) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\DAL\DBservices.cs:line 70
+   at exe1HW.Models.User.Insert() in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Models\User.cs:line 14
+   at exe1HW.Controllers.UsersController.Post(User user) in C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\Controllers\UsersController.cs:line 31
+   at lambda_method13(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:c64abd71-da20-415d-85c8-47b30e7e1698
+Error Number:2627,State:1,Class:14
+
+2022-12-20 20:22:29.001   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 20:22:29.007   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 3947.8494ms
+2022-12-20 20:22:29.045   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:22:29.049   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Users application/json 96 - 500 - text/plain;+charset=utf-8 5108.1120ms
+2022-12-20 20:22:29.051   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:22:29.056   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 4083.6337ms
+2022-12-20 20:22:29.066   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423337 application/json - - 200 - application/json;+charset=utf-8 4368.2397ms
+2022-12-20 20:22:29.068   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:22:29.072   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:22:29.073   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423339 application/json - - 200 - application/json;+charset=utf-8 4385.2476ms
+2022-12-20 20:22:29.097   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 48.1509ms
+2022-12-20 20:22:29.106   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:22:29.108   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423338 application/json - - 200 - application/json;+charset=utf-8 135.3525ms
+2022-12-20 20:22:41.904   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Pp132456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Pp132456%22}&_=1671560423340 - -
+2022-12-20 20:22:41.905   [INF]  CORS policy execution successful.
+2022-12-20 20:22:41.907   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Pp132456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Pp132456%22}&_=1671560423340 - - - 204 - - 3.3529ms
+2022-12-20 20:22:41.914   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Pp132456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Pp132456%22}&_=1671560423340 application/json -
+2022-12-20 20:22:41.917   [INF]  CORS policy execution successful.
+2022-12-20 20:22:41.918   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:22:41.919   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 20:22:41.947   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:22:41.950   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 27.6653ms
+2022-12-20 20:22:41.951   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:22:41.953   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Pp132456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Pp132456%22}&_=1671560423340 application/json - - 200 - application/json;+charset=utf-8 38.7405ms
+2022-12-20 20:22:45.674   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423341 - -
+2022-12-20 20:22:45.676   [INF]  CORS policy execution successful.
+2022-12-20 20:22:45.678   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423341 - - - 204 - - 3.8558ms
+2022-12-20 20:22:45.686   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423341 application/json -
+2022-12-20 20:22:45.693   [INF]  CORS policy execution successful.
+2022-12-20 20:22:45.695   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:22:45.700   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 20:22:45.729   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:22:45.738   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 33.933ms
+2022-12-20 20:22:45.752   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:22:45.755   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423341 application/json - - 200 - application/json;+charset=utf-8 70.1937ms
+2022-12-20 20:22:49.058   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423342 - -
+2022-12-20 20:22:49.059   [INF]  CORS policy execution successful.
+2022-12-20 20:22:49.060   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423342 - - - 204 - - 3.2660ms
+2022-12-20 20:22:49.072   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423342 application/json -
+2022-12-20 20:22:49.074   [INF]  CORS policy execution successful.
+2022-12-20 20:22:49.075   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:22:49.077   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 20:22:49.103   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:22:49.106   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 26.6373ms
+2022-12-20 20:22:49.108   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:22:49.109   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560423342 application/json - - 200 - application/json;+charset=utf-8 36.9050ms
+2022-12-20 20:23:37.293   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560609681 - -
+2022-12-20 20:23:37.295   [INF]  CORS policy execution successful.
+2022-12-20 20:23:37.297   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560609681 - - - 204 - - 3.7102ms
+2022-12-20 20:23:37.308   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560609681 application/json -
+2022-12-20 20:23:37.310   [INF]  CORS policy execution successful.
+2022-12-20 20:23:37.311   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:23:37.313   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 20:23:37.339   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:23:37.346   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 31.1188ms
+2022-12-20 20:23:37.349   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:23:37.351   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gamil.com/password/Da123456?{%22Email%22:%22dan3azoulay@gamil.com%22,%22Password%22:%22Da123456%22}&_=1671560609681 application/json - - 200 - application/json;+charset=utf-8 43.3773ms
+2022-12-20 20:23:53.738   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users - -
+2022-12-20 20:23:53.741   [INF]  CORS policy execution successful.
+2022-12-20 20:23:53.743   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users - - - 204 - - 5.0365ms
+2022-12-20 20:23:53.748   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Users application/json 96
+2022-12-20 20:23:53.751   [INF]  CORS policy execution successful.
+2022-12-20 20:23:53.752   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-20 20:23:53.753   [INF]  Route matched with {action = "Post", controller = "Users"}. Executing controller action with signature Int32 Post(exe1HW.Models.User) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 20:25:26.951   [INF]  Now listening on: https://localhost:7294
+2022-12-20 20:25:27.161   [INF]  Now listening on: http://localhost:5294
+2022-12-20 20:25:27.172   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-20 20:25:27.178   [INF]  Hosting environment: Development
+2022-12-20 20:25:27.182   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-20 20:25:31.411   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-20 20:25:31.780   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 369.3727ms
+2022-12-20 20:25:31.824   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-20 20:25:32.355   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 531.1457ms
+2022-12-20 20:25:32.420   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-20 20:25:32.440   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-20 20:25:32.440   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-20 20:25:32.440   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-20 20:25:32.448   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-20 20:25:32.465   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 24.7660ms
+2022-12-20 20:25:32.649   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-20 20:25:32.707   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-20 20:25:32.719   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 279.0475ms
+2022-12-20 20:25:32.752   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 332.5645ms
+2022-12-20 20:25:32.937   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 488.0668ms
+2022-12-20 20:25:32.973   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-20 20:25:32.993   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 552.2554ms
+2022-12-20 20:25:33.691   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-20 20:25:34.608   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 916.8532ms
+2022-12-20 20:25:35.294   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users - -
+2022-12-20 20:25:35.316   [INF]  CORS policy execution successful.
+2022-12-20 20:25:35.322   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users - - - 204 - - 28.7829ms
+2022-12-20 20:25:35.334   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Users application/json 96
+2022-12-20 20:25:35.344   [INF]  CORS policy execution successful.
+2022-12-20 20:25:35.367   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-20 20:25:35.436   [INF]  Route matched with {action = "Post", controller = "Users"}. Executing controller action with signature Int32 Post(exe1HW.Models.User) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 20:25:36.266   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 20:25:36.286   [INF]  Executed action exe1HW.Controllers.UsersController.Post (exe1HW) in 825.744ms
+2022-12-20 20:25:36.291   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Post (exe1HW)'
+2022-12-20 20:25:36.293   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Users application/json 96 - 200 - application/json;+charset=utf-8 959.8546ms
+2022-12-20 20:25:36.898   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671560736786 - -
+2022-12-20 20:25:36.902   [INF]  CORS policy execution successful.
+2022-12-20 20:25:36.907   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671560736786 - - - 204 - - 9.2904ms
+2022-12-20 20:25:36.919   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671560736786 application/json -
+2022-12-20 20:25:36.923   [INF]  CORS policy execution successful.
+2022-12-20 20:25:36.926   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 20:25:36.947   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 20:25:37.050   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:25:37.103   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 151.3803ms
+2022-12-20 20:25:37.107   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 20:25:37.111   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671560736786 application/json - - 200 - application/json;+charset=utf-8 192.4719ms
+2022-12-20 20:25:51.745   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats - -
+2022-12-20 20:25:51.747   [INF]  CORS policy execution successful.
+2022-12-20 20:25:51.748   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats - - - 204 - - 5.2137ms
+2022-12-20 20:25:51.751   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 80
+2022-12-20 20:25:51.751   [INF]  CORS policy execution successful.
+2022-12-20 20:25:51.752   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-12-20 20:25:51.757   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Int32 Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 20:25:51.801   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 20:25:51.804   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 41.7053ms
+2022-12-20 20:25:51.809   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-12-20 20:25:51.811   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 80 - 200 - application/json;+charset=utf-8 60.5296ms
+2022-12-20 20:25:51.817   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671560736787 - -
+2022-12-20 20:25:51.818   [INF]  CORS policy execution successful.
+2022-12-20 20:25:51.820   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671560736787 - - - 204 - - 3.4485ms
+2022-12-20 20:25:51.824   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671560736787 application/json -
+2022-12-20 20:25:51.825   [INF]  CORS policy execution successful.
+2022-12-20 20:25:51.827   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 20:25:51.829   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 20:25:51.858   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:25:51.861   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 30.1255ms
+2022-12-20 20:25:51.864   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 20:25:51.865   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671560736787 application/json - - 200 - application/json;+charset=utf-8 41.3836ms
+2022-12-20 20:25:53.836   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671560753777 - -
+2022-12-20 20:25:53.847   [INF]  CORS policy execution successful.
+2022-12-20 20:25:53.868   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671560753777 - - - 204 - - 32.1047ms
+2022-12-20 20:25:53.876   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671560753777 application/json -
+2022-12-20 20:25:53.880   [INF]  CORS policy execution successful.
+2022-12-20 20:25:53.882   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:25:53.891   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 20:25:53.931   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:25:53.946   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 48.4655ms
+2022-12-20 20:25:53.949   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:25:53.951   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671560753777 application/json - - 200 - application/json;+charset=utf-8 74.1554ms
+2022-12-20 20:26:00.700   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations - -
+2022-12-20 20:26:00.705   [INF]  CORS policy execution successful.
+2022-12-20 20:26:00.719   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations - - - 204 - - 19.3600ms
+2022-12-20 20:26:00.722   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 103
+2022-12-20 20:26:00.723   [INF]  CORS policy execution successful.
+2022-12-20 20:26:00.729   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 20:26:00.733   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Int32 Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 20:26:00.821   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 20:26:00.823   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 87.9359ms
+2022-12-20 20:26:00.826   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 20:26:00.828   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 103 - 200 - application/json;+charset=utf-8 106.2916ms
+2022-12-20 20:26:00.838   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671560753778 - -
+2022-12-20 20:26:00.841   [INF]  CORS policy execution successful.
+2022-12-20 20:26:00.843   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671560753778 - - - 204 - - 4.9082ms
+2022-12-20 20:26:00.846   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671560753778 application/json -
+2022-12-20 20:26:00.849   [INF]  CORS policy execution successful.
+2022-12-20 20:26:00.853   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:26:00.854   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 20:26:00.877   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:26:00.881   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 25.2504ms
+2022-12-20 20:26:00.883   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:26:00.885   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671560753778 application/json - - 200 - application/json;+charset=utf-8 39.0837ms
+2022-12-20 20:28:15.111   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671560894822 - -
+2022-12-20 20:28:15.154   [INF]  CORS policy execution successful.
+2022-12-20 20:28:15.156   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671560894822 - - - 204 - - 45.5053ms
+2022-12-20 20:28:15.171   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671560894822 application/json -
+2022-12-20 20:28:15.173   [INF]  CORS policy execution successful.
+2022-12-20 20:28:15.184   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:28:15.204   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 20:28:15.239   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:28:15.246   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 26.7378ms
+2022-12-20 20:28:15.248   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:28:15.250   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671560894822 application/json - - 200 - application/json;+charset=utf-8 79.1184ms
+2022-12-20 20:28:16.779   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671560896732 - -
+2022-12-20 20:28:16.783   [INF]  CORS policy execution successful.
+2022-12-20 20:28:16.784   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Flats?_=1671560896732 - - - 204 - - 5.7379ms
+2022-12-20 20:28:16.790   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Flats?_=1671560896732 application/json -
+2022-12-20 20:28:16.819   [INF]  CORS policy execution successful.
+2022-12-20 20:28:16.822   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 20:28:16.824   [INF]  Route matched with {action = "Get", controller = "Flats"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Flat] Get() on controller exe1.Controllers.FlatsController (exe1HW).
+2022-12-20 20:28:16.868   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Flat, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:28:16.889   [INF]  Executed action exe1.Controllers.FlatsController.Get (exe1HW) in 43.3773ms
+2022-12-20 20:28:16.893   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Get (exe1HW)'
+2022-12-20 20:28:16.898   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Flats?_=1671560896732 application/json - - 200 - application/json;+charset=utf-8 107.9773ms
+2022-12-20 20:28:18.920   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gmail.com/password/Da123456?{%22Email%22:%22dan3azoulay@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671560896733 - -
+2022-12-20 20:28:18.923   [INF]  CORS policy execution successful.
+2022-12-20 20:28:18.937   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Users/email/dan3azoulay@gmail.com/password/Da123456?{%22Email%22:%22dan3azoulay@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671560896733 - - - 204 - - 17.0643ms
+2022-12-20 20:28:18.972   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gmail.com/password/Da123456?{%22Email%22:%22dan3azoulay@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671560896733 application/json -
+2022-12-20 20:28:18.975   [INF]  CORS policy execution successful.
+2022-12-20 20:28:18.981   [INF]  Executing endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:28:19.007   [INF]  Route matched with {action = "Get", controller = "Users"}. Executing controller action with signature System.Collections.Generic.List`1[exe1HW.Models.User] Get(System.String, System.String) on controller exe1HW.Controllers.UsersController (exe1HW).
+2022-12-20 20:28:19.106   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.User, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:28:19.109   [INF]  Executed action exe1HW.Controllers.UsersController.Get (exe1HW) in 95.3031ms
+2022-12-20 20:28:19.113   [INF]  Executed endpoint 'exe1HW.Controllers.UsersController.Get (exe1HW)'
+2022-12-20 20:28:19.115   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Users/email/dan3azoulay@gmail.com/password/Da123456?{%22Email%22:%22dan3azoulay@gmail.com%22,%22Password%22:%22Da123456%22}&_=1671560896733 application/json - - 200 - application/json;+charset=utf-8 142.8159ms
+2022-12-20 20:28:22.489   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671560902291 - -
+2022-12-20 20:28:22.504   [INF]  CORS policy execution successful.
+2022-12-20 20:28:22.517   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671560902291 - - - 204 - - 28.5593ms
+2022-12-20 20:28:22.521   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671560902291 application/json -
+2022-12-20 20:28:22.525   [INF]  CORS policy execution successful.
+2022-12-20 20:28:22.526   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:28:22.529   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 20:28:22.554   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:28:22.556   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 21.497ms
+2022-12-20 20:28:22.559   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:28:22.561   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671560902291 application/json - - 200 - application/json;+charset=utf-8 40.2859ms
+2022-12-20 20:28:30.881   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations - -
+2022-12-20 20:28:30.894   [INF]  CORS policy execution successful.
+2022-12-20 20:28:30.906   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations - - - 204 - - 24.7778ms
+2022-12-20 20:28:30.911   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 103
+2022-12-20 20:28:30.914   [INF]  CORS policy execution successful.
+2022-12-20 20:28:30.922   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 20:28:30.924   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Int32 Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 20:28:31.003   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 20:28:31.005   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 78.4034ms
+2022-12-20 20:28:31.007   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 20:28:31.008   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 103 - 200 - application/json;+charset=utf-8 96.4300ms
+2022-12-20 20:28:31.018   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671560902292 - -
+2022-12-20 20:28:31.019   [INF]  CORS policy execution successful.
+2022-12-20 20:28:31.021   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671560902292 - - - 204 - - 2.7256ms
+2022-12-20 20:28:31.023   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671560902292 application/json -
+2022-12-20 20:28:31.025   [INF]  CORS policy execution successful.
+2022-12-20 20:28:31.029   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:28:31.031   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 20:28:31.058   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:28:31.060   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 24.4048ms
+2022-12-20 20:28:31.062   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:28:31.063   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671560902292 application/json - - 200 - application/json;+charset=utf-8 40.1886ms
+2022-12-20 20:35:16.318   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671561316124 - -
+2022-12-20 20:35:16.329   [INF]  CORS policy execution successful.
+2022-12-20 20:35:16.330   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671561316124 - - - 204 - - 12.1447ms
+2022-12-20 20:35:16.335   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671561316124 application/json -
+2022-12-20 20:35:16.340   [INF]  CORS policy execution successful.
+2022-12-20 20:35:16.341   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:35:16.343   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 20:35:17.223   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 20:35:17.286   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 938.4392ms
+2022-12-20 20:35:17.291   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 20:35:17.295   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671561316124 application/json - - 200 - application/json;+charset=utf-8 960.8420ms
+2022-12-20 23:40:42.628   [INF]  Now listening on: https://localhost:7294
+2022-12-20 23:40:42.743   [INF]  Now listening on: http://localhost:5294
+2022-12-20 23:40:42.750   [INF]  Application started. Press Ctrl+C to shut down.
+2022-12-20 23:40:42.752   [INF]  Hosting environment: Development
+2022-12-20 23:40:42.756   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-12-20 23:40:44.203   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2022-12-20 23:40:44.518   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 325.0529ms
+2022-12-20 23:40:44.547   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-12-20 23:40:45.034   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 486.5505ms
+2022-12-20 23:40:45.071   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2022-12-20 23:40:45.071   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2022-12-20 23:40:45.071   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2022-12-20 23:40:45.072   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-12-20 23:40:45.127   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 55.4021ms
+2022-12-20 23:40:45.184   [INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-12-20 23:40:45.186   [INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-12-20 23:40:45.193   [INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-12-20 23:40:45.206   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 134.7223ms
+2022-12-20 23:40:45.215   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 143632 text/css 144.0549ms
+2022-12-20 23:40:45.216   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 145.1264ms
+2022-12-20 23:40:45.269   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-12-20 23:40:45.403   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 133.4766ms
+2022-12-20 23:40:46.870   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-12-20 23:40:47.050   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/favicon-32x32.png - -
+2022-12-20 23:40:47.223   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 353.2808ms
+2022-12-20 23:40:47.254   [INF]  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-12-20 23:40:47.715   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/favicon-32x32.png - - - 200 628 image/png 664.9932ms
+2022-12-20 23:41:47.555   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 138
+2022-12-20 23:41:47.571   [INF]  CORS policy execution successful.
+2022-12-20 23:41:47.587   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 23:41:47.665   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Int32 Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 23:41:48.546   [ERR]  *!*Flat with ID: 15 not exist in flats list*!*
+2022-12-20 23:41:48.551   [INF]  Executing ObjectResult, writing value of type 'System.Int32'.
+2022-12-20 23:41:48.569   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 891.2937ms
+2022-12-20 23:41:48.574   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-12-20 23:41:48.577   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 138 - 200 - application/json;+charset=utf-8 1021.7547ms
+2022-12-20 23:42:01.042   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations - -
+2022-12-20 23:42:01.046   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 23:42:01.052   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 23:42:01.110   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 23:42:01.125   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 63.7112ms
+2022-12-20 23:42:01.128   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 23:42:01.129   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations - - - 200 - application/json;+charset=utf-8 87.3948ms
+2022-12-20 23:48:44.808   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671572923511 - -
+2022-12-20 23:48:44.834   [INF]  CORS policy execution successful.
+2022-12-20 23:48:44.849   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671572923511 - - - 204 - - 41.0560ms
+2022-12-20 23:48:44.856   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671572923511 application/json -
+2022-12-20 23:48:44.862   [INF]  CORS policy execution successful.
+2022-12-20 23:48:44.866   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 23:48:44.890   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 23:48:45.153   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 23:48:45.162   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 268.3797ms
+2022-12-20 23:48:45.165   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 23:48:45.167   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671572923511 application/json - - 200 - application/json;+charset=utf-8 311.4766ms
+2022-12-20 23:49:16.163   [INF]  Request starting HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671572955975 - -
+2022-12-20 23:49:16.181   [INF]  CORS policy execution successful.
+2022-12-20 23:49:16.188   [INF]  Request finished HTTP/2 OPTIONS https://localhost:7294/api/Vacations?_=1671572955975 - - - 204 - - 24.7711ms
+2022-12-20 23:49:16.191   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations?_=1671572955975 application/json -
+2022-12-20 23:49:16.225   [INF]  CORS policy execution successful.
+2022-12-20 23:49:16.227   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 23:49:16.229   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-12-20 23:49:16.260   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-20 23:49:16.272   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 37.127ms
+2022-12-20 23:49:16.274   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-12-20 23:49:16.276   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations?_=1671572955975 application/json - - 200 - application/json;+charset=utf-8 84.9016ms

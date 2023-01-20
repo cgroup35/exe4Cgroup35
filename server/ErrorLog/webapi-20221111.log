@@ -1,0 +1,293 @@
+2022-11-11 10:44:46.034 +02:00 [ERR] Id should be unique, flat ID 0 already exist in the List
+2022-11-11 10:49:49.712   ERR  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 10:51:11.574   ERR  Id should be unique, flat ID 2 already exist in the List
+2022-11-11 10:53:58.779   ERR  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 10:53:59.572   ERR  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 11:07:20.398   INF  Now listening on: https://localhost:7294
+2022-11-11 11:07:20.652   INF  Now listening on: http://localhost:5294
+2022-11-11 11:07:20.658   INF  Application started. Press Ctrl+C to shut down.
+2022-11-11 11:07:20.659   INF  Hosting environment: Development
+2022-11-11 11:07:20.660   INF  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-11 11:07:20.687   INF  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-11 11:07:21.169   INF  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 482.9948ms
+2022-11-11 11:07:21.195   INF  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-11 11:07:21.201   INF  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-11 11:07:21.212   INF  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 17.6781ms
+2022-11-11 11:07:21.288   INF  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 86.6596ms
+2022-11-11 11:07:22.086   INF  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-11 11:07:22.469   INF  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 383.0781ms
+2022-11-11 11:07:30.545   INF  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:07:30.560   INF  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:07:30.615   INF  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:07:30.687   INF  dan
+2022-11-11 11:07:30.705   INF  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:07:30.726   INF  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 86.2732ms
+2022-11-11 11:07:30.732   INF  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:07:30.736   INF  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 191.1515ms
+2022-11-11 11:07:34.869   INF  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:07:34.872   INF  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:07:34.875   INF  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:07:34.883   INF  dan
+2022-11-11 11:07:34.884   ERR  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 11:07:34.886   INF  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:07:34.888   INF  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 4.9508ms
+2022-11-11 11:07:34.890   INF  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:07:34.893   INF  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 23.4101ms
+2022-11-11 11:08:03.998   INF  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 86
+2022-11-11 11:08:04.002   INF  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:08:04.011   INF  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:08:04.027   INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-11 11:08:04.032   INF  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 17.5ms
+2022-11-11 11:08:04.037   INF  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:08:04.039   INF  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 86 - 400 - application/problem+json;+charset=utf-8 41.2208ms
+2022-11-11 11:09:03.200   INF  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 95
+2022-11-11 11:09:03.204   INF  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:09:03.206   INF  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:09:03.210   INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-11 11:09:03.212   INF  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 4.2443ms
+2022-11-11 11:09:03.218   INF  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:09:03.219   INF  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 95 - 400 - application/problem+json;+charset=utf-8 19.4642ms
+2022-11-11 11:09:11.210   INF  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 26
+2022-11-11 11:09:11.211   INF  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:09:11.213   INF  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:09:11.219   INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-11 11:09:11.222   INF  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 7.7249ms
+2022-11-11 11:09:11.224   INF  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:09:11.225   INF  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 26 - 400 - application/problem+json;+charset=utf-8 14.9944ms
+2022-11-11 11:12:16.656  [] INF  Now listening on: https://localhost:7294
+2022-11-11 11:12:16.941  [] INF  Now listening on: http://localhost:5294
+2022-11-11 11:12:16.968  [] INF  Application started. Press Ctrl+C to shut down.
+2022-11-11 11:12:16.972  [] INF  Hosting environment: Development
+2022-11-11 11:12:16.974  [] INF  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-11 11:12:17.033  [] INF  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-11 11:12:17.575  [] INF  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 550.5558ms
+2022-11-11 11:12:17.632  [] INF  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-11 11:12:17.633  [] INF  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-11 11:12:17.648  [] INF  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 15.5599ms
+2022-11-11 11:12:17.758  [] INF  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 125.4529ms
+2022-11-11 11:12:19.318  [] INF  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-11 11:12:19.838  [] INF  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 519.4945ms
+2022-11-11 11:12:33.729  [] INF  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:12:33.748  [] INF  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:12:33.815  [] INF  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:12:33.875  [] INF  dan
+2022-11-11 11:12:33.888  [] INF  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:12:33.904  [] INF  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 70.5899ms
+2022-11-11 11:12:33.910  [] INF  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:12:33.912  [] INF  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 182.5227ms
+2022-11-11 11:12:34.780  [] INF  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:12:34.804  [] INF  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:12:34.810  [] INF  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:12:34.816  [] INF  dan
+2022-11-11 11:12:34.823  [] ERR  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 11:12:34.825  [] INF  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:12:34.827  [] INF  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 12.7091ms
+2022-11-11 11:12:34.833  [] INF  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:12:34.838  [] INF  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 57.7173ms
+2022-11-11 11:13:03.204   [INF]  Now listening on: https://localhost:7294
+2022-11-11 11:13:03.601   [INF]  Now listening on: http://localhost:5294
+2022-11-11 11:13:03.625   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-11 11:13:03.628   [INF]  Hosting environment: Development
+2022-11-11 11:13:03.629   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-11 11:13:03.714   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-11 11:13:03.714   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:13:03.895   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:13:03.993   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:13:04.123   [INF]  dan
+2022-11-11 11:13:04.443   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:13:04.475   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 460.8512ms
+2022-11-11 11:13:04.479   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:13:04.481   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 0 - application/json;+charset=utf-8 774.1666ms
+2022-11-11 11:13:04.505   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 797.9518ms
+2022-11-11 11:13:04.537   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-11 11:13:04.558   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-11 11:13:04.698   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 161.3311ms
+2022-11-11 11:13:04.983   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 424.6656ms
+2022-11-11 11:13:05.342   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-11 11:13:05.811   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 468.4752ms
+2022-11-11 11:13:17.397   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:13:17.401   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:13:17.403   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:13:17.407   [INF]  dan
+2022-11-11 11:13:17.408   [ERR]  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 11:13:17.409   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:13:17.411   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 6.0527ms
+2022-11-11 11:13:17.415   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:13:17.416   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 19.2315ms
+2022-11-11 11:13:18.222   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:13:18.225   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:13:18.226   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:13:18.229   [INF]  dan
+2022-11-11 11:13:18.231   [ERR]  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 11:13:18.232   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:13:18.234   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 5.652ms
+2022-11-11 11:13:18.236   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:13:18.237   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 14.6206ms
+2022-11-11 11:16:39.926   [INF]  Now listening on: https://localhost:7294
+2022-11-11 11:16:40.000   [INF]  Now listening on: http://localhost:5294
+2022-11-11 11:16:40.006   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-11 11:16:40.007   [INF]  Hosting environment: Development
+2022-11-11 11:16:40.008   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-11 11:16:40.384   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-11 11:16:40.838   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 456.8349ms
+2022-11-11 11:16:40.845   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-11 11:16:40.848   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-11 11:16:40.857   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 9.3494ms
+2022-11-11 11:16:40.904   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.2484ms
+2022-11-11 11:16:42.382   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-11 11:16:42.619   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 237.1270ms
+2022-11-11 11:16:50.081   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:16:50.096   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:16:50.147   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:16:50.196   [INF]  dan
+2022-11-11 11:16:50.210   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:16:50.227   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 68.4928ms
+2022-11-11 11:16:50.233   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:16:50.235   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 154.0088ms
+2022-11-11 11:16:51.162   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:16:51.167   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:16:51.170   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:16:51.173   [INF]  dan
+2022-11-11 11:16:51.174   [ERR]  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 11:16:51.176   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:16:51.178   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 5.7914ms
+2022-11-11 11:16:51.188   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:16:51.189   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 26.9001ms
+2022-11-11 11:16:56.687   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 128
+2022-11-11 11:16:56.690   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:16:56.692   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:16:56.706   [INF]  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-11 11:16:56.710   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 14.8749ms
+2022-11-11 11:16:56.714   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:16:56.718   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 128 - 400 - application/problem+json;+charset=utf-8 29.8082ms
+2022-11-11 11:22:33.127   [INF]  dan
+2022-11-11 11:22:34.013   [INF]  dan
+2022-11-11 11:22:34.015   [ERR]  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 11:23:48.423   [INF]  Now listening on: https://localhost:7294
+2022-11-11 11:23:48.486   [INF]  Now listening on: http://localhost:5294
+2022-11-11 11:23:48.492   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-11 11:23:48.493   [INF]  Hosting environment: Development
+2022-11-11 11:23:48.494   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-11 11:23:48.900   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-11 11:23:49.362   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 466.7924ms
+2022-11-11 11:23:49.363   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-11 11:23:49.363   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-11 11:23:49.374   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 11.2294ms
+2022-11-11 11:23:49.431   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 68.3383ms
+2022-11-11 11:23:50.652   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-11 11:23:51.044   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 391.1968ms
+2022-11-11 11:23:55.709   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:23:55.732   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:23:55.794   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:23:55.840   [INF]  dan
+2022-11-11 11:23:55.850   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:23:55.864   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 56.6544ms
+2022-11-11 11:23:55.868   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:23:55.869   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 159.7071ms
+2022-11-11 11:23:56.940   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:23:56.944   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:23:56.950   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:23:56.954   [INF]  dan
+2022-11-11 11:23:56.962   [ERR]  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 11:23:56.967   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:23:56.969   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 16.8106ms
+2022-11-11 11:23:56.972   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:23:56.975   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 34.1548ms
+2022-11-11 11:23:57.123   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:23:57.125   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:23:57.128   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:23:57.130   [INF]  dan
+2022-11-11 11:23:57.131   [ERR]  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 11:23:57.135   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:23:57.136   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 6.5013ms
+2022-11-11 11:23:57.139   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:23:57.142   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 18.9483ms
+2022-11-11 11:23:57.280   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:23:57.304   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:23:57.313   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:23:57.321   [INF]  dan
+2022-11-11 11:23:57.323   [ERR]  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 11:23:57.332   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:23:57.336   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 14.802ms
+2022-11-11 11:23:57.338   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:23:57.342   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 59.1599ms
+2022-11-11 11:23:57.509   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:23:57.511   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:23:57.513   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:23:57.516   [INF]  dan
+2022-11-11 11:23:57.519   [ERR]  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 11:23:57.522   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:23:57.537   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 21.1404ms
+2022-11-11 11:23:57.540   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:23:57.548   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 38.3772ms
+2022-11-11 11:24:15.844   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Flats application/json 92
+2022-11-11 11:24:15.860   [INF]  Executing endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:24:15.863   [INF]  Route matched with {action = "Post", controller = "Flats"}. Executing controller action with signature Boolean Post(exe1HW.Models.Flat) on controller exe1.Controllers.FlatsController (exe1HW).
+2022-11-11 11:24:15.886   [INF]  dan
+2022-11-11 11:24:15.888   [ERR]  Id should be unique, flat ID 0 already exist in the List
+2022-11-11 11:24:15.890   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 11:24:15.893   [INF]  Executed action exe1.Controllers.FlatsController.Post (exe1HW) in 7.2588ms
+2022-11-11 11:24:15.898   [INF]  Executed endpoint 'exe1.Controllers.FlatsController.Post (exe1HW)'
+2022-11-11 11:24:15.902   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Flats application/json 92 - 200 - application/json;+charset=utf-8 58.8656ms
+2022-11-11 18:06:08.239   [INF]  Now listening on: https://localhost:7294
+2022-11-11 18:06:08.400   [INF]  Now listening on: http://localhost:5294
+2022-11-11 18:06:08.483   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-11 18:06:08.485   [INF]  Hosting environment: Development
+2022-11-11 18:06:08.486   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-11 18:06:08.691   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-11 18:06:09.242   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 554.9402ms
+2022-11-11 18:06:09.292   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-11 18:06:09.293   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-11 18:06:09.305   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 13.1851ms
+2022-11-11 18:06:09.375   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.0528ms
+2022-11-11 18:06:10.443   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-11 18:06:10.764   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 320.7597ms
+2022-11-11 18:06:40.315   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 127
+2022-11-11 18:06:40.331   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-11 18:06:40.385   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-11 18:06:40.447   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 18:06:40.464   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 65.3108ms
+2022-11-11 18:06:40.468   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-11 18:06:40.470   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 127 - 200 - application/json;+charset=utf-8 154.9685ms
+2022-11-11 18:06:58.433   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 127
+2022-11-11 18:06:58.467   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-11 18:06:58.473   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-11 18:06:58.481   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 18:06:58.487   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 7.8115ms
+2022-11-11 18:06:58.493   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-11 18:06:58.496   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 127 - 200 - application/json;+charset=utf-8 62.8078ms
+2022-11-11 18:07:11.420   [INF]  Request starting HTTP/2 GET https://localhost:7294/api/Vacations - -
+2022-11-11 18:07:11.422   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-11 18:07:11.427   [INF]  Route matched with {action = "Get", controller = "Vacations"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[exe1HW.Models.Vacation] Get() on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-11 18:07:11.433   [INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[exe1HW.Models.Vacation, exe1HW, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-11 18:07:11.443   [INF]  Executed action exe1.Controllers.VacationsController.Get (exe1HW) in 11.2178ms
+2022-11-11 18:07:11.446   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Get (exe1HW)'
+2022-11-11 18:07:11.448   [INF]  Request finished HTTP/2 GET https://localhost:7294/api/Vacations - - - 200 - application/json;+charset=utf-8 27.8344ms
+2022-11-11 18:08:06.442   [INF]  Now listening on: https://localhost:7294
+2022-11-11 18:08:06.580   [INF]  Now listening on: http://localhost:5294
+2022-11-11 18:08:06.596   [INF]  Application started. Press Ctrl+C to shut down.
+2022-11-11 18:08:06.600   [INF]  Hosting environment: Development
+2022-11-11 18:08:06.604   [INF]  Content root path: C:\Users\Administrator\Desktop\serverSide\exe1HW\exe1HW\
+2022-11-11 18:08:06.738   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2022-11-11 18:08:07.285   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 554.1699ms
+2022-11-11 18:08:07.287   [INF]  Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2022-11-11 18:08:07.287   [INF]  Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2022-11-11 18:08:07.295   [INF]  Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 8.0334ms
+2022-11-11 18:08:07.312   [INF]  Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.6825ms
+2022-11-11 18:08:09.094   [INF]  Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2022-11-11 18:08:09.294   [INF]  Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 199.6221ms
+2022-11-11 18:08:26.407   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 127
+2022-11-11 18:08:26.425   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-11 18:08:26.483   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-11 18:08:26.604   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 18:08:26.707   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 136.3368ms
+2022-11-11 18:08:26.756   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-11 18:08:26.770   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 127 - 200 - application/json;+charset=utf-8 360.7886ms
+2022-11-11 18:08:42.236   [INF]  Request starting HTTP/2 POST https://localhost:7294/api/Vacations application/json 127
+2022-11-11 18:08:42.240   [INF]  Executing endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-11 18:08:42.242   [INF]  Route matched with {action = "Post", controller = "Vacations"}. Executing controller action with signature Boolean Post(exe1HW.Models.Vacation) on controller exe1.Controllers.VacationsController (exe1HW).
+2022-11-11 18:08:42.249   [ERR]  Cannot rent an apartment (0) the selected dates are not available
+2022-11-11 18:08:42.252   [INF]  Executing ObjectResult, writing value of type 'System.Boolean'.
+2022-11-11 18:08:42.254   [INF]  Executed action exe1.Controllers.VacationsController.Post (exe1HW) in 10.3958ms
+2022-11-11 18:08:42.256   [INF]  Executed endpoint 'exe1.Controllers.VacationsController.Post (exe1HW)'
+2022-11-11 18:08:42.258   [INF]  Request finished HTTP/2 POST https://localhost:7294/api/Vacations application/json 127 - 200 - application/json;+charset=utf-8 22.2446ms

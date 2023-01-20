@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Vacation Manager</title>
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link href="css/databootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">-->
+    <link href="css/datatable.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+    <style type="text/css">
+
+        button {
+            margin-left: 10px;
+        }
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="js/ajaxCalls.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+        // will run when the document is ready
+        $(document).ready(function () {
+
+            if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+                api = "https://localhost:7294/api/Vacations";
+            }
+            else {
+
+                api = "https://proj.ruppin.ac.il/cgroup35/test2/tar1/api/Vacations";
+            }
+
+            // once the document is ready we fetch a list of cars from the server
+            ajaxCall("GET", api, "", getSuccess, error);
+
+            $("#carForm").submit(onSubmitFunc); // wire the submit event to a function called f1
+            $("#editDiv").hide();
+            setTodayAsMinDate();// set today as min date for input start date
+            $("#startDate").on("blur", updateEndDate);  //update min end date=start date && max end date = start date +10 days;
+        });
+
+        // wire all the buttons to their functions
+        function buttonEvents() {
+
+            $(document).on("click", ".editBtn", function () {
+                markSelected(this);
+                $("#editDiv").show();
+                $("#editDiv :input").prop("disabled", false); // edit mode: enable all controls in the form
+                populateFields(this.getAttribute('data-flatid')); // fill the form fields according to the selected row
+            });
+
+            $(document).on("click", ".viewBtn", function () {
+                markSelected(this);
+                $("#editDiv").show();
+                row.className = 'selected';
+                $("#editDiv :input").attr("disabled", "disabled"); // view mode: disable all controls in the form
+                populateFields(this.getAttribute('data-flatid'));
+            });
+
+            $(document).on("click", ".deleteBtn", function () {
+                markSelected(this);
+                var VacationId = this.getAttribute('data-flatid');
+                swal({ // this will open a dialouge
+                    title: "Are you sure ??",
+                    text: "",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true
+                })
+                    .then(function (willDelete) {
+                        if (willDelete) DeleteFlat(VacationId);
+                        else swal("Not Deleted!");
+                    });
+            });
+        }
+
+        // mark the selected row
+        function markSelected(btn) {
+            $("#vacationsTable tr").removeClass("selected"); // remove seleced class from rows that were selected before
+            row = (btn.parentNode).parentNode; // button is in TD which is in Row
+            row.className = 'selected'; // mark as selected
+        }
+
+        // Delete a car from the server
+        function DeleteFlat(id) {
+            let qString = `${api}/${id}`;
+            ajaxCall("DELETE", qString, "", deleteSuccess, error);
+        }
+
+        function onSubmitFunc() {
+            let VacationAfterEdit = {
+                Id: $("#vacationID").val(),
+                UserEmail: $("#userEmail").val(),
+                FlatId: $("#flatId").val(),
+                StartDate: $("#startDate").val(),
+                Enddate: $("#endDate").val()
+
+                //הid זה של הטופס
+            }
+            let qString = `${api}/${$("#vacationID").val()}`;
+            // update a new Car record to the server
+            ajaxCall("PUT", qString, JSON.stringify(VacationAfterEdit), updateSuccess, error);
+            return false;
+        }
+        // fill the form fields
+        function populateFields(vacationId) {
+            vacation = getFlat(vacationId);
+            $("#vacationID").val(vacationId);
+            $("#userEmail").val(vacation.userEmail);
+            $("#flatId").val(vacation.flatId);
+            $("#startDate").val(vacation.startDate);
+            $("#endDate").val(vacation.enddate);
+        }
+
+        // get a car according to its Id
+        function getFlat(id) {
+            for (i in _vacation) {
+                if (_vacation[i].id == id)
+                    return _vacation[i];
+            }
+            return null;
+        }
+
+        // success callback function after update
+        function updateSuccess(vacationsdata) {
+            tbl.clear();
+            redrawTable(tbl, vacationsdata);
+            buttonEvents();
+            $("#editDiv").hide();
+            swal("Updated Successfuly!", "Great Job", "success");
+        }
+
+        // success callback function after delete
+        function deleteSuccess(carsdata) {
+
+            redrawTable(tbl, carsdata);
+            buttonEvents(); // after redrawing the table, we must wire the new buttons
+            $("#editDiv").hide();
+            swal("Deleted Successfuly!", "Great Job", "success");
+        }
+
+        // redraw a datatable with new data
+        function redrawTable(tbl, data) {
+            tbl.clear();
+            for (var i = 0; i < data.length; i++) {
+                tbl.row.add(data[i]);
+            }
+            tbl.draw();
+        }
+
+        // this function is activated in case of a success
+        function getSuccess(vacationsdata) {
+            _vacation = vacationsdata; // keep the cars array in a global variable;
+            try {
+                tbl = $('#vacationsTable').DataTable({
+                    data: vacationsdata,
+                    pageLength: 10,
+                    columns: [
+                        {
+                            render: function (data, type, row, meta) {
+                                let flatdata = "data-flatid='" + row.id + "'";
+
+                                editBtn = "<button type='button' class = 'editBtn btn btn-success' " + flatdata + "> Edit </button>";
+                                viewBtn = "<button type='button' class = 'viewBtn btn btn-info' " + flatdata + "> View </button>";
+                                deleteBtn = "<button type='button' class = 'deleteBtn btn btn-danger' " + flatdata + "> Delete </button>";
+                                return editBtn + viewBtn + deleteBtn;
+                            }
+                        },
+                        { data: "id" },
+                        { data: "userEmail" },
+                        { data: "flatId" },
+                        {
+                            data: "startDate",
+                            render: function (data, type, row, meta) { return `${data.split('T')[0]}` }
+
+                        },
+                        {
+                            data: "enddate",
+                            render: function (data, type, row, meta) { return `${data.split('T')[0]}` }
+                        }
+                    ],
+                });
+                buttonEvents();
+            }
+
+            catch (err) {
+        
+                    swal("Error: " + err);
+              
+            }
+        }
+
+        // this function is activated in case of a failure
+        function error(err) {
+            if (err.responseText != undefined) {
+                if (err.responseText.includes("selected dates are not available")) {
+                    swal("Error: Cannot update this apartment  the selected dates are not available");
+                }
+                else {
+                    swal("Error: " + err);
+                }
+            }
+            else {
+                swal("Error: " + err);
+            }
+        }
+        //Function name:setTodayAsMinDate
+        //parameters:---
+        //Purpose: set min value of start date to today date
+        //note:--
+        function setTodayAsMinDate() {
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth() + 1; //January is 0!
+            var yyyy = today.getFullYear();
+            if (dd < 10) {
+                dd = '0' + dd;
+            }
+
+            if (mm < 10) {
+                mm = '0' + mm;
+            }
+            today = yyyy + '-' + mm + '-' + dd;
+            startDate.min = today;
+            endDate.min = today;
+        }
+        //Function name:updateEndDate
+        //parameters:---
+        //Purpose: set min and max value for end date
+        //note:use the start day value.
+        function updateEndDate() {
+            endDate.min = $("#startDate").val();
+
+            var mindate = new Date(endDate.min);
+            mindate.setDate(mindate.getDate() + 1);//at least one day
+            var ddMin = mindate.getDate();
+            var mmMin = mindate.getMonth() + 1; //January is 0!
+            var yyyyMin = mindate.getFullYear();
+            if (ddMin < 10) {
+                ddMin = '0' + ddMin;
+            }
+
+            if (mmMin < 10) {
+                mmMin = '0' + mmMin;
+            }
+            mindate = yyyyMin + '-' + mmMin + '-' + ddMin;
+            endDate.min = mindate;
+
+
+            var maxdate = new Date(endDate.min);
+            maxdate.setDate(maxdate.getDate() + 9); // one day already taken need more 9 days
+            var dd = maxdate.getDate();
+            var mm = maxdate.getMonth() + 1; //January is 0!
+            var yyyy = maxdate.getFullYear();
+            if (dd < 10) {
+                dd = '0' + dd;
+            }
+
+            if (mm < 10) {
+                mm = '0' + mm;
+            }
+            maxdate = yyyy + '-' + mm + '-' + dd;
+            endDate.max = maxdate;
+
+        }
+
+    </script>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="wrapper d-flex align-items-stretch">
+            <nav id="sidebar">
+                <div class="custom-menu">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    </button>
+                </div>
+                <div class="img bg-wrap text-center py-4" style="background-image: url(images/bg_1.jpg); ">
+                    <div class="user-logo">
+                        <div class="img" style="background-image: url(images/adminpng.png);"></div>
+                        <h3>Cgroup35 Administrator</h3>
+                    </div>
+                </div>
+                <ul class="list-unstyled components mb-5">
+                    <li>
+                        <a href="userManager.html"><span class="fa fa-user mr-3"></span> Users</a>
+                    </li>
+                    <li>
+                        <a href="flatManager.html"><span class="fa fa-home mr-3"></span> Flats</a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><span class="fa fa-calendar mr-3"></span> Vacations</a>
+                    </li>
+                    <li>
+                        <a href="report.html"><span class="fa fa-file mr-3"></span> report</a>
+                    </li>
+                    <li>
+                        <a href="../pages/login.html"><span class="fa fa-sign-out mr-3"></span> Sign Out</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+           
+
+
+
+
+            <!-- Page Content  -->
+
+
+
+            <div id="content" class="p-4 p-md-5 pt-5">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <span id="mainTitelnav">Vacation Manager</span>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="container">
+                    <form id="pForm">
+                        <table id="vacationsTable" class="display nowrap" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Vacation ID</th>
+                                    <th>User ID</th>
+                                    <th>Flat ID</th>
+                                    <th>Start date</th>
+                                    <th>End date</th>
+                                </tr>
+                            </thead>
+                        </table>
+
+                    </form>
+
+                    <div id="editDiv">
+                        <form id="carForm">
+                            <div class="form-group row">
+
+                                <div class="form-group col-sm-3">
+                                    <label for="manufacturer"><span class="red-star">★ </span>Vacation Id</label>
+                                    <input type="number" class="form-control" id="vacationID" readonly required>
+                                </div>
+                                <div class="form-group col-sm-3">
+                                    <label for="manufacturer"><span class="red-star">★ </span>User Email</label>
+                                    <input type="text" class="form-control" id="userEmail" readonly required>
+                                </div>
+
+
+                                <div class="form-group col-sm-3">
+                                    <label for="model"><span class="red-star">★ </span>Flat id</label>
+                                    <input type="text" class="form-control" id="flatId" required>
+                                </div>
+
+
+                                <div class="form-group col-sm-3">
+                                    <label for="year"><span class="red-star">★ </span>Start date</label>
+                                    <input type="text"
+                                           onfocus="(this.type='date')"
+                                           onblur="(this.type='text')"
+                                           class="form-control" id="startDate" required>
+                                </div>
+
+                                <div class="form-group col-sm-3">
+                                    <label for="price"><span class="red-star">★ </span>End date</label>
+                                    <input type="text"
+                                           onfocus="(this.type='date')"
+                                           onblur="(this.type='text')"
+                                           class="form-control" id="endDate" required>
+                                </div>
+
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg" id="saveBTN">Save</button>
+
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--<script src="js/jquery.min.js"></script>-->
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
